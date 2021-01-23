@@ -1,0 +1,48 @@
+.grid_squared {
+  width: 100%;
+  height: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: repeat(3 1rf);
+  border: 1rpx solid white;
+}
+.grid_squared .button {
+  width: 100%;
+  height: calc(750rpx / 3);
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-right: 1rpx solid #ccc;
+  border-bottom: 1rpx solid #ccc;
+  font-size: 28rpx;
+}
+.grid_squared .button .img {
+  width: 80rpx;
+  height: 80rpx;
+}
+.grid_squared .button .text {
+  padding: 10rpx;
+  color: gray;
+}
+.grid_squared .button:active {
+  background: rgba(0, 0, 0, 0.2);
+}
+.grid_squared .button:nth-child(3n) {
+  border-right: none;
+}
+.space {
+  width: 1rpx;
+  height: 100%;
+  float: left;
+}
+
+

@@ -1,0 +1,90 @@
+.CreateFlag {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #ffffff;
+}
+.CreateFlag .title {
+  width: 100%;
+  text-align: center;
+  font-weight: 800;
+}
+.CreateFlag .text {
+  background: #fff;
+  width: 85%;
+  margin: 30rpx auto;
+  border: 1rpx solid #ccc;
+  border-radius: 20rpx;
+  padding: 20rpx;
+  font-size: 32rpx;
+}
+.close {
+  text-align: right;
+  padding: 10rpx;
+}
+.save {
+  width: 100%;
+  text-align: center;
+}
+
+.record {
+  width: 100%;
+  height: 100%;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  overflow: hidden;
+}
+.recoed_nav {
+  width: 100vw;
+  height: 80rpx;
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom: 1rpx solid #ccc;
+}
+.recoed_nav .text {
+  text-align: center;
+}
+.recoed_nav .text-active {
+  color: orangered;
+}
+.content {
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  overflow-y: scroll;
+}
+.content .item {
+  padding: 10rpx 0 10rpx 20rpx;
+  display: grid;
+  grid-template-columns: 88% 10%;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom: 1rpx solid #ccc;
+  font-size: 32rpx;
+}
+.content .img {
+  width: 500rpx;
+  height: 500rpx;
+  margin: 150rpx auto;
+}
+.content .page-section .picker {
+  text-align: center;
+  padding: 20rpx 0;
+  border-bottom: 1rpx solid #ccc;
+}
+.createFlag {
+  width: 100%;
+  height: 80rpx;
+  text-align: center;
+}
+

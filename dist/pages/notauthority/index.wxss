@@ -1,0 +1,25 @@
+.logo {
+  width: 80%;
+  height: 100rpx;
+  margin: 300rpx auto;
+  overflow: hidden;
+}
+.login {
+  width: 200rpx;
+  height: 100rpx;
+  margin: 0 auto;
+}
+.login:hover {
+  content: '点我登陆';
+}
+.btn {
+  width: 100%;
+  height: 70rpx;
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  line-height: 70rpx;
+  color: gray;
+  font-size: 32rpx;
+}
+

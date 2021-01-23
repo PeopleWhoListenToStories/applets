@@ -1,0 +1,6 @@
+.about {
+  text-align: center;
+  color: gray;
+  font-size: 32rpx;
+}
+

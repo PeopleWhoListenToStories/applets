@@ -41,11 +41,12 @@
     "@tarojs/runtime": "3.0.21",
     "@tarojs/taro": "3.0.21",
     "flyio": "^0.6.14",
+    "m-commonjs-jweixin": "^1.0.1",
     "mobx": "^4.8.0",
     "mobx-react": "^6.1.4",
     "react": "^17.0.1",
     "react-dom": "^16.10.0",
-    "styled-components": "^5.2.1"
+    "taro-ui": "^2.3.4"
   },
   "devDependencies": {
     "@babel/core": "^7.8.0",

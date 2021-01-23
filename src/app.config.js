@@ -1,10 +1,12 @@
 export default {
   pages: [
-    'pages/index/index',
-    'pages/location/index',
-    'pages/map/index',
     'pages/my/index',
+    'pages/map/index',
+    'pages/index/index',
     'pages/record/index',
+    'pages/location/index',
+    'pages/notauthority/index',
+    'pages/my/about/index'
   ],
   permission: {
     'scope.userLocation': {
