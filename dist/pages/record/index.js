@@ -1,16 +1,15 @@
 (wx["webpackJsonp"] = wx["webpackJsonp"] || []).push([["pages/record/index"],{
 
-/***/ "./node_modules/@tarojs/mini-runner/node_modules/babel-loader/lib/index.js!./src/pages/record/index.jsx":
+/***/ "./node_modules/@tarojs/mini-runner/node_modules/babel-loader/lib/index.js!./src/pages/record/index.tsx":
 /*!*****************************************************************************************************!*\
-  !*** ./node_modules/@tarojs/mini-runner/node_modules/babel-loader/lib!./src/pages/record/index.jsx ***!
+  !*** ./node_modules/@tarojs/mini-runner/node_modules/babel-loader/lib!./src/pages/record/index.tsx ***!
   \*****************************************************************************************************/
 /*! exports provided: default */
 /*! exports used: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return index; });
-/* harmony import */ var _Users_sulei_Desktop_applets_node_modules_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/@babel/runtime/regenerator */ "./node_modules/@babel/runtime/regenerator/index.js");
+/* WEBPACK VAR INJECTION */(function(global) {/* harmony import */ var _Users_sulei_Desktop_applets_node_modules_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/@babel/runtime/regenerator */ "./node_modules/@babel/runtime/regenerator/index.js");
 /* harmony import */ var _Users_sulei_Desktop_applets_node_modules_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_Users_sulei_Desktop_applets_node_modules_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _Users_sulei_Desktop_applets_node_modules_babel_runtime_helpers_esm_asyncToGenerator__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/asyncToGenerator */ "./node_modules/@babel/runtime/helpers/esm/asyncToGenerator.js");
 /* harmony import */ var _Users_sulei_Desktop_applets_node_modules_babel_runtime_helpers_esm_slicedToArray__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/slicedToArray */ "./node_modules/@babel/runtime/helpers/esm/slicedToArray.js");
@@ -19,10 +18,11 @@
 /* harmony import */ var _tarojs_taro__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @tarojs/taro */ "./node_modules/@tarojs/taro/index.js");
 /* harmony import */ var _tarojs_taro__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_tarojs_taro__WEBPACK_IMPORTED_MODULE_4__);
 /* harmony import */ var _tarojs_components__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @tarojs/components */ "./node_modules/@tarojs/components/mini/index.js");
-/* harmony import */ var _components_createFlag__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./components/createFlag */ "./src/pages/record/components/createFlag.jsx");
+/* harmony import */ var _components_createFlag__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./components/createFlag */ "./src/pages/record/components/createFlag.tsx");
 /* harmony import */ var _service_apiModules_api__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../service/apiModules/api */ "./src/service/apiModules/api.js");
-/* harmony import */ var _index_less__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./index.less */ "./src/pages/record/index.less");
-/* harmony import */ var _index_less__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(_index_less__WEBPACK_IMPORTED_MODULE_8__);
+/* harmony import */ var _config__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../../../config */ "./config/index.js");
+/* harmony import */ var _index_scss__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./index.scss */ "./src/pages/record/index.scss");
+/* harmony import */ var _index_scss__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(_index_scss__WEBPACK_IMPORTED_MODULE_9__);
 
 
 
@@ -32,7 +32,9 @@
 
 
 
-function index() {
+
+
+var Record = function Record() {
   var _useState = Object(react__WEBPACK_IMPORTED_MODULE_3__["useState"])(['今日', '全部']),
       _useState2 = Object(_Users_sulei_Desktop_applets_node_modules_babel_runtime_helpers_esm_slicedToArray__WEBPACK_IMPORTED_MODULE_2__[/* default */ "a"])(_useState, 2),
       navMenu = _useState2[0],
@@ -72,7 +74,7 @@ function index() {
   Object(react__WEBPACK_IMPORTED_MODULE_3__["useEffect"])(function () {
     getAllList();
     return function () {};
-  }, date);
+  }, [date]);
 
   function getList() {
     return _getList.apply(this, arguments);
@@ -181,8 +183,8 @@ function index() {
   }
 
   function onDateChange(e) {
-    var date = e.detail.value.split('-');
-    setDate([date[0], date[1].startsWith('0') ? date[1].substr(1) : date[1], date[2].startsWith('0') ? date[2].substr(1) : date[2]]);
+    var searchDate = e.detail.value.split('-');
+    setDate([searchDate[0], searchDate[1].startsWith('0') ? searchDate[1].substr(1) : searchDate[1], searchDate[2].startsWith('0') ? searchDate[2].substr(1) : searchDate[2]]);
   }
 
   function setMenu(index) {
@@ -202,12 +204,12 @@ function index() {
     }
   }
 
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_tarojs_components__WEBPACK_IMPORTED_MODULE_5__[/* View */ "n"], {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_tarojs_components__WEBPACK_IMPORTED_MODULE_5__[/* View */ "m"], {
     className: "record"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_tarojs_components__WEBPACK_IMPORTED_MODULE_5__[/* View */ "n"], {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_tarojs_components__WEBPACK_IMPORTED_MODULE_5__[/* View */ "m"], {
     className: "recoed_nav"
   }, navMenu.map(function (navName, index) {
-    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_tarojs_components__WEBPACK_IMPORTED_MODULE_5__[/* Text */ "l"], {
+    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_tarojs_components__WEBPACK_IMPORTED_MODULE_5__[/* Text */ "k"], {
       className: 'text ' + (currentMenu === navName ? 'text-active' : ''),
       key: navName,
       onClick: function onClick() {
@@ -218,46 +220,46 @@ function index() {
     close: function close() {
       showCreateFlag('close');
     }
-  }) : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_tarojs_components__WEBPACK_IMPORTED_MODULE_5__[/* View */ "n"], {
+  }) : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_tarojs_components__WEBPACK_IMPORTED_MODULE_5__[/* View */ "m"], {
     className: "content"
-  }, currentMenu === '全部' && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_tarojs_components__WEBPACK_IMPORTED_MODULE_5__[/* View */ "n"], {
+  }, currentMenu === '全部' && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_tarojs_components__WEBPACK_IMPORTED_MODULE_5__[/* View */ "m"], {
     className: "page-section"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_tarojs_components__WEBPACK_IMPORTED_MODULE_5__[/* Picker */ "i"], {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_tarojs_components__WEBPACK_IMPORTED_MODULE_5__[/* Picker */ "h"], {
     mode: "date",
     onChange: function onChange(e) {
       onDateChange(e);
     }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_tarojs_components__WEBPACK_IMPORTED_MODULE_5__[/* View */ "n"], {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_tarojs_components__WEBPACK_IMPORTED_MODULE_5__[/* View */ "m"], {
     className: "picker"
   }, date[0], " - ", date[1], " - ", date[2]))), currentMenu === '今日' && (todayList.length ? todayList.map(function (item) {
-    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_tarojs_components__WEBPACK_IMPORTED_MODULE_5__[/* View */ "n"], {
+    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_tarojs_components__WEBPACK_IMPORTED_MODULE_5__[/* View */ "m"], {
       className: "item",
       key: item.user_id
-    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_tarojs_components__WEBPACK_IMPORTED_MODULE_5__[/* Text */ "l"], null, " ", item.label, "  "), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_tarojs_components__WEBPACK_IMPORTED_MODULE_5__[/* RadioGroup */ "k"], {
-      onChange: function onChange(e) {
-        changeStatus(e, item.user_id, item.type_id);
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_tarojs_components__WEBPACK_IMPORTED_MODULE_5__[/* Text */ "k"], null, " ", item.label, "  "), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_tarojs_components__WEBPACK_IMPORTED_MODULE_5__[/* RadioGroup */ "j"], {
+      onChange: function onChange() {
+        changeStatus(null, item.user_id, item.type_id);
       }
-    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_tarojs_components__WEBPACK_IMPORTED_MODULE_5__[/* Radio */ "j"], {
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_tarojs_components__WEBPACK_IMPORTED_MODULE_5__[/* Radio */ "i"], {
       checked: item.status === '1'
     })));
   }) : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_tarojs_components__WEBPACK_IMPORTED_MODULE_5__[/* CoverImage */ "b"], {
     className: "img",
-    src: "../../assets/image/wushuju.png"
+    src: global.constants.icon.zanwushujuIcon
   })), currentMenu === '全部' && (allList.length ? allList.map(function (item) {
-    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_tarojs_components__WEBPACK_IMPORTED_MODULE_5__[/* View */ "n"], {
+    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_tarojs_components__WEBPACK_IMPORTED_MODULE_5__[/* View */ "m"], {
       className: "item",
       key: item.user_id
-    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_tarojs_components__WEBPACK_IMPORTED_MODULE_5__[/* Text */ "l"], null, " ", item.label, "  "), item.status === '1' ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_tarojs_components__WEBPACK_IMPORTED_MODULE_5__[/* Icon */ "e"], {
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_tarojs_components__WEBPACK_IMPORTED_MODULE_5__[/* Text */ "k"], null, " ", item.label, "  "), item.status === '1' ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_tarojs_components__WEBPACK_IMPORTED_MODULE_5__[/* Icon */ "d"], {
       size: "20",
       type: "success"
-    }) : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_tarojs_components__WEBPACK_IMPORTED_MODULE_5__[/* Icon */ "e"], {
+    }) : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_tarojs_components__WEBPACK_IMPORTED_MODULE_5__[/* Icon */ "d"], {
       size: "20",
       type: "waiting"
     }));
   }) : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_tarojs_components__WEBPACK_IMPORTED_MODULE_5__[/* CoverImage */ "b"], {
     className: "img",
-    src: "../../assets/image/wushuju.png"
-  }))), !off && currentMenu === '今日' && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_tarojs_components__WEBPACK_IMPORTED_MODULE_5__[/* View */ "n"], {
+    src: global.constants.icon.zanwushujuIcon
+  }))), !off && currentMenu === '今日' && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_tarojs_components__WEBPACK_IMPORTED_MODULE_5__[/* View */ "m"], {
     className: "createFlag"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_tarojs_components__WEBPACK_IMPORTED_MODULE_5__[/* Button */ "a"], {
     size: "mini",
@@ -267,20 +269,33 @@ function index() {
       showCreateFlag('show');
     }
   }, "Flag")));
-}
+};
+
+/* harmony default export */ __webpack_exports__["a"] = (Record);
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../../../node_modules/webpack/buildin/global.js */ "./node_modules/webpack/buildin/global.js")))
 
 /***/ }),
 
-/***/ "./src/pages/record/components/createFlag.jsx":
+/***/ "./src/pages/record/components/createFlag.scss":
+/*!*****************************************************!*\
+  !*** ./src/pages/record/components/createFlag.scss ***!
+  \*****************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+// extracted by mini-css-extract-plugin
+
+/***/ }),
+
+/***/ "./src/pages/record/components/createFlag.tsx":
 /*!****************************************************!*\
-  !*** ./src/pages/record/components/createFlag.jsx ***!
+  !*** ./src/pages/record/components/createFlag.tsx ***!
   \****************************************************/
 /*! exports provided: default */
 /*! exports used: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return createFlag; });
 /* harmony import */ var _Users_sulei_Desktop_applets_node_modules_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/@babel/runtime/regenerator */ "./node_modules/@babel/runtime/regenerator/index.js");
 /* harmony import */ var _Users_sulei_Desktop_applets_node_modules_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_Users_sulei_Desktop_applets_node_modules_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _Users_sulei_Desktop_applets_node_modules_babel_runtime_helpers_esm_asyncToGenerator__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/asyncToGenerator */ "./node_modules/@babel/runtime/helpers/esm/asyncToGenerator.js");
@@ -291,8 +306,8 @@ function index() {
 /* harmony import */ var _tarojs_taro__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_tarojs_taro__WEBPACK_IMPORTED_MODULE_4__);
 /* harmony import */ var _tarojs_components__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @tarojs/components */ "./node_modules/@tarojs/components/mini/index.js");
 /* harmony import */ var _service_apiModules_api__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../../service/apiModules/api */ "./src/service/apiModules/api.js");
-/* harmony import */ var _createFlag_less__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./createFlag.less */ "./src/pages/record/components/createFlag.less");
-/* harmony import */ var _createFlag_less__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_createFlag_less__WEBPACK_IMPORTED_MODULE_7__);
+/* harmony import */ var _createFlag_scss__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./createFlag.scss */ "./src/pages/record/components/createFlag.scss");
+/* harmony import */ var _createFlag_scss__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_createFlag_scss__WEBPACK_IMPORTED_MODULE_7__);
 
 
 
@@ -301,7 +316,8 @@ function index() {
 
 
 
-function createFlag(props) {
+
+var CreateFlag = function CreateFlag(props) {
   var _useState = Object(react__WEBPACK_IMPORTED_MODULE_3__["useState"])(''),
       _useState2 = Object(_Users_sulei_Desktop_applets_node_modules_babel_runtime_helpers_esm_slicedToArray__WEBPACK_IMPORTED_MODULE_2__[/* default */ "a"])(_useState, 2),
       value = _useState2[0],
@@ -365,18 +381,18 @@ function createFlag(props) {
     setValue(e);
   }
 
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_tarojs_components__WEBPACK_IMPORTED_MODULE_5__[/* View */ "n"], {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_tarojs_components__WEBPACK_IMPORTED_MODULE_5__[/* View */ "m"], {
     className: "CreateFlag"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_tarojs_components__WEBPACK_IMPORTED_MODULE_5__[/* View */ "n"], {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_tarojs_components__WEBPACK_IMPORTED_MODULE_5__[/* View */ "m"], {
     className: "title"
-  }, "\u8F93\u5165\u521B\u5EFA\u7684\u6807\u9898"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_tarojs_components__WEBPACK_IMPORTED_MODULE_5__[/* Textarea */ "m"], {
+  }, "\u8F93\u5165\u521B\u5EFA\u7684\u6807\u9898"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_tarojs_components__WEBPACK_IMPORTED_MODULE_5__[/* Textarea */ "l"], {
     className: "text",
     placeholder: "\u5927\u80C6\u7684\u8F93\u5165\u5427\uFF01",
     autoFocus: true,
     onInput: function onInput(e) {
       changeText(e.detail.value);
     }
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_tarojs_components__WEBPACK_IMPORTED_MODULE_5__[/* View */ "n"], {
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_tarojs_components__WEBPACK_IMPORTED_MODULE_5__[/* View */ "m"], {
     className: "save"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_tarojs_components__WEBPACK_IMPORTED_MODULE_5__[/* Button */ "a"], {
     size: "mini",
@@ -386,14 +402,16 @@ function createFlag(props) {
       save();
     }
   }, "\u521B\u5EFA")));
-}
+};
+
+/* harmony default export */ __webpack_exports__["a"] = (CreateFlag);
 
 /***/ }),
 
-/***/ "./src/pages/record/components/createFlag.less":
-/*!*****************************************************!*\
-  !*** ./src/pages/record/components/createFlag.less ***!
-  \*****************************************************/
+/***/ "./src/pages/record/index.scss":
+/*!*************************************!*\
+  !*** ./src/pages/record/index.scss ***!
+  \*************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -401,9 +419,9 @@ function createFlag(props) {
 
 /***/ }),
 
-/***/ "./src/pages/record/index.jsx":
+/***/ "./src/pages/record/index.tsx":
 /*!************************************!*\
-  !*** ./src/pages/record/index.jsx ***!
+  !*** ./src/pages/record/index.tsx ***!
   \************************************/
 /*! no exports provided */
 /*! all exports used */
@@ -412,26 +430,15 @@ function createFlag(props) {
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _tarojs_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @tarojs/runtime */ "./node_modules/@tarojs/runtime/dist/runtime.esm.js");
-/* harmony import */ var _node_modules_tarojs_mini_runner_node_modules_babel_loader_lib_index_js_index_jsx__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../node_modules/@tarojs/mini-runner/node_modules/babel-loader/lib!./index.jsx */ "./node_modules/@tarojs/mini-runner/node_modules/babel-loader/lib/index.js!./src/pages/record/index.jsx");
+/* harmony import */ var _node_modules_tarojs_mini_runner_node_modules_babel_loader_lib_index_js_index_tsx__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../node_modules/@tarojs/mini-runner/node_modules/babel-loader/lib!./index.tsx */ "./node_modules/@tarojs/mini-runner/node_modules/babel-loader/lib/index.js!./src/pages/record/index.tsx");
 
 
 var config = {};
 
 
-var inst = Page(Object(_tarojs_runtime__WEBPACK_IMPORTED_MODULE_0__["createPageConfig"])(_node_modules_tarojs_mini_runner_node_modules_babel_loader_lib_index_js_index_jsx__WEBPACK_IMPORTED_MODULE_1__[/* default */ "a"], 'pages/record/index', {}, config || {}))
+var inst = Page(Object(_tarojs_runtime__WEBPACK_IMPORTED_MODULE_0__["createPageConfig"])(_node_modules_tarojs_mini_runner_node_modules_babel_loader_lib_index_js_index_tsx__WEBPACK_IMPORTED_MODULE_1__[/* default */ "a"], 'pages/record/index', {}, config || {}))
 
 
-
-/***/ }),
-
-/***/ "./src/pages/record/index.less":
-/*!*************************************!*\
-  !*** ./src/pages/record/index.less ***!
-  \*************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-// extracted by mini-css-extract-plugin
 
 /***/ }),
 
@@ -448,7 +455,7 @@ var inst = Page(Object(_tarojs_runtime__WEBPACK_IMPORTED_MODULE_0__["createPageC
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return getRecordAllList; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "d", function() { return recordChangeStatus; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return createType; });
-/* harmony import */ var _request__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../request */ "./src/service/request.js");
+/* harmony import */ var _request__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../request */ "./src/service/request.ts");
 
 var getRecordList = function getRecordList() {
   return _request__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"].get('/api/target');
@@ -465,5 +472,5 @@ var createType = function createType(params) {
 
 /***/ })
 
-},[["./src/pages/record/index.jsx","runtime","taro","vendors","common"]]]);
+},[["./src/pages/record/index.tsx","runtime","taro","vendors","common"]]]);
 //# sourceMappingURL=index.js.map

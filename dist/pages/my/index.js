@@ -1,16 +1,43 @@
 (wx["webpackJsonp"] = wx["webpackJsonp"] || []).push([["pages/my/index"],{
 
-/***/ "./node_modules/@tarojs/mini-runner/node_modules/babel-loader/lib/index.js!./src/pages/my/index.jsx":
+/***/ "./config.ts":
+/*!*******************!*\
+  !*** ./config.ts ***!
+  \*******************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+/* WEBPACK VAR INJECTION */(function(global) {global.constants = {
+  website: 'https://humanweaknesses.com',
+  // website: 'http://127.0.0.1:7001',
+  name: 'weChat',
+  icon: {
+    mapIcon: 'http://picture-1302857231.cos.ap-beijing.myqcloud.com/402_1611416547670818.png',
+    flagIcon: 'http://picture-1302857231.cos.ap-beijing.myqcloud.com/402_1611416512165149.png',
+    otherIcon: 'http://picture-1302857231.cos.ap-beijing.myqcloud.com/402_1611416467103273.png',
+    lukuangOffIcon: 'http://picture-1302857231.cos.ap-beijing.myqcloud.com/402_1611418418081583.png',
+    lukuangOpenIcon: 'http://picture-1302857231.cos.ap-beijing.myqcloud.com/402_161141845409626.png',
+    weixingOffIcon: 'http://picture-1302857231.cos.ap-beijing.myqcloud.com/402_1611419076167662.png',
+    weixingOpenIcon: 'http://picture-1302857231.cos.ap-beijing.myqcloud.com/402_161142058554750.png',
+    notAuthorityLogo: 'http://picture-1302857231.cos.ap-beijing.myqcloud.com/402_1611416591491965.png',
+    notAuthorityLogin: 'http://picture-1302857231.cos.ap-beijing.myqcloud.com/402_1611416725880498.png',
+    zanwushujuIcon: 'http://picture-1302857231.cos.ap-beijing.myqcloud.com/402_1611423136101319.png'
+  }
+};
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/webpack/buildin/global.js */ "./node_modules/webpack/buildin/global.js")))
+
+/***/ }),
+
+/***/ "./node_modules/@tarojs/mini-runner/node_modules/babel-loader/lib/index.js!./src/pages/my/index.tsx":
 /*!*************************************************************************************************!*\
-  !*** ./node_modules/@tarojs/mini-runner/node_modules/babel-loader/lib!./src/pages/my/index.jsx ***!
+  !*** ./node_modules/@tarojs/mini-runner/node_modules/babel-loader/lib!./src/pages/my/index.tsx ***!
   \*************************************************************************************************/
 /*! exports provided: default */
 /*! exports used: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(global) {/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return My; });
-/* harmony import */ var _Users_sulei_Desktop_applets_node_modules_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/@babel/runtime/regenerator */ "./node_modules/@babel/runtime/regenerator/index.js");
+/* WEBPACK VAR INJECTION */(function(global) {/* harmony import */ var _Users_sulei_Desktop_applets_node_modules_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/@babel/runtime/regenerator */ "./node_modules/@babel/runtime/regenerator/index.js");
 /* harmony import */ var _Users_sulei_Desktop_applets_node_modules_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_Users_sulei_Desktop_applets_node_modules_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _Users_sulei_Desktop_applets_node_modules_babel_runtime_helpers_esm_asyncToGenerator__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/asyncToGenerator */ "./node_modules/@babel/runtime/helpers/esm/asyncToGenerator.js");
 /* harmony import */ var _Users_sulei_Desktop_applets_node_modules_babel_runtime_helpers_esm_slicedToArray__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/slicedToArray */ "./node_modules/@babel/runtime/helpers/esm/slicedToArray.js");
@@ -20,14 +47,19 @@
 /* harmony import */ var _tarojs_taro__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_tarojs_taro__WEBPACK_IMPORTED_MODULE_4__);
 /* harmony import */ var mobx_react__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! mobx-react */ "./node_modules/mobx-react-lite/es/index.js");
 /* harmony import */ var _tarojs_components__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @tarojs/components */ "./node_modules/@tarojs/components/mini/index.js");
-/* harmony import */ var _components_Phtot__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./components/Phtot */ "./src/pages/my/components/Phtot.jsx");
-/* harmony import */ var _store_index__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../../store/index */ "./src/store/index.js");
-/* harmony import */ var _utils_tool__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../../utils/tool */ "./src/utils/tool.js");
+/* harmony import */ var _components_Phtot__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./components/Phtot */ "./src/pages/my/components/Phtot.tsx");
+/* harmony import */ var _store_index__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../../store/index */ "./src/store/index.ts");
+/* harmony import */ var _utils_tool__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../../utils/tool */ "./src/utils/tool.ts");
 /* harmony import */ var _service_apiModules_user__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../../service/apiModules/user */ "./src/service/apiModules/user.js");
-/* harmony import */ var _config__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../../../config */ "./config.js");
-/* harmony import */ var _config__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(_config__WEBPACK_IMPORTED_MODULE_11__);
-/* harmony import */ var _index_less__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./index.less */ "./src/pages/my/index.less");
-/* harmony import */ var _index_less__WEBPACK_IMPORTED_MODULE_12___default = /*#__PURE__*/__webpack_require__.n(_index_less__WEBPACK_IMPORTED_MODULE_12__);
+/* harmony import */ var _config_ts__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../../../config.ts */ "./config.ts");
+/* harmony import */ var _config_ts__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(_config_ts__WEBPACK_IMPORTED_MODULE_11__);
+/* harmony import */ var _index_scss__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./index.scss */ "./src/pages/my/index.scss");
+/* harmony import */ var _index_scss__WEBPACK_IMPORTED_MODULE_12___default = /*#__PURE__*/__webpack_require__.n(_index_scss__WEBPACK_IMPORTED_MODULE_12__);
+
+
+
+
+var _this = undefined;
 
 
 
@@ -40,32 +72,38 @@
 
 
 
-
-function My(props) {
-  var _this = this;
-
+var My = function My() {
   var User = _store_index__WEBPACK_IMPORTED_MODULE_8__[/* default */ "a"].User;
 
-  var _useState = Object(react__WEBPACK_IMPORTED_MODULE_3__["useState"])({
-    height: '100rpx',
-    width: '100rpx'
-  }),
+  var _useState = Object(react__WEBPACK_IMPORTED_MODULE_3__["useState"])(0),
       _useState2 = Object(_Users_sulei_Desktop_applets_node_modules_babel_runtime_helpers_esm_slicedToArray__WEBPACK_IMPORTED_MODULE_2__[/* default */ "a"])(_useState, 2),
-      canvasStyle = _useState2[0],
-      setCanvasStyle = _useState2[1];
+      touchStartTime = _useState2[0],
+      setTouchStartTime = _useState2[1];
+
+  var _useState3 = Object(react__WEBPACK_IMPORTED_MODULE_3__["useState"])(false),
+      _useState4 = Object(_Users_sulei_Desktop_applets_node_modules_babel_runtime_helpers_esm_slicedToArray__WEBPACK_IMPORTED_MODULE_2__[/* default */ "a"])(_useState3, 2),
+      isShowUserName = _useState4[0],
+      setShowUserName = _useState4[1];
+
+  var _useState5 = Object(react__WEBPACK_IMPORTED_MODULE_3__["useState"])(''),
+      _useState6 = Object(_Users_sulei_Desktop_applets_node_modules_babel_runtime_helpers_esm_slicedToArray__WEBPACK_IMPORTED_MODULE_2__[/* default */ "a"])(_useState5, 2),
+      userName = _useState6[0],
+      setUserName = _useState6[1];
 
   Object(_tarojs_taro__WEBPACK_IMPORTED_MODULE_4__["useDidShow"])(function () {
     getUserInfoFn();
     _tarojs_taro__WEBPACK_IMPORTED_MODULE_4___default.a.setNavigationBarTitle({
-      title: "个人中心"
+      title: '个人中心'
     });
   });
-  Object(_tarojs_taro__WEBPACK_IMPORTED_MODULE_4__["useDidHide"])(function () {// console.log('useDidHide')
+  Object(_tarojs_taro__WEBPACK_IMPORTED_MODULE_4__["useDidHide"])(function () {
+    setShowUserName(false);
   });
 
   function getUserInfoFn() {
     return _getUserInfoFn.apply(this, arguments);
-  }
+  } // 上传头像调用接口
+
 
   function _getUserInfoFn() {
     _getUserInfoFn = Object(_Users_sulei_Desktop_applets_node_modules_babel_runtime_helpers_esm_asyncToGenerator__WEBPACK_IMPORTED_MODULE_1__[/* default */ "a"])( /*#__PURE__*/_Users_sulei_Desktop_applets_node_modules_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee() {
@@ -82,6 +120,7 @@ function My(props) {
 
               if (result.data.status === 200) {
                 User.setuserInfo(result.data.data);
+                setUserName(result.data.data.codeName);
               }
 
             case 4:
@@ -94,83 +133,6 @@ function My(props) {
     return _getUserInfoFn.apply(this, arguments);
   }
 
-  function handleOperaClick(e) {
-    e.preventDefault();
-    var flag = e.currentTarget.dataset.flag;
-
-    switch (flag) {
-      case 'portrait':
-        {
-          // 从手机相册中选择图片或使用相机拍照
-          // Taro.chooseImage({
-          //     count: 1,
-          //     sizeType: ['original', 'compressed'], // 可以指定是原图还是压缩图，默认二者都有
-          //     sourceType: ['album', 'camera'],  // 可以指定来源是相册还是相机
-          // }).then(async (res) => {  //我使用链式写法，也可以使用官方文档提供的方式
-          //     console.warn('chooseImage then', res)
-          // const files = [];
-          // // 以下几行代码是为了处理成自己想要的格式[{file: {path: '', size: ''}, url: '' }]
-          // const obj = {};
-          // obj.file = res.tempFiles[0];
-          // obj.url = res.tempFilePaths[0];
-          //     files.push(obj);
-          //     console.warn('then obj', files)
-          //     // 上传到七牛返回的图片连接，可以在线访问
-          //     const itemImgUrlLIst = await utils.transImgList(files || [])
-          //     console.warn('then itemImgUrlLIst', itemImgUrlLIst)
-          //     Taro.showLoading();
-          //     // 把返回的链接传给更换个人信息的接口，完成头像更换
-          //     this.props.dispatch({
-          //         type: 'mine/fecthupdatePersonInfo',
-          //         payload: {
-          //             headImg: itemImgUrlLIst[0]  // 因为是个数组，获取数组第一个元素
-          //         }
-          //     }).then(res => {
-          //         if (res.resultCode === 200) {
-          //             Taro.hideLoading();
-          //             // 更换调全局缓存的数据，要不显示不出来
-          //             const userInfo = getGlobalData('userInfo');
-          //             userInfo.headImg = itemImgUrlLIst[0];
-          //             setGlobalData('userInfo', userInfo);
-          //             this.componentDidMount();
-          //         }
-          //     })
-          // })
-          break;
-        }
-
-      case 'name':
-        {
-          _tarojs_taro__WEBPACK_IMPORTED_MODULE_4___default.a.navigateTo({
-            url: "/subMinePages/UpdateName/UpdateName"
-          });
-          break;
-        }
-
-      case 'phone':
-        {
-          _tarojs_taro__WEBPACK_IMPORTED_MODULE_4___default.a.navigateTo({
-            url: "/subMinePages/UpdatePhone/UpdatePhone"
-          });
-          break;
-        }
-
-      case 'address':
-        {
-          _tarojs_taro__WEBPACK_IMPORTED_MODULE_4___default.a.navigateTo({
-            url: "/subMinePages/MyAddress/MyAddress"
-          });
-          break;
-        }
-
-      default:
-        {
-          break;
-        }
-    }
-  } // 上传头像调用接口
-
-
   function upload() {
     return _upload.apply(this, arguments);
   } // 修改头像
@@ -179,25 +141,19 @@ function My(props) {
   function _upload() {
     _upload = Object(_Users_sulei_Desktop_applets_node_modules_babel_runtime_helpers_esm_asyncToGenerator__WEBPACK_IMPORTED_MODULE_1__[/* default */ "a"])( /*#__PURE__*/_Users_sulei_Desktop_applets_node_modules_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee2() {
       var imgList,
-          Taro,
           _args2 = arguments;
       return _Users_sulei_Desktop_applets_node_modules_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.wrap(function _callee2$(_context2) {
         while (1) {
           switch (_context2.prev = _context2.next) {
             case 0:
-              imgList = _args2.length > 0 && _args2[0] !== undefined ? _args2[0] : [];
-              Taro = __webpack_require__(/*! @tarojs/taro */ "./node_modules/@tarojs/taro/index.js"); // const wx = require('m-commonjs-jweixin');
-              //小程序
+              imgList = _args2.length > 0 && _args2[0] !== undefined ? _args2[0] : []; //小程序
 
               if (true) {
-                // const base64 = wx.getFileSystemManager().readFileSync(imgList[0].url, 'base64')
-                // const arrayBuffer = Taro.base64ToArrayBuffer(base64)
-                // const result = await postUpLoadImage(arrayBuffer)
-                Taro.showLoading({
+                _tarojs_taro__WEBPACK_IMPORTED_MODULE_4___default.a.showLoading({
                   title: '正在加载',
                   mask: true
                 });
-                Taro.uploadFile({
+                _tarojs_taro__WEBPACK_IMPORTED_MODULE_4___default.a.uploadFile({
                   url: "".concat(global.constants.website, "/api/updateUserPhoto"),
                   //仅为示例，非真实的接口地址
                   filePath: imgList[0].url,
@@ -205,7 +161,7 @@ function My(props) {
                   formData: {},
                   header: {
                     'content-type': 'multipart/form-data',
-                    'authority': Taro.getStorageSync('authority')
+                    'authority': _tarojs_taro__WEBPACK_IMPORTED_MODULE_4___default.a.getStorageSync('authority')
                   },
                   success: function success(res) {
                     var data = JSON.parse(res.data);
@@ -219,12 +175,12 @@ function My(props) {
                       Object(_utils_tool__WEBPACK_IMPORTED_MODULE_9__[/* Toast */ "a"])('更新失败', 'none', 1000);
                     }
 
-                    Taro.hideLoading();
+                    _tarojs_taro__WEBPACK_IMPORTED_MODULE_4___default.a.hideLoading();
                   }
                 });
               }
 
-            case 3:
+            case 2:
             case "end":
               return _context2.stop();
           }
@@ -236,21 +192,17 @@ function My(props) {
 
   function uploadImg(_x) {
     return _uploadImg.apply(this, arguments);
-  } // 退出登陆
+  } // 修改用户名
 
 
   function _uploadImg() {
     _uploadImg = Object(_Users_sulei_Desktop_applets_node_modules_babel_runtime_helpers_esm_asyncToGenerator__WEBPACK_IMPORTED_MODULE_1__[/* default */ "a"])( /*#__PURE__*/_Users_sulei_Desktop_applets_node_modules_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee3(e) {
-      var _Taro;
-
       return _Users_sulei_Desktop_applets_node_modules_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.wrap(function _callee3$(_context3) {
         while (1) {
           switch (_context3.prev = _context3.next) {
             case 0:
               if (true) {
-                _Taro = __webpack_require__(/*! @tarojs/taro */ "./node_modules/@tarojs/taro/index.js");
-
-                _Taro.chooseImage({
+                _tarojs_taro__WEBPACK_IMPORTED_MODULE_4___default.a.chooseImage({
                   count: 1,
                   // 可选图片数量, 这里限制为1张
                   sizeType: ['original', 'compressed'],
@@ -264,66 +216,7 @@ function My(props) {
                     obj.file = res.tempFiles[0];
                     obj.url = res.tempFilePaths[0];
                     files.push(obj);
-                    upload(files); // Taro.getImageInfo({
-                    //     src: res.tempFilePaths[0],
-                    //     success: (res) => {
-                    //         console.log('getImageInfo=>res', res)
-                    //         console.log('getImageInfo=>', res.path)
-                    //         let originW = res.width
-                    //         let originH = res.height
-                    //         //压缩比例
-                    //         //最大尺寸限制，这里我不知道为什么规定的320和420无法压缩到对应的值，只好/3试试，发现可以
-                    //         let maxW = 320 / 3
-                    //         let maxH = 420 / 3
-                    //         //目标尺寸
-                    //         let targetW = originW
-                    //         let targetH = originH
-                    //         if (originW > maxW || originH > maxH) {
-                    //             if (originW / originH > maxW / maxH) {
-                    //                 // 要求宽度*(原生图片比例)=新图片尺寸
-                    //                 targetW = maxW;
-                    //                 targetH = Math.round(maxW * (originH / originW));
-                    //             } else {
-                    //                 targetH = maxH;
-                    //                 targetW = Math.round(maxH * (originW / originH));
-                    //             }
-                    //         }
-                    //         //尝试压缩文件，创建 canvas
-                    //         let ctx = Taro.createCanvasContext('firstCanvas');
-                    //         ctx.clearRect(0, 0, targetW, targetH);
-                    //         console.log(res.path, targetW, targetH)
-                    //         ctx.drawImage(res.path, 0, 0, targetW, targetH);
-                    //         ctx.draw();
-                    //         //设置canvas的长宽
-                    //         setCanvasStyle({
-                    //             width: targetW + 'px',
-                    //             height: targetH + 'px',
-                    //         })
-                    //         setTimeout(() => {
-                    //             Taro.canvasToTempFilePath({
-                    //                 canvasId: 'firstCanvas',
-                    //                 width: targetW,
-                    //                 height: targetH,
-                    //                 success: (res) => {
-                    //                     console.log('画布信息=>', res)
-                    //                     console.log('画布信息=>', res.tempFilePath)
-                    //                     Taro.getImageInfo({
-                    //                         src: res.tempFilePath,
-                    //                         success: (res) => {
-                    //                             console.log('压缩后的res', res)
-                    //                         }
-                    //                     })
-                    //                     this.setState({
-                    //                         tempFilePaths: res.tempFilePath,
-                    //                         hidden: true,
-                    //                         isChanged: true
-                    //                     })
-                    //                     Taro.setStorageSync('userImage', res.tempFilePath)
-                    //                 }
-                    //             })
-                    //         }, 500)
-                    //     }
-                    // })
+                    upload(files);
                   }
                 });
               }
@@ -338,6 +231,44 @@ function My(props) {
     return _uploadImg.apply(this, arguments);
   }
 
+  function updateName() {
+    return _updateName.apply(this, arguments);
+  } // 退出登陆
+
+
+  function _updateName() {
+    _updateName = Object(_Users_sulei_Desktop_applets_node_modules_babel_runtime_helpers_esm_asyncToGenerator__WEBPACK_IMPORTED_MODULE_1__[/* default */ "a"])( /*#__PURE__*/_Users_sulei_Desktop_applets_node_modules_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee4() {
+      var result;
+      return _Users_sulei_Desktop_applets_node_modules_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.wrap(function _callee4$(_context4) {
+        while (1) {
+          switch (_context4.prev = _context4.next) {
+            case 0:
+              _context4.next = 2;
+              return Object(_service_apiModules_user__WEBPACK_IMPORTED_MODULE_10__[/* updateUserName */ "c"])({
+                userName: userName
+              });
+
+            case 2:
+              result = _context4.sent;
+
+              if (result.data.code === 200) {
+                getUserInfoFn();
+                setShowUserName(false);
+                Object(_utils_tool__WEBPACK_IMPORTED_MODULE_9__[/* Toast */ "a"])('修改成功', 'success', 1000);
+              } else {
+                Object(_utils_tool__WEBPACK_IMPORTED_MODULE_9__[/* Toast */ "a"])('修改失败', 'none', 1000);
+              }
+
+            case 4:
+            case "end":
+              return _context4.stop();
+          }
+        }
+      }, _callee4);
+    }));
+    return _updateName.apply(this, arguments);
+  }
+
   function exitLogin() {
     Object(_utils_tool__WEBPACK_IMPORTED_MODULE_9__[/* Toast */ "a"])('正在退出', 'loading', 1000);
     User.loginOut();
@@ -350,44 +281,81 @@ function My(props) {
 
   function clickToEmptyPage(name) {
     _tarojs_taro__WEBPACK_IMPORTED_MODULE_4___default.a.navigateTo({
-      url: '/pages/my/about/index'
+      url: "/pages/my/".concat(name, "/index")
     });
+  } // 双击显示编辑名字
+
+
+  function touchStart(e) {
+    var timer = null;
+
+    if (!touchStartTime) {
+      setTouchStartTime(e.timeStamp);
+      timer = setTimeout(function () {
+        setTouchStartTime(0);
+        clearTimeout(timer);
+      }, 500);
+    } else {
+      if (e.timeStamp - touchStartTime < 350) {
+        setTouchStartTime(0);
+        setShowUserName(true);
+        clearTimeout(timer);
+      }
+    }
   }
 
   return Object(mobx_react__WEBPACK_IMPORTED_MODULE_5__[/* useObserver */ "d"])(function () {
-    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_tarojs_components__WEBPACK_IMPORTED_MODULE_6__[/* View */ "n"], {
+    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_tarojs_components__WEBPACK_IMPORTED_MODULE_6__[/* View */ "m"], {
       className: "container"
-    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_tarojs_components__WEBPACK_IMPORTED_MODULE_6__[/* View */ "n"], {
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_tarojs_components__WEBPACK_IMPORTED_MODULE_6__[/* View */ "m"], {
       className: "nav"
-    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_tarojs_components__WEBPACK_IMPORTED_MODULE_6__[/* View */ "n"], {
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_tarojs_components__WEBPACK_IMPORTED_MODULE_6__[/* View */ "m"], {
       className: "photo"
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_components_Phtot__WEBPACK_IMPORTED_MODULE_7__[/* default */ "a"], {
       photoUrl: User.userInfo.photo,
       uploadImg: uploadImg.bind(_this)
-    })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_tarojs_components__WEBPACK_IMPORTED_MODULE_6__[/* View */ "n"], {
-      className: "info"
-    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_tarojs_components__WEBPACK_IMPORTED_MODULE_6__[/* Text */ "l"], null, User.userInfo.codeName))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_tarojs_components__WEBPACK_IMPORTED_MODULE_6__[/* View */ "n"], {
+    })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_tarojs_components__WEBPACK_IMPORTED_MODULE_6__[/* View */ "m"], {
+      className: "info",
+      onTouchStart: function onTouchStart(e) {
+        touchStart(e);
+      }
+    }, isShowUserName ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_tarojs_components__WEBPACK_IMPORTED_MODULE_6__[/* View */ "m"], {
+      className: "changeInfo"
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_tarojs_components__WEBPACK_IMPORTED_MODULE_6__[/* Input */ "f"], {
+      focus: true,
+      value: userName,
+      onInput: function onInput(e) {
+        setUserName(e.detail.value);
+      }
+    }), " ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_tarojs_components__WEBPACK_IMPORTED_MODULE_6__[/* Text */ "k"], {
+      className: "btn",
+      onClick: function onClick() {
+        updateName();
+      }
+    }, "OK")) : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_tarojs_components__WEBPACK_IMPORTED_MODULE_6__[/* Text */ "k"], null, userName))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_tarojs_components__WEBPACK_IMPORTED_MODULE_6__[/* View */ "m"], {
       className: "content"
-    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_tarojs_components__WEBPACK_IMPORTED_MODULE_6__[/* Text */ "l"], {
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_tarojs_components__WEBPACK_IMPORTED_MODULE_6__[/* Text */ "k"], {
       className: "lebalItem",
       onClick: function onClick() {
         clickToEmptyPage('about');
       }
-    }, "\u5173\u4E8E\u6211\u4EEC"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_tarojs_components__WEBPACK_IMPORTED_MODULE_6__[/* Text */ "l"], {
+    }, "\u5173\u4E8E\u6211\u4EEC"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_tarojs_components__WEBPACK_IMPORTED_MODULE_6__[/* Text */ "k"], {
       className: "lebalItem",
       onClick: function onClick() {
         exitLogin();
       }
     }, "\u9000\u51FA\u767B\u9646")));
   });
-}
+};
+
+/* harmony default export */ __webpack_exports__["a"] = (My);
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../../../node_modules/webpack/buildin/global.js */ "./node_modules/webpack/buildin/global.js")))
 
 /***/ }),
 
-/***/ "./src/pages/my/components/Photo.less":
+/***/ "./src/pages/my/components/Photo.scss":
 /*!********************************************!*\
-  !*** ./src/pages/my/components/Photo.less ***!
+  !*** ./src/pages/my/components/Photo.scss ***!
   \********************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
@@ -396,9 +364,9 @@ function My(props) {
 
 /***/ }),
 
-/***/ "./src/pages/my/components/Phtot.jsx":
+/***/ "./src/pages/my/components/Phtot.tsx":
 /*!*******************************************!*\
-  !*** ./src/pages/my/components/Phtot.jsx ***!
+  !*** ./src/pages/my/components/Phtot.tsx ***!
   \*******************************************/
 /*! exports provided: default */
 /*! exports used: default */
@@ -408,23 +376,20 @@ function My(props) {
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Phtot; });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/cjs/react.production.min.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _tarojs_taro__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @tarojs/taro */ "./node_modules/@tarojs/taro/index.js");
-/* harmony import */ var _tarojs_taro__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_tarojs_taro__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var mobx_react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! mobx-react */ "./node_modules/mobx-react-lite/es/index.js");
-/* harmony import */ var _tarojs_components__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @tarojs/components */ "./node_modules/@tarojs/components/mini/index.js");
-/* harmony import */ var _Photo_less__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./Photo.less */ "./src/pages/my/components/Photo.less");
-/* harmony import */ var _Photo_less__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_Photo_less__WEBPACK_IMPORTED_MODULE_4__);
-
+/* harmony import */ var mobx_react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! mobx-react */ "./node_modules/mobx-react-lite/es/index.js");
+/* harmony import */ var _tarojs_components__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @tarojs/components */ "./node_modules/@tarojs/components/mini/index.js");
+/* harmony import */ var _Photo_scss__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./Photo.scss */ "./src/pages/my/components/Photo.scss");
+/* harmony import */ var _Photo_scss__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_Photo_scss__WEBPACK_IMPORTED_MODULE_3__);
 
 
 
 
 function Phtot(props) {
-  return Object(mobx_react__WEBPACK_IMPORTED_MODULE_2__[/* useObserver */ "d"])(function () {
-    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_tarojs_components__WEBPACK_IMPORTED_MODULE_3__[/* View */ "n"], {
+  return Object(mobx_react__WEBPACK_IMPORTED_MODULE_1__[/* useObserver */ "d"])(function () {
+    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_tarojs_components__WEBPACK_IMPORTED_MODULE_2__[/* View */ "m"], {
       className: "userinfo-img-view portrait flex-box jc-sb ai-ce",
       "data-flag": "portrait"
-    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_tarojs_components__WEBPACK_IMPORTED_MODULE_3__[/* Image */ "f"], {
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_tarojs_components__WEBPACK_IMPORTED_MODULE_2__[/* Image */ "e"], {
       src: props.photoUrl,
       className: "userinfo-img",
       onClick: function onClick(e) {
@@ -437,9 +402,20 @@ function Phtot(props) {
 
 /***/ }),
 
-/***/ "./src/pages/my/index.jsx":
+/***/ "./src/pages/my/index.scss":
+/*!*********************************!*\
+  !*** ./src/pages/my/index.scss ***!
+  \*********************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+// extracted by mini-css-extract-plugin
+
+/***/ }),
+
+/***/ "./src/pages/my/index.tsx":
 /*!********************************!*\
-  !*** ./src/pages/my/index.jsx ***!
+  !*** ./src/pages/my/index.tsx ***!
   \********************************/
 /*! no exports provided */
 /*! all exports used */
@@ -448,28 +424,17 @@ function Phtot(props) {
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _tarojs_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @tarojs/runtime */ "./node_modules/@tarojs/runtime/dist/runtime.esm.js");
-/* harmony import */ var _node_modules_tarojs_mini_runner_node_modules_babel_loader_lib_index_js_index_jsx__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../node_modules/@tarojs/mini-runner/node_modules/babel-loader/lib!./index.jsx */ "./node_modules/@tarojs/mini-runner/node_modules/babel-loader/lib/index.js!./src/pages/my/index.jsx");
+/* harmony import */ var _node_modules_tarojs_mini_runner_node_modules_babel_loader_lib_index_js_index_tsx__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../node_modules/@tarojs/mini-runner/node_modules/babel-loader/lib!./index.tsx */ "./node_modules/@tarojs/mini-runner/node_modules/babel-loader/lib/index.js!./src/pages/my/index.tsx");
 
 
 var config = {};
 
 
-var inst = Page(Object(_tarojs_runtime__WEBPACK_IMPORTED_MODULE_0__["createPageConfig"])(_node_modules_tarojs_mini_runner_node_modules_babel_loader_lib_index_js_index_jsx__WEBPACK_IMPORTED_MODULE_1__[/* default */ "a"], 'pages/my/index', {}, config || {}))
+var inst = Page(Object(_tarojs_runtime__WEBPACK_IMPORTED_MODULE_0__["createPageConfig"])(_node_modules_tarojs_mini_runner_node_modules_babel_loader_lib_index_js_index_tsx__WEBPACK_IMPORTED_MODULE_1__[/* default */ "a"], 'pages/my/index', {}, config || {}))
 
 
-
-/***/ }),
-
-/***/ "./src/pages/my/index.less":
-/*!*********************************!*\
-  !*** ./src/pages/my/index.less ***!
-  \*********************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-// extracted by mini-css-extract-plugin
 
 /***/ })
 
-},[["./src/pages/my/index.jsx","runtime","taro","vendors","common"]]]);
+},[["./src/pages/my/index.tsx","runtime","taro","vendors","common"]]]);
 //# sourceMappingURL=index.js.map

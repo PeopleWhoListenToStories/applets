@@ -5,25 +5,25 @@ require("./taro");
 
 (wx["webpackJsonp"] = wx["webpackJsonp"] || []).push([["app"],{
 
-/***/ "./node_modules/@tarojs/mini-runner/node_modules/babel-loader/lib/index.js!./src/app.jsx":
+/***/ "./node_modules/@tarojs/mini-runner/node_modules/babel-loader/lib/index.js!./src/app.tsx":
 /*!**************************************************************************************!*\
-  !*** ./node_modules/@tarojs/mini-runner/node_modules/babel-loader/lib!./src/app.jsx ***!
+  !*** ./node_modules/@tarojs/mini-runner/node_modules/babel-loader/lib!./src/app.tsx ***!
   \**************************************************************************************/
 /*! exports provided: default */
 /*! exports used: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/cjs/react.production.min.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _tarojs_taro__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @tarojs/taro */ "./node_modules/@tarojs/taro/index.js");
-/* harmony import */ var _tarojs_taro__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_tarojs_taro__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var mobx_react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! mobx-react */ "./node_modules/mobx-react/dist/mobxreact.esm.js");
-/* harmony import */ var _store_index__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./store/index */ "./src/store/index.js");
-/* harmony import */ var taro_ui_dist_style_index_scss__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! taro-ui/dist/style/index.scss */ "./node_modules/taro-ui/dist/style/index.scss");
-/* harmony import */ var taro_ui_dist_style_index_scss__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(taro_ui_dist_style_index_scss__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var _app_less__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./app.less */ "./src/app.less");
-/* harmony import */ var _app_less__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_app_less__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var _Users_sulei_Desktop_applets_node_modules_babel_runtime_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/classCallCheck */ "./node_modules/@babel/runtime/helpers/esm/classCallCheck.js");
+/* harmony import */ var _Users_sulei_Desktop_applets_node_modules_babel_runtime_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/createClass */ "./node_modules/@babel/runtime/helpers/esm/createClass.js");
+/* harmony import */ var _Users_sulei_Desktop_applets_node_modules_babel_runtime_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/inherits */ "./node_modules/@babel/runtime/helpers/esm/inherits.js");
+/* harmony import */ var _Users_sulei_Desktop_applets_node_modules_babel_runtime_helpers_esm_createSuper__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/createSuper */ "./node_modules/@babel/runtime/helpers/esm/createSuper.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react */ "./node_modules/react/cjs/react.production.min.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var mobx_react__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! mobx-react */ "./node_modules/mobx-react/dist/mobxreact.esm.js");
+/* harmony import */ var _store_index__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./store/index */ "./src/store/index.ts");
+/* harmony import */ var _app_scss__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./app.scss */ "./src/app.scss");
+/* harmony import */ var _app_scss__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_app_scss__WEBPACK_IMPORTED_MODULE_7__);
 
 
 
@@ -31,70 +31,45 @@ require("./taro");
 
 
 
-var App = function App(props) {
-  Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(function () {
-    console.log('come on!'); // authorize()
-  }, []); // function authorize() {
-  //   // 可以通过 Taro.getSetting 先查询一下用户是否授权了 "scope.record" 这个 scope
-  //   Taro.getSetting({
-  //     success: function (res) {
-  //       if (!res.authSetting['scope.record']) {
-  //         Taro.authorize({
-  //           scope: 'scope.record',
-  //           success: function () {
-  //             // 用户已经同意小程序使用录音功能，后续调用 Taro.startRecord 接口不会弹窗询问
-  //             Taro.startRecord()
-  //           }
-  //         })
-  //       }
-  //     }
-  //   })
-  // }
 
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(mobx_react__WEBPACK_IMPORTED_MODULE_2__[/* Provider */ "a"], {
-    store: _store_index__WEBPACK_IMPORTED_MODULE_3__[/* default */ "a"]
-  }, props.children);
-};
 
-/* harmony default export */ __webpack_exports__["a"] = (App); // class App extends Component {
-//   componentDidMount() {
-//     console.log('componentDidMount')
-//     Taro.login({
-//       success: function (res) {
-//         console.log('res...', res)
-//         if (res.code) {
-//           //发起网络请求
-//           Taro.request({
-//             url: '/user/code2session',
-//             data: {
-//               code: res.code
-//             }
-//           })
-//         } else {
-//           console.log('登录失败！' + res.errMsg)
-//         }
-//       }
-//     })
-//   }
-//   componentDidShow() {
-//     console.log('componentDidShow')
-//   }
-//   componentDidHide() {
-//     console.log('componentDidHide')
-//   }
-//   componentDidCatchError() {
-//     console.log('componentDidCatchError')
-//   }
-//   // this.props.children 是将要会渲染的页面
-//   render() {
-//     return (
-//       <Provider store={store}>
-//         {this.props.children}
-//       </Provider>
-//     )
-//   }
-// }
-// export default App
+var App = /*#__PURE__*/function (_Component) {
+  Object(_Users_sulei_Desktop_applets_node_modules_babel_runtime_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_2__[/* default */ "a"])(App, _Component);
+
+  var _super = Object(_Users_sulei_Desktop_applets_node_modules_babel_runtime_helpers_esm_createSuper__WEBPACK_IMPORTED_MODULE_3__[/* default */ "a"])(App);
+
+  function App() {
+    Object(_Users_sulei_Desktop_applets_node_modules_babel_runtime_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])(this, App);
+
+    return _super.apply(this, arguments);
+  }
+
+  Object(_Users_sulei_Desktop_applets_node_modules_babel_runtime_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_1__[/* default */ "a"])(App, [{
+    key: "componentDidMount",
+    value: function componentDidMount() {}
+  }, {
+    key: "componentDidShow",
+    value: function componentDidShow() {}
+  }, {
+    key: "componentDidHide",
+    value: function componentDidHide() {}
+  }, {
+    key: "componentDidCatchError",
+    value: function componentDidCatchError() {} // this.props.children 就是要渲染的页面
+
+  }, {
+    key: "render",
+    value: function render() {
+      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement(mobx_react__WEBPACK_IMPORTED_MODULE_5__[/* Provider */ "a"], {
+        store: _store_index__WEBPACK_IMPORTED_MODULE_6__[/* default */ "a"]
+      }, this.props.children);
+    }
+  }]);
+
+  return App;
+}(react__WEBPACK_IMPORTED_MODULE_4__["Component"]);
+
+/* harmony default export */ __webpack_exports__["a"] = (App);
 
 /***/ }),
 
@@ -936,10 +911,10 @@ if (!mobx__WEBPACK_IMPORTED_MODULE_0__[/* observable */ "l"]) throw new Error("m
 
 /***/ }),
 
-/***/ "./node_modules/taro-ui/dist/style/index.scss":
-/*!****************************************************!*\
-  !*** ./node_modules/taro-ui/dist/style/index.scss ***!
-  \****************************************************/
+/***/ "./src/app.scss":
+/*!**********************!*\
+  !*** ./src/app.scss ***!
+  \**********************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -947,9 +922,9 @@ if (!mobx__WEBPACK_IMPORTED_MODULE_0__[/* observable */ "l"]) throw new Error("m
 
 /***/ }),
 
-/***/ "./src/app.jsx":
+/***/ "./src/app.tsx":
 /*!*********************!*\
-  !*** ./src/app.jsx ***!
+  !*** ./src/app.tsx ***!
   \*********************/
 /*! no exports provided */
 /*! all exports used */
@@ -958,7 +933,7 @@ if (!mobx__WEBPACK_IMPORTED_MODULE_0__[/* observable */ "l"]) throw new Error("m
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _tarojs_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @tarojs/runtime */ "./node_modules/@tarojs/runtime/dist/runtime.esm.js");
-/* harmony import */ var _node_modules_tarojs_mini_runner_node_modules_babel_loader_lib_index_js_app_jsx__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../node_modules/@tarojs/mini-runner/node_modules/babel-loader/lib!./app.jsx */ "./node_modules/@tarojs/mini-runner/node_modules/babel-loader/lib/index.js!./src/app.jsx");
+/* harmony import */ var _node_modules_tarojs_mini_runner_node_modules_babel_loader_lib_index_js_app_tsx__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../node_modules/@tarojs/mini-runner/node_modules/babel-loader/lib!./app.tsx */ "./node_modules/@tarojs/mini-runner/node_modules/babel-loader/lib/index.js!./src/app.tsx");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react */ "./node_modules/react/cjs/react.production.min.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react-dom */ "./node_modules/@tarojs/react/dist/react.esm.js");
@@ -968,24 +943,13 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-var config = {"pages":["pages/my/index","pages/map/index","pages/index/index","pages/record/index","pages/location/index","pages/notauthority/index","pages/my/about/index"],"permission":{"scope.userLocation":{"desc":"你的位置信息将用于小程序位置接口的效果展示"}},"window":{"backgroundTextStyle":"light","navigationBarBackgroundColor":"#fff","navigationBarTitleText":"首页","navigationBarTextStyle":"black"},"tabBar":{"color":"#a9b7b7","selectedColor":"#D2691E","backgroundColor":"#fff","list":[{"pagePath":"pages/index/index","text":"主页","selectedIconPath":"./assets/image/xinnian-yanhua.png","iconPath":"./assets/image/xinniantubiao-shangchuantubiaoku-_6.png"},{"pagePath":"pages/my/index","text":"个人","selectedIconPath":"/assets/image/xinnian-yanhua.png","iconPath":"./assets/image/xinniantubiao-shangchuantubiaoku.png"}]}};
+var config = {"pages":["pages/my/index","pages/map/index","pages/index/index","pages/record/index","pages/my/about/index","pages/notauthority/index"],"permission":{"scope.userLocation":{"desc":"你的位置信息将用于小程序位置接口的效果展示"}},"window":{"backgroundTextStyle":"light","navigationBarBackgroundColor":"#fff","navigationBarTitleText":"WeChat","navigationBarTextStyle":"black"},"tabBar":{"color":"#a9b7b7","selectedColor":"#D2691E","backgroundColor":"#fff","list":[{"pagePath":"pages/index/index","text":"主页","selectedIconPath":"./assets/image/paozhuhuohua.png","iconPath":"./assets/image/xinniantubiao-shangchuantubiaoku-_6.png","dot":true},{"pagePath":"pages/my/index","text":"个人","selectedIconPath":"/assets/image/paozhuhuohua.png","iconPath":"./assets/image/xinniantubiao-shangchuantubiaoku.png","dot":true}]}};
 _tarojs_runtime__WEBPACK_IMPORTED_MODULE_0__["window"].__taroAppConfig = config
-var inst = App(Object(_tarojs_runtime__WEBPACK_IMPORTED_MODULE_0__["createReactApp"])(_node_modules_tarojs_mini_runner_node_modules_babel_loader_lib_index_js_app_jsx__WEBPACK_IMPORTED_MODULE_1__[/* default */ "a"], react__WEBPACK_IMPORTED_MODULE_2__, react_dom__WEBPACK_IMPORTED_MODULE_3__[/* default */ "a"], config))
+var inst = App(Object(_tarojs_runtime__WEBPACK_IMPORTED_MODULE_0__["createReactApp"])(_node_modules_tarojs_mini_runner_node_modules_babel_loader_lib_index_js_app_tsx__WEBPACK_IMPORTED_MODULE_1__[/* default */ "a"], react__WEBPACK_IMPORTED_MODULE_2__, react_dom__WEBPACK_IMPORTED_MODULE_3__[/* default */ "a"], config))
 
 
-
-/***/ }),
-
-/***/ "./src/app.less":
-/*!**********************!*\
-  !*** ./src/app.less ***!
-  \**********************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-// extracted by mini-css-extract-plugin
 
 /***/ })
 
-},[["./src/app.jsx","runtime","taro","vendors","common"]]]);;
+},[["./src/app.tsx","runtime","taro","vendors","common"]]]);;
 //# sourceMappingURL=app.js.map

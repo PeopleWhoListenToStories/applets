@@ -1,7 +1,7 @@
 {
-  "miniprogramRoot": "./src",
-  "projectname": "taro-demo",
-  "description": "test",
+  "miniprogramRoot": "./dist",
+  "projectname": "myApp",
+  "description": "本是青灯不归客 缺因浊酒恋红尘·",
   "appid": "wx1ea68200e117a6f0",
   "setting": {
     "urlCheck": true,

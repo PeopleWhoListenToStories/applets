@@ -13,3 +13,8 @@ export const getUserInfo = () => {
 export const postUpLoadImage = (params) => {
     return request.post('/api/upload', params, 'multipart/form-data')
 }
+
+// 修改用户名
+export const updateUserName = (params) => {
+    return request.post('/api/updateUserName', params)
+}

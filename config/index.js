@@ -1,6 +1,8 @@
+import { resolve } from 'path'
+
 const config = {
-  projectName: 'taro-demo',
-  date: '2020-12-26',
+  projectName: 'myApp',
+  date: '2021-1-23',
   designWidth: 750,
   deviceRatio: {
     640: 2.34 / 2,
@@ -9,23 +11,15 @@ const config = {
   },
   sourceRoot: 'src',
   outputRoot: 'dist',
+  alias: {
+    '@components': resolve(__dirname, '..', 'src/components'),
+    '@utils': resolve(__dirname, '..', 'src/utils')
+  },
   plugins: [],
   defineConstants: {
   },
   copy: {
     patterns: [
-      {
-        from: 'src/assets/',
-        to: 'dist/assets/',
-      },
-      {
-        from: 'src/utils/',
-        to: 'dist/utils/',
-      },
-      {
-        from: 'src/store/',
-        to: 'dist/store/',
-      }
     ],
     options: {
     }
@@ -74,7 +68,7 @@ const config = {
   }
 }
 
-module.exports = function (merge) {
+export default function (merge) {
   if (process.env.NODE_ENV === 'development') {
     return merge({}, config, require('./dev'))
   }
