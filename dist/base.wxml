@@ -153,6 +153,14 @@
   </image>
 </template>
 
+<template name="tmpl_0_canvas">
+  <canvas type="{{i.type}}" canvas-id="{{i.canvasId}}" disable-scroll="{{xs.b(i.disableScroll,false)}}" bindtouchstart="eh" bindtouchmove="eh" bindtouchend="eh" bindtouchcancel="eh" bindlongtap="eh" binderror="eh" style="{{i.st}}" class="{{i.cl}}" bindtap="eh"  id="{{i.uid}}">
+    <block wx:for="{{i.cn}}" wx:key="uid">
+      <template is="{{xs.e(cid+1)}}" data="{{i:item,l:l}}" />
+    </block>
+  </canvas>
+</template>
+
 <template name="tmpl_0_map">
   <map longitude="{{i.longitude}}" latitude="{{i.latitude}}" scale="{{xs.b(i.scale,16)}}" markers="{{xs.b(i.markers,[])}}" covers="{{i.covers}}" polyline="{{xs.b(i.polyline,[])}}" circles="{{xs.b(i.circles,[])}}" controls="{{i.controls}}" include-points="{{xs.b(i.includePoints,[])}}" show-location="{{i.showLocation}}" polygons="{{i.polygons}}" subkey="{{i.subkey}}" layer-style="{{xs.b(i.layerStyle,1)}}" rotate="{{xs.b(i.rotate,0)}}" skew="{{xs.b(i.skew,skew)}}" enable-3D="{{xs.b(i.enable3D,false)}}" show-compass="{{xs.b(i.showCompass,false)}}" show-scale="{{xs.b(i.showScale,false)}}" enable-overlooking="{{xs.b(i.enableOverlooking,false)}}" enable-zoom="{{xs.b(i.enableZoom,true)}}" enable-scroll="{{xs.b(i.enableScroll,true)}}" enable-rotate="{{xs.b(i.enableRotate,false)}}" enable-satellite="{{xs.b(i.enableSatellite,false)}}" enable-traffic="{{xs.b(i.enableTraffic,false)}}" bindmarkertap="eh" bindlabeltap="eh" bindcontroltap="eh" bindcallouttap="eh" bindupdated="eh" bindregionchange="eh" bindpoitap="eh" bindtouchstart="eh" bindtouchmove="eh" bindtouchend="eh" bindtouchcancel="eh" bindlongpress="eh" setting="{{xs.b(i.setting,[])}}" style="{{i.st}}" class="{{i.cl}}" bindtap="eh"  id="{{i.uid}}">
     <block wx:for="{{i.cn}}" wx:key="uid">

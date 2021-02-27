@@ -739,32 +739,32 @@ var Taro = {
   !*** ./node_modules/@tarojs/components/mini/index.js ***!
   \*******************************************************/
 /*! exports provided: View, Icon, Progress, RichText, Text, Button, Checkbox, CheckboxGroup, Editor, Form, Input, Label, Picker, PickerView, PickerViewColumn, Radio, RadioGroup, Slider, Switch, CoverImage, Textarea, CoverView, MatchMedia, MoveableArea, MoveableView, ScrollView, Swiper, SwiperItem, FunctionalPageNavigator, Navigator, Audio, Camera, Image, LivePlayer, LivePusher, Video, Map, Canvas, Ad, OfficialAccount, OpenData, WebView, NavigationBar, PageMeta, Block, MovableArea, MovableView, Slot, CustomWrapper */
-/*! exports used: Button, CoverImage, CoverView, Icon, Image, Input, Map, Picker, Radio, RadioGroup, Text, Textarea, View */
+/*! exports used: Button, Canvas, CoverImage, CoverView, Icon, Image, Input, Map, Picker, Radio, RadioGroup, Text, Textarea, View */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "m", function() { return View; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "d", function() { return Icon; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "n", function() { return View; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "e", function() { return Icon; });
 /* unused harmony export Progress */
 /* unused harmony export RichText */
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "k", function() { return Text; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "l", function() { return Text; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Button; });
 /* unused harmony export Checkbox */
 /* unused harmony export CheckboxGroup */
 /* unused harmony export Editor */
 /* unused harmony export Form */
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "f", function() { return Input; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "g", function() { return Input; });
 /* unused harmony export Label */
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "h", function() { return Picker; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "i", function() { return Picker; });
 /* unused harmony export PickerView */
 /* unused harmony export PickerViewColumn */
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "i", function() { return Radio; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "j", function() { return RadioGroup; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "j", function() { return Radio; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "k", function() { return RadioGroup; });
 /* unused harmony export Slider */
 /* unused harmony export Switch */
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return CoverImage; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "l", function() { return Textarea; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "c", function() { return CoverView; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "c", function() { return CoverImage; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "m", function() { return Textarea; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "d", function() { return CoverView; });
 /* unused harmony export MatchMedia */
 /* unused harmony export MoveableArea */
 /* unused harmony export MoveableView */
@@ -775,12 +775,12 @@ var Taro = {
 /* unused harmony export Navigator */
 /* unused harmony export Audio */
 /* unused harmony export Camera */
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "e", function() { return Image; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "f", function() { return Image; });
 /* unused harmony export LivePlayer */
 /* unused harmony export LivePusher */
 /* unused harmony export Video */
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "g", function() { return Map; });
-/* unused harmony export Canvas */
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "h", function() { return Map; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return Canvas; });
 /* unused harmony export Ad */
 /* unused harmony export OfficialAccount */
 /* unused harmony export OpenData */
@@ -906,9 +906,9 @@ Component(runtime_1.createRecursiveComponentConfig());
 /* unused harmony export render */
 /* unused harmony export unmountComponentAtNode */
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return unstable_batchedUpdates; });
-/* harmony import */ var _Users_sulei_Desktop_applets_node_modules_babel_runtime_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/classCallCheck */ "./node_modules/@babel/runtime/helpers/esm/classCallCheck.js");
-/* harmony import */ var _Users_sulei_Desktop_applets_node_modules_babel_runtime_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/createClass */ "./node_modules/@babel/runtime/helpers/esm/createClass.js");
-/* harmony import */ var _Users_sulei_Desktop_applets_node_modules_babel_runtime_helpers_esm_typeof__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/typeof */ "./node_modules/@babel/runtime/helpers/esm/typeof.js");
+/* harmony import */ var _Users_sulei_Desktop_study_applets_node_modules_babel_runtime_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/classCallCheck */ "./node_modules/@babel/runtime/helpers/esm/classCallCheck.js");
+/* harmony import */ var _Users_sulei_Desktop_study_applets_node_modules_babel_runtime_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/createClass */ "./node_modules/@babel/runtime/helpers/esm/createClass.js");
+/* harmony import */ var _Users_sulei_Desktop_study_applets_node_modules_babel_runtime_helpers_esm_typeof__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/typeof */ "./node_modules/@babel/runtime/helpers/esm/typeof.js");
 /* harmony import */ var react_reconciler__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react-reconciler */ "./node_modules/react-reconciler/cjs/react-reconciler.production.min.js");
 /* harmony import */ var react_reconciler__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(react_reconciler__WEBPACK_IMPORTED_MODULE_3__);
 /* harmony import */ var scheduler__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! scheduler */ "./node_modules/scheduler/cjs/scheduler.production.min.js");
@@ -926,7 +926,7 @@ function isString(o) {
 }
 
 function isObject(o) {
-  return o !== null && Object(_Users_sulei_Desktop_applets_node_modules_babel_runtime_helpers_esm_typeof__WEBPACK_IMPORTED_MODULE_2__[/* default */ "a"])(o) === 'object';
+  return o !== null && Object(_Users_sulei_Desktop_study_applets_node_modules_babel_runtime_helpers_esm_typeof__WEBPACK_IMPORTED_MODULE_2__[/* default */ "a"])(o) === 'object';
 }
 
 function isFunction(o) {
@@ -1905,13 +1905,13 @@ var ContainerMap = new WeakMap();
 
 var Root = /*#__PURE__*/function () {
   function Root(renderer, domContainer) {
-    Object(_Users_sulei_Desktop_applets_node_modules_babel_runtime_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])(this, Root);
+    Object(_Users_sulei_Desktop_study_applets_node_modules_babel_runtime_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])(this, Root);
 
     this.renderer = renderer;
     this.internalRoot = renderer.createContainer(domContainer, false, false);
   }
 
-  Object(_Users_sulei_Desktop_applets_node_modules_babel_runtime_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_1__[/* default */ "a"])(Root, [{
+  Object(_Users_sulei_Desktop_study_applets_node_modules_babel_runtime_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_1__[/* default */ "a"])(Root, [{
     key: "render",
     value: function render(children, cb) {
       this.renderer.updateContainer(children, this.internalRoot, null, cb);
@@ -2053,19 +2053,19 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "useTabItemTap", function() { return useTabItemTap; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "useTitleClick", function() { return useTitleClick; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "window", function() { return window$1; });
-/* harmony import */ var _Users_sulei_Desktop_applets_node_modules_babel_runtime_helpers_esm_set__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/set */ "./node_modules/@babel/runtime/helpers/esm/set.js");
-/* harmony import */ var _Users_sulei_Desktop_applets_node_modules_babel_runtime_helpers_esm_toConsumableArray__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/toConsumableArray */ "./node_modules/@babel/runtime/helpers/esm/toConsumableArray.js");
-/* harmony import */ var _Users_sulei_Desktop_applets_node_modules_babel_runtime_helpers_esm_get__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/get */ "./node_modules/@babel/runtime/helpers/esm/get.js");
-/* harmony import */ var _Users_sulei_Desktop_applets_node_modules_babel_runtime_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/getPrototypeOf */ "./node_modules/@babel/runtime/helpers/esm/getPrototypeOf.js");
-/* harmony import */ var _Users_sulei_Desktop_applets_node_modules_babel_runtime_helpers_esm_wrapNativeSuper__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/wrapNativeSuper */ "./node_modules/@babel/runtime/helpers/esm/wrapNativeSuper.js");
-/* harmony import */ var _Users_sulei_Desktop_applets_node_modules_babel_runtime_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/assertThisInitialized */ "./node_modules/@babel/runtime/helpers/esm/assertThisInitialized.js");
-/* harmony import */ var _Users_sulei_Desktop_applets_node_modules_babel_runtime_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/inherits */ "./node_modules/@babel/runtime/helpers/esm/inherits.js");
-/* harmony import */ var _Users_sulei_Desktop_applets_node_modules_babel_runtime_helpers_esm_createSuper__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/createSuper */ "./node_modules/@babel/runtime/helpers/esm/createSuper.js");
-/* harmony import */ var _Users_sulei_Desktop_applets_node_modules_babel_runtime_helpers_esm_slicedToArray__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/slicedToArray */ "./node_modules/@babel/runtime/helpers/esm/slicedToArray.js");
-/* harmony import */ var _Users_sulei_Desktop_applets_node_modules_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/defineProperty */ "./node_modules/@babel/runtime/helpers/esm/defineProperty.js");
-/* harmony import */ var _Users_sulei_Desktop_applets_node_modules_babel_runtime_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/classCallCheck */ "./node_modules/@babel/runtime/helpers/esm/classCallCheck.js");
-/* harmony import */ var _Users_sulei_Desktop_applets_node_modules_babel_runtime_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/createClass */ "./node_modules/@babel/runtime/helpers/esm/createClass.js");
-/* harmony import */ var _Users_sulei_Desktop_applets_node_modules_babel_runtime_helpers_esm_typeof__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/typeof */ "./node_modules/@babel/runtime/helpers/esm/typeof.js");
+/* harmony import */ var _Users_sulei_Desktop_study_applets_node_modules_babel_runtime_helpers_esm_set__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/set */ "./node_modules/@babel/runtime/helpers/esm/set.js");
+/* harmony import */ var _Users_sulei_Desktop_study_applets_node_modules_babel_runtime_helpers_esm_toConsumableArray__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/toConsumableArray */ "./node_modules/@babel/runtime/helpers/esm/toConsumableArray.js");
+/* harmony import */ var _Users_sulei_Desktop_study_applets_node_modules_babel_runtime_helpers_esm_get__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/get */ "./node_modules/@babel/runtime/helpers/esm/get.js");
+/* harmony import */ var _Users_sulei_Desktop_study_applets_node_modules_babel_runtime_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/getPrototypeOf */ "./node_modules/@babel/runtime/helpers/esm/getPrototypeOf.js");
+/* harmony import */ var _Users_sulei_Desktop_study_applets_node_modules_babel_runtime_helpers_esm_wrapNativeSuper__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/wrapNativeSuper */ "./node_modules/@babel/runtime/helpers/esm/wrapNativeSuper.js");
+/* harmony import */ var _Users_sulei_Desktop_study_applets_node_modules_babel_runtime_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/assertThisInitialized */ "./node_modules/@babel/runtime/helpers/esm/assertThisInitialized.js");
+/* harmony import */ var _Users_sulei_Desktop_study_applets_node_modules_babel_runtime_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/inherits */ "./node_modules/@babel/runtime/helpers/esm/inherits.js");
+/* harmony import */ var _Users_sulei_Desktop_study_applets_node_modules_babel_runtime_helpers_esm_createSuper__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/createSuper */ "./node_modules/@babel/runtime/helpers/esm/createSuper.js");
+/* harmony import */ var _Users_sulei_Desktop_study_applets_node_modules_babel_runtime_helpers_esm_slicedToArray__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/slicedToArray */ "./node_modules/@babel/runtime/helpers/esm/slicedToArray.js");
+/* harmony import */ var _Users_sulei_Desktop_study_applets_node_modules_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/defineProperty */ "./node_modules/@babel/runtime/helpers/esm/defineProperty.js");
+/* harmony import */ var _Users_sulei_Desktop_study_applets_node_modules_babel_runtime_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/classCallCheck */ "./node_modules/@babel/runtime/helpers/esm/classCallCheck.js");
+/* harmony import */ var _Users_sulei_Desktop_study_applets_node_modules_babel_runtime_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/createClass */ "./node_modules/@babel/runtime/helpers/esm/createClass.js");
+/* harmony import */ var _Users_sulei_Desktop_study_applets_node_modules_babel_runtime_helpers_esm_typeof__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/typeof */ "./node_modules/@babel/runtime/helpers/esm/typeof.js");
 
 
 
@@ -2089,7 +2089,7 @@ function isUndefined(o) {
 }
 
 function isObject(o) {
-  return o !== null && Object(_Users_sulei_Desktop_applets_node_modules_babel_runtime_helpers_esm_typeof__WEBPACK_IMPORTED_MODULE_12__[/* default */ "a"])(o) === 'object';
+  return o !== null && Object(_Users_sulei_Desktop_study_applets_node_modules_babel_runtime_helpers_esm_typeof__WEBPACK_IMPORTED_MODULE_12__[/* default */ "a"])(o) === 'object';
 }
 
 function isFunction(o) {
@@ -2899,12 +2899,12 @@ function isText(node) {
 
 var TaroEventTarget = /*#__PURE__*/function () {
   function TaroEventTarget() {
-    Object(_Users_sulei_Desktop_applets_node_modules_babel_runtime_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_10__[/* default */ "a"])(this, TaroEventTarget);
+    Object(_Users_sulei_Desktop_study_applets_node_modules_babel_runtime_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_10__[/* default */ "a"])(this, TaroEventTarget);
 
     this.__handlers = {};
   }
 
-  Object(_Users_sulei_Desktop_applets_node_modules_babel_runtime_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_11__[/* default */ "a"])(TaroEventTarget, [{
+  Object(_Users_sulei_Desktop_study_applets_node_modules_babel_runtime_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_11__[/* default */ "a"])(TaroEventTarget, [{
     key: "addEventListener",
     value: function addEventListener(type, handler, options) {
       if (type === 'regionchange') {
@@ -2984,7 +2984,7 @@ var eventSource = new Map();
 
 var TaroEvent = /*#__PURE__*/function () {
   function TaroEvent(type, opts, event) {
-    Object(_Users_sulei_Desktop_applets_node_modules_babel_runtime_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_10__[/* default */ "a"])(this, TaroEvent);
+    Object(_Users_sulei_Desktop_study_applets_node_modules_babel_runtime_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_10__[/* default */ "a"])(this, TaroEvent);
 
     this._stop = false;
     this._end = false;
@@ -2998,7 +2998,7 @@ var TaroEvent = /*#__PURE__*/function () {
     this.cancelable = Boolean(opts && opts.cancelable);
   }
 
-  Object(_Users_sulei_Desktop_applets_node_modules_babel_runtime_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_11__[/* default */ "a"])(TaroEvent, [{
+  Object(_Users_sulei_Desktop_study_applets_node_modules_babel_runtime_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_11__[/* default */ "a"])(TaroEvent, [{
     key: "stopPropagation",
     value: function stopPropagation() {
       this._stop = true;
@@ -3092,16 +3092,16 @@ function hydrate(node) {
   if (isText(node)) {
     var _ref;
 
-    return _ref = {}, Object(_Users_sulei_Desktop_applets_node_modules_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_9__[/* default */ "a"])(_ref, "v"
+    return _ref = {}, Object(_Users_sulei_Desktop_study_applets_node_modules_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_9__[/* default */ "a"])(_ref, "v"
     /* Text */
-    , node.nodeValue), Object(_Users_sulei_Desktop_applets_node_modules_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_9__[/* default */ "a"])(_ref, "nn"
+    , node.nodeValue), Object(_Users_sulei_Desktop_study_applets_node_modules_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_9__[/* default */ "a"])(_ref, "nn"
     /* NodeName */
     , node.nodeName), _ref;
   }
 
-  var data = (_data = {}, Object(_Users_sulei_Desktop_applets_node_modules_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_9__[/* default */ "a"])(_data, "nn"
+  var data = (_data = {}, Object(_Users_sulei_Desktop_study_applets_node_modules_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_9__[/* default */ "a"])(_data, "nn"
   /* NodeName */
-  , node.nodeName), Object(_Users_sulei_Desktop_applets_node_modules_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_9__[/* default */ "a"])(_data, "uid", node.uid), _data);
+  , node.nodeName), Object(_Users_sulei_Desktop_study_applets_node_modules_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_9__[/* default */ "a"])(_data, "uid", node.uid), _data);
   var props = node.props,
       childNodes = node.childNodes;
 
@@ -3296,14 +3296,14 @@ function isWordEnd(cursor, wordBegin, html) {
 
 var Scaner = /*#__PURE__*/function () {
   function Scaner(html) {
-    Object(_Users_sulei_Desktop_applets_node_modules_babel_runtime_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_10__[/* default */ "a"])(this, Scaner);
+    Object(_Users_sulei_Desktop_study_applets_node_modules_babel_runtime_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_10__[/* default */ "a"])(this, Scaner);
 
     this.tokens = [];
     this.position = initPosition();
     this.html = html;
   }
 
-  Object(_Users_sulei_Desktop_applets_node_modules_babel_runtime_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_11__[/* default */ "a"])(Scaner, [{
+  Object(_Users_sulei_Desktop_study_applets_node_modules_babel_runtime_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_11__[/* default */ "a"])(Scaner, [{
     key: "scan",
     value: function scan() {
       var html = this.html,
@@ -3781,7 +3781,7 @@ function format(children) {
       var attr = child.attributes[i];
 
       var _splitEqual = splitEqual(attr),
-          _splitEqual2 = Object(_Users_sulei_Desktop_applets_node_modules_babel_runtime_helpers_esm_slicedToArray__WEBPACK_IMPORTED_MODULE_8__[/* default */ "a"])(_splitEqual, 2),
+          _splitEqual2 = Object(_Users_sulei_Desktop_study_applets_node_modules_babel_runtime_helpers_esm_slicedToArray__WEBPACK_IMPORTED_MODULE_8__[/* default */ "a"])(_splitEqual, 2),
           key = _splitEqual2[0],
           value = _splitEqual2[1];
 
@@ -3947,14 +3947,14 @@ function setInnerHTML(element, html) {
 var nodeId = incrementId();
 
 var TaroNode = /*#__PURE__*/function (_TaroEventTarget) {
-  Object(_Users_sulei_Desktop_applets_node_modules_babel_runtime_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_6__[/* default */ "a"])(TaroNode, _TaroEventTarget);
+  Object(_Users_sulei_Desktop_study_applets_node_modules_babel_runtime_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_6__[/* default */ "a"])(TaroNode, _TaroEventTarget);
 
-  var _super = Object(_Users_sulei_Desktop_applets_node_modules_babel_runtime_helpers_esm_createSuper__WEBPACK_IMPORTED_MODULE_7__[/* default */ "a"])(TaroNode);
+  var _super = Object(_Users_sulei_Desktop_study_applets_node_modules_babel_runtime_helpers_esm_createSuper__WEBPACK_IMPORTED_MODULE_7__[/* default */ "a"])(TaroNode);
 
   function TaroNode(nodeType, nodeName) {
     var _this2;
 
-    Object(_Users_sulei_Desktop_applets_node_modules_babel_runtime_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_10__[/* default */ "a"])(this, TaroNode);
+    Object(_Users_sulei_Desktop_study_applets_node_modules_babel_runtime_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_10__[/* default */ "a"])(this, TaroNode);
 
     _this2 = _super.call(this);
     _this2.parentNode = null;
@@ -3969,11 +3969,11 @@ var TaroNode = /*#__PURE__*/function (_TaroEventTarget) {
     _this2.nodeType = nodeType;
     _this2.nodeName = nodeName;
     _this2.uid = "_n_".concat(nodeId());
-    eventSource.set(_this2.uid, Object(_Users_sulei_Desktop_applets_node_modules_babel_runtime_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_5__[/* default */ "a"])(_this2));
+    eventSource.set(_this2.uid, Object(_Users_sulei_Desktop_study_applets_node_modules_babel_runtime_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_5__[/* default */ "a"])(_this2));
     return _this2;
   }
 
-  Object(_Users_sulei_Desktop_applets_node_modules_babel_runtime_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_11__[/* default */ "a"])(TaroNode, [{
+  Object(_Users_sulei_Desktop_study_applets_node_modules_babel_runtime_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_11__[/* default */ "a"])(TaroNode, [{
     key: "insertBefore",
     value: function insertBefore(newChild, refChild, isReplace) {
       var _this3 = this;
@@ -4133,7 +4133,7 @@ var TaroNode = /*#__PURE__*/function (_TaroEventTarget) {
       for (var key in this) {
         var value = this[key];
 
-        if (['props', 'dataset'].includes(key) && Object(_Users_sulei_Desktop_applets_node_modules_babel_runtime_helpers_esm_typeof__WEBPACK_IMPORTED_MODULE_12__[/* default */ "a"])(value) === 'object') {
+        if (['props', 'dataset'].includes(key) && Object(_Users_sulei_Desktop_study_applets_node_modules_babel_runtime_helpers_esm_typeof__WEBPACK_IMPORTED_MODULE_12__[/* default */ "a"])(value) === 'object') {
           newNode[key] = Object.assign({}, value);
         } else if (key === '_value') {
           newNode[key] = value;
@@ -4250,14 +4250,14 @@ var TaroNode = /*#__PURE__*/function (_TaroEventTarget) {
 }(TaroEventTarget);
 
 var TaroText = /*#__PURE__*/function (_TaroNode) {
-  Object(_Users_sulei_Desktop_applets_node_modules_babel_runtime_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_6__[/* default */ "a"])(TaroText, _TaroNode);
+  Object(_Users_sulei_Desktop_study_applets_node_modules_babel_runtime_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_6__[/* default */ "a"])(TaroText, _TaroNode);
 
-  var _super2 = Object(_Users_sulei_Desktop_applets_node_modules_babel_runtime_helpers_esm_createSuper__WEBPACK_IMPORTED_MODULE_7__[/* default */ "a"])(TaroText);
+  var _super2 = Object(_Users_sulei_Desktop_study_applets_node_modules_babel_runtime_helpers_esm_createSuper__WEBPACK_IMPORTED_MODULE_7__[/* default */ "a"])(TaroText);
 
   function TaroText(text) {
     var _this5;
 
-    Object(_Users_sulei_Desktop_applets_node_modules_babel_runtime_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_10__[/* default */ "a"])(this, TaroText);
+    Object(_Users_sulei_Desktop_study_applets_node_modules_babel_runtime_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_10__[/* default */ "a"])(this, TaroText);
 
     _this5 = _super2.call(this, 3
     /* TEXT_NODE */
@@ -4266,7 +4266,7 @@ var TaroText = /*#__PURE__*/function (_TaroNode) {
     return _this5;
   }
 
-  Object(_Users_sulei_Desktop_applets_node_modules_babel_runtime_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_11__[/* default */ "a"])(TaroText, [{
+  Object(_Users_sulei_Desktop_study_applets_node_modules_babel_runtime_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_11__[/* default */ "a"])(TaroText, [{
     key: "textContent",
     set: function set(text) {
       this._value = text;
@@ -4348,14 +4348,14 @@ function initStyle(ctor) {
 
 var Style = /*#__PURE__*/function () {
   function Style(element) {
-    Object(_Users_sulei_Desktop_applets_node_modules_babel_runtime_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_10__[/* default */ "a"])(this, Style);
+    Object(_Users_sulei_Desktop_study_applets_node_modules_babel_runtime_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_10__[/* default */ "a"])(this, Style);
 
     this._element = element;
     this._usedStyleProp = new Set();
     this._value = {};
   }
 
-  Object(_Users_sulei_Desktop_applets_node_modules_babel_runtime_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_11__[/* default */ "a"])(Style, [{
+  Object(_Users_sulei_Desktop_study_applets_node_modules_babel_runtime_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_11__[/* default */ "a"])(Style, [{
     key: "setCssVariables",
     value: function setCssVariables(styleKey) {
       var _this6 = this;
@@ -4458,7 +4458,7 @@ var Style = /*#__PURE__*/function () {
         }
 
         var _rule$split = rule.split(':'),
-            _rule$split2 = Object(_Users_sulei_Desktop_applets_node_modules_babel_runtime_helpers_esm_slicedToArray__WEBPACK_IMPORTED_MODULE_8__[/* default */ "a"])(_rule$split, 2),
+            _rule$split2 = Object(_Users_sulei_Desktop_study_applets_node_modules_babel_runtime_helpers_esm_slicedToArray__WEBPACK_IMPORTED_MODULE_8__[/* default */ "a"])(_rule$split, 2),
             propName = _rule$split2[0],
             val = _rule$split2[1];
 
@@ -4525,25 +4525,25 @@ function following(el, root) {
 }
 
 var ClassList = /*#__PURE__*/function (_Set) {
-  Object(_Users_sulei_Desktop_applets_node_modules_babel_runtime_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_6__[/* default */ "a"])(ClassList, _Set);
+  Object(_Users_sulei_Desktop_study_applets_node_modules_babel_runtime_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_6__[/* default */ "a"])(ClassList, _Set);
 
-  var _super3 = Object(_Users_sulei_Desktop_applets_node_modules_babel_runtime_helpers_esm_createSuper__WEBPACK_IMPORTED_MODULE_7__[/* default */ "a"])(ClassList);
+  var _super3 = Object(_Users_sulei_Desktop_study_applets_node_modules_babel_runtime_helpers_esm_createSuper__WEBPACK_IMPORTED_MODULE_7__[/* default */ "a"])(ClassList);
 
   function ClassList(className, el) {
     var _thisSuper, _this9;
 
-    Object(_Users_sulei_Desktop_applets_node_modules_babel_runtime_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_10__[/* default */ "a"])(this, ClassList);
+    Object(_Users_sulei_Desktop_study_applets_node_modules_babel_runtime_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_10__[/* default */ "a"])(this, ClassList);
 
     _this9 = _super3.call(this);
-    className.trim().split(/\s+/).forEach(Object(_Users_sulei_Desktop_applets_node_modules_babel_runtime_helpers_esm_get__WEBPACK_IMPORTED_MODULE_2__[/* default */ "a"])((_thisSuper = Object(_Users_sulei_Desktop_applets_node_modules_babel_runtime_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_5__[/* default */ "a"])(_this9), Object(_Users_sulei_Desktop_applets_node_modules_babel_runtime_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_3__[/* default */ "a"])(ClassList.prototype)), "add", _thisSuper).bind(Object(_Users_sulei_Desktop_applets_node_modules_babel_runtime_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_5__[/* default */ "a"])(_this9)));
+    className.trim().split(/\s+/).forEach(Object(_Users_sulei_Desktop_study_applets_node_modules_babel_runtime_helpers_esm_get__WEBPACK_IMPORTED_MODULE_2__[/* default */ "a"])((_thisSuper = Object(_Users_sulei_Desktop_study_applets_node_modules_babel_runtime_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_5__[/* default */ "a"])(_this9), Object(_Users_sulei_Desktop_study_applets_node_modules_babel_runtime_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_3__[/* default */ "a"])(ClassList.prototype)), "add", _thisSuper).bind(Object(_Users_sulei_Desktop_study_applets_node_modules_babel_runtime_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_5__[/* default */ "a"])(_this9)));
     _this9.el = el;
     return _this9;
   }
 
-  Object(_Users_sulei_Desktop_applets_node_modules_babel_runtime_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_11__[/* default */ "a"])(ClassList, [{
+  Object(_Users_sulei_Desktop_study_applets_node_modules_babel_runtime_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_11__[/* default */ "a"])(ClassList, [{
     key: "add",
     value: function add(s) {
-      Object(_Users_sulei_Desktop_applets_node_modules_babel_runtime_helpers_esm_get__WEBPACK_IMPORTED_MODULE_2__[/* default */ "a"])(Object(_Users_sulei_Desktop_applets_node_modules_babel_runtime_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_3__[/* default */ "a"])(ClassList.prototype), "add", this).call(this, s);
+      Object(_Users_sulei_Desktop_study_applets_node_modules_babel_runtime_helpers_esm_get__WEBPACK_IMPORTED_MODULE_2__[/* default */ "a"])(Object(_Users_sulei_Desktop_study_applets_node_modules_babel_runtime_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_3__[/* default */ "a"])(ClassList.prototype), "add", this).call(this, s);
 
       this._update();
 
@@ -4552,17 +4552,17 @@ var ClassList = /*#__PURE__*/function (_Set) {
   }, {
     key: "remove",
     value: function remove(s) {
-      Object(_Users_sulei_Desktop_applets_node_modules_babel_runtime_helpers_esm_get__WEBPACK_IMPORTED_MODULE_2__[/* default */ "a"])(Object(_Users_sulei_Desktop_applets_node_modules_babel_runtime_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_3__[/* default */ "a"])(ClassList.prototype), "delete", this).call(this, s);
+      Object(_Users_sulei_Desktop_study_applets_node_modules_babel_runtime_helpers_esm_get__WEBPACK_IMPORTED_MODULE_2__[/* default */ "a"])(Object(_Users_sulei_Desktop_study_applets_node_modules_babel_runtime_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_3__[/* default */ "a"])(ClassList.prototype), "delete", this).call(this, s);
 
       this._update();
     }
   }, {
     key: "toggle",
     value: function toggle(s) {
-      if (Object(_Users_sulei_Desktop_applets_node_modules_babel_runtime_helpers_esm_get__WEBPACK_IMPORTED_MODULE_2__[/* default */ "a"])(Object(_Users_sulei_Desktop_applets_node_modules_babel_runtime_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_3__[/* default */ "a"])(ClassList.prototype), "has", this).call(this, s)) {
-        Object(_Users_sulei_Desktop_applets_node_modules_babel_runtime_helpers_esm_get__WEBPACK_IMPORTED_MODULE_2__[/* default */ "a"])(Object(_Users_sulei_Desktop_applets_node_modules_babel_runtime_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_3__[/* default */ "a"])(ClassList.prototype), "delete", this).call(this, s);
+      if (Object(_Users_sulei_Desktop_study_applets_node_modules_babel_runtime_helpers_esm_get__WEBPACK_IMPORTED_MODULE_2__[/* default */ "a"])(Object(_Users_sulei_Desktop_study_applets_node_modules_babel_runtime_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_3__[/* default */ "a"])(ClassList.prototype), "has", this).call(this, s)) {
+        Object(_Users_sulei_Desktop_study_applets_node_modules_babel_runtime_helpers_esm_get__WEBPACK_IMPORTED_MODULE_2__[/* default */ "a"])(Object(_Users_sulei_Desktop_study_applets_node_modules_babel_runtime_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_3__[/* default */ "a"])(ClassList.prototype), "delete", this).call(this, s);
       } else {
-        Object(_Users_sulei_Desktop_applets_node_modules_babel_runtime_helpers_esm_get__WEBPACK_IMPORTED_MODULE_2__[/* default */ "a"])(Object(_Users_sulei_Desktop_applets_node_modules_babel_runtime_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_3__[/* default */ "a"])(ClassList.prototype), "add", this).call(this, s);
+        Object(_Users_sulei_Desktop_study_applets_node_modules_babel_runtime_helpers_esm_get__WEBPACK_IMPORTED_MODULE_2__[/* default */ "a"])(Object(_Users_sulei_Desktop_study_applets_node_modules_babel_runtime_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_3__[/* default */ "a"])(ClassList.prototype), "add", this).call(this, s);
       }
 
       this._update();
@@ -4570,16 +4570,16 @@ var ClassList = /*#__PURE__*/function (_Set) {
   }, {
     key: "replace",
     value: function replace(s1, s2) {
-      Object(_Users_sulei_Desktop_applets_node_modules_babel_runtime_helpers_esm_get__WEBPACK_IMPORTED_MODULE_2__[/* default */ "a"])(Object(_Users_sulei_Desktop_applets_node_modules_babel_runtime_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_3__[/* default */ "a"])(ClassList.prototype), "delete", this).call(this, s1);
+      Object(_Users_sulei_Desktop_study_applets_node_modules_babel_runtime_helpers_esm_get__WEBPACK_IMPORTED_MODULE_2__[/* default */ "a"])(Object(_Users_sulei_Desktop_study_applets_node_modules_babel_runtime_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_3__[/* default */ "a"])(ClassList.prototype), "delete", this).call(this, s1);
 
-      Object(_Users_sulei_Desktop_applets_node_modules_babel_runtime_helpers_esm_get__WEBPACK_IMPORTED_MODULE_2__[/* default */ "a"])(Object(_Users_sulei_Desktop_applets_node_modules_babel_runtime_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_3__[/* default */ "a"])(ClassList.prototype), "add", this).call(this, s2);
+      Object(_Users_sulei_Desktop_study_applets_node_modules_babel_runtime_helpers_esm_get__WEBPACK_IMPORTED_MODULE_2__[/* default */ "a"])(Object(_Users_sulei_Desktop_study_applets_node_modules_babel_runtime_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_3__[/* default */ "a"])(ClassList.prototype), "add", this).call(this, s2);
 
       this._update();
     }
   }, {
     key: "contains",
     value: function contains(s) {
-      return Object(_Users_sulei_Desktop_applets_node_modules_babel_runtime_helpers_esm_get__WEBPACK_IMPORTED_MODULE_2__[/* default */ "a"])(Object(_Users_sulei_Desktop_applets_node_modules_babel_runtime_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_3__[/* default */ "a"])(ClassList.prototype), "has", this).call(this, s);
+      return Object(_Users_sulei_Desktop_study_applets_node_modules_babel_runtime_helpers_esm_get__WEBPACK_IMPORTED_MODULE_2__[/* default */ "a"])(Object(_Users_sulei_Desktop_study_applets_node_modules_babel_runtime_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_3__[/* default */ "a"])(ClassList.prototype), "has", this).call(this, s);
     }
   }, {
     key: "toString",
@@ -4594,24 +4594,24 @@ var ClassList = /*#__PURE__*/function (_Set) {
   }, {
     key: "value",
     get: function get() {
-      return Object(_Users_sulei_Desktop_applets_node_modules_babel_runtime_helpers_esm_toConsumableArray__WEBPACK_IMPORTED_MODULE_1__[/* default */ "a"])(this).join(' ');
+      return Object(_Users_sulei_Desktop_study_applets_node_modules_babel_runtime_helpers_esm_toConsumableArray__WEBPACK_IMPORTED_MODULE_1__[/* default */ "a"])(this).join(' ');
     }
   }]);
 
   return ClassList;
-}( /*#__PURE__*/Object(_Users_sulei_Desktop_applets_node_modules_babel_runtime_helpers_esm_wrapNativeSuper__WEBPACK_IMPORTED_MODULE_4__[/* default */ "a"])(Set));
+}( /*#__PURE__*/Object(_Users_sulei_Desktop_study_applets_node_modules_babel_runtime_helpers_esm_wrapNativeSuper__WEBPACK_IMPORTED_MODULE_4__[/* default */ "a"])(Set));
 /* eslint-disable no-dupe-class-members */
 
 
 var TaroElement = /*#__PURE__*/function (_TaroNode2) {
-  Object(_Users_sulei_Desktop_applets_node_modules_babel_runtime_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_6__[/* default */ "a"])(TaroElement, _TaroNode2);
+  Object(_Users_sulei_Desktop_study_applets_node_modules_babel_runtime_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_6__[/* default */ "a"])(TaroElement, _TaroNode2);
 
-  var _super4 = Object(_Users_sulei_Desktop_applets_node_modules_babel_runtime_helpers_esm_createSuper__WEBPACK_IMPORTED_MODULE_7__[/* default */ "a"])(TaroElement);
+  var _super4 = Object(_Users_sulei_Desktop_study_applets_node_modules_babel_runtime_helpers_esm_createSuper__WEBPACK_IMPORTED_MODULE_7__[/* default */ "a"])(TaroElement);
 
   function TaroElement(nodeType, nodeName) {
     var _this10;
 
-    Object(_Users_sulei_Desktop_applets_node_modules_babel_runtime_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_10__[/* default */ "a"])(this, TaroElement);
+    Object(_Users_sulei_Desktop_study_applets_node_modules_babel_runtime_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_10__[/* default */ "a"])(this, TaroElement);
 
     _this10 = _super4.call(this, nodeType || 1
     /* ELEMENT_NODE */
@@ -4619,12 +4619,12 @@ var TaroElement = /*#__PURE__*/function (_TaroNode2) {
     _this10.props = {};
     _this10.dataset = EMPTY_OBJ;
     _this10.tagName = nodeName.toUpperCase();
-    _this10.style = new Style(Object(_Users_sulei_Desktop_applets_node_modules_babel_runtime_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_5__[/* default */ "a"])(_this10));
+    _this10.style = new Style(Object(_Users_sulei_Desktop_study_applets_node_modules_babel_runtime_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_5__[/* default */ "a"])(_this10));
     warn(_this10.tagName === 'MAP' && "weapp" === 'weapp', '微信小程序 map 组件的 `setting` 属性需要传递一个默认值。详情：\n https://developers.weixin.qq.com/miniprogram/dev/component/map.html');
     return _this10;
   }
 
-  Object(_Users_sulei_Desktop_applets_node_modules_babel_runtime_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_11__[/* default */ "a"])(TaroElement, [{
+  Object(_Users_sulei_Desktop_study_applets_node_modules_babel_runtime_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_11__[/* default */ "a"])(TaroElement, [{
     key: "hasAttribute",
     value: function hasAttribute(qualifiedName) {
       return !isUndefined(this.props[qualifiedName]);
@@ -4846,7 +4846,7 @@ var TaroElement = /*#__PURE__*/function (_TaroNode2) {
       return text;
     },
     set: function set(text) {
-      Object(_Users_sulei_Desktop_applets_node_modules_babel_runtime_helpers_esm_set__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])(Object(_Users_sulei_Desktop_applets_node_modules_babel_runtime_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_3__[/* default */ "a"])(TaroElement.prototype), "textContent", text, this, true);
+      Object(_Users_sulei_Desktop_study_applets_node_modules_babel_runtime_helpers_esm_set__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])(Object(_Users_sulei_Desktop_study_applets_node_modules_babel_runtime_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_3__[/* default */ "a"])(TaroElement.prototype), "textContent", text, this, true);
     }
   }]);
 
@@ -4854,17 +4854,17 @@ var TaroElement = /*#__PURE__*/function (_TaroNode2) {
 }(TaroNode);
 
 var FormElement = /*#__PURE__*/function (_TaroElement) {
-  Object(_Users_sulei_Desktop_applets_node_modules_babel_runtime_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_6__[/* default */ "a"])(FormElement, _TaroElement);
+  Object(_Users_sulei_Desktop_study_applets_node_modules_babel_runtime_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_6__[/* default */ "a"])(FormElement, _TaroElement);
 
-  var _super5 = Object(_Users_sulei_Desktop_applets_node_modules_babel_runtime_helpers_esm_createSuper__WEBPACK_IMPORTED_MODULE_7__[/* default */ "a"])(FormElement);
+  var _super5 = Object(_Users_sulei_Desktop_study_applets_node_modules_babel_runtime_helpers_esm_createSuper__WEBPACK_IMPORTED_MODULE_7__[/* default */ "a"])(FormElement);
 
   function FormElement() {
-    Object(_Users_sulei_Desktop_applets_node_modules_babel_runtime_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_10__[/* default */ "a"])(this, FormElement);
+    Object(_Users_sulei_Desktop_study_applets_node_modules_babel_runtime_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_10__[/* default */ "a"])(this, FormElement);
 
     return _super5.apply(this, arguments);
   }
 
-  Object(_Users_sulei_Desktop_applets_node_modules_babel_runtime_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_11__[/* default */ "a"])(FormElement, [{
+  Object(_Users_sulei_Desktop_study_applets_node_modules_babel_runtime_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_11__[/* default */ "a"])(FormElement, [{
     key: "dispatchEvent",
     value: function dispatchEvent(event) {
       if ((event.type === 'input' || event.type === 'change') && event.mpEvent) {
@@ -4872,7 +4872,7 @@ var FormElement = /*#__PURE__*/function (_TaroElement) {
         this.props.value = val;
       }
 
-      return Object(_Users_sulei_Desktop_applets_node_modules_babel_runtime_helpers_esm_get__WEBPACK_IMPORTED_MODULE_2__[/* default */ "a"])(Object(_Users_sulei_Desktop_applets_node_modules_babel_runtime_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_3__[/* default */ "a"])(FormElement.prototype), "dispatchEvent", this).call(this, event);
+      return Object(_Users_sulei_Desktop_study_applets_node_modules_babel_runtime_helpers_esm_get__WEBPACK_IMPORTED_MODULE_2__[/* default */ "a"])(Object(_Users_sulei_Desktop_study_applets_node_modules_babel_runtime_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_3__[/* default */ "a"])(FormElement.prototype), "dispatchEvent", this).call(this, event);
     }
   }, {
     key: "value",
@@ -4916,10 +4916,10 @@ var FormElement = /*#__PURE__*/function (_TaroElement) {
 var isArray$1 = Array.isArray;
 /** Detect free variable `global` from Node.js. */
 
-var freeGlobal = (typeof global === "undefined" ? "undefined" : Object(_Users_sulei_Desktop_applets_node_modules_babel_runtime_helpers_esm_typeof__WEBPACK_IMPORTED_MODULE_12__[/* default */ "a"])(global)) == 'object' && global && global.Object === Object && global;
+var freeGlobal = (typeof global === "undefined" ? "undefined" : Object(_Users_sulei_Desktop_study_applets_node_modules_babel_runtime_helpers_esm_typeof__WEBPACK_IMPORTED_MODULE_12__[/* default */ "a"])(global)) == 'object' && global && global.Object === Object && global;
 /** Detect free variable `self`. */
 
-var freeSelf = (typeof self === "undefined" ? "undefined" : Object(_Users_sulei_Desktop_applets_node_modules_babel_runtime_helpers_esm_typeof__WEBPACK_IMPORTED_MODULE_12__[/* default */ "a"])(self)) == 'object' && self && self.Object === Object && self;
+var freeSelf = (typeof self === "undefined" ? "undefined" : Object(_Users_sulei_Desktop_study_applets_node_modules_babel_runtime_helpers_esm_typeof__WEBPACK_IMPORTED_MODULE_12__[/* default */ "a"])(self)) == 'object' && self && self.Object === Object && self;
 /** Used as a reference to the global object. */
 
 var root = freeGlobal || freeSelf || Function('return this')();
@@ -5043,7 +5043,7 @@ function baseGetTag(value) {
 
 
 function isObjectLike(value) {
-  return value != null && Object(_Users_sulei_Desktop_applets_node_modules_babel_runtime_helpers_esm_typeof__WEBPACK_IMPORTED_MODULE_12__[/* default */ "a"])(value) == 'object';
+  return value != null && Object(_Users_sulei_Desktop_study_applets_node_modules_babel_runtime_helpers_esm_typeof__WEBPACK_IMPORTED_MODULE_12__[/* default */ "a"])(value) == 'object';
 }
 /** `Object#toString` result references. */
 
@@ -5068,7 +5068,7 @@ var symbolTag = '[object Symbol]';
  */
 
 function isSymbol(value) {
-  return Object(_Users_sulei_Desktop_applets_node_modules_babel_runtime_helpers_esm_typeof__WEBPACK_IMPORTED_MODULE_12__[/* default */ "a"])(value) == 'symbol' || isObjectLike(value) && baseGetTag(value) == symbolTag;
+  return Object(_Users_sulei_Desktop_study_applets_node_modules_babel_runtime_helpers_esm_typeof__WEBPACK_IMPORTED_MODULE_12__[/* default */ "a"])(value) == 'symbol' || isObjectLike(value) && baseGetTag(value) == symbolTag;
 }
 /** Used to match property names within property paths. */
 
@@ -5089,7 +5089,7 @@ function isKey(value, object) {
     return false;
   }
 
-  var type = Object(_Users_sulei_Desktop_applets_node_modules_babel_runtime_helpers_esm_typeof__WEBPACK_IMPORTED_MODULE_12__[/* default */ "a"])(value);
+  var type = Object(_Users_sulei_Desktop_study_applets_node_modules_babel_runtime_helpers_esm_typeof__WEBPACK_IMPORTED_MODULE_12__[/* default */ "a"])(value);
 
   if (type == 'number' || type == 'symbol' || type == 'boolean' || value == null || isSymbol(value)) {
     return true;
@@ -5125,7 +5125,7 @@ function isKey(value, object) {
 
 
 function isObject$1(value) {
-  var type = Object(_Users_sulei_Desktop_applets_node_modules_babel_runtime_helpers_esm_typeof__WEBPACK_IMPORTED_MODULE_12__[/* default */ "a"])(value);
+  var type = Object(_Users_sulei_Desktop_study_applets_node_modules_babel_runtime_helpers_esm_typeof__WEBPACK_IMPORTED_MODULE_12__[/* default */ "a"])(value);
 
   return value != null && (type == 'object' || type == 'function');
 }
@@ -5628,7 +5628,7 @@ function mapCacheClear() {
 
 
 function isKeyable(value) {
-  var type = Object(_Users_sulei_Desktop_applets_node_modules_babel_runtime_helpers_esm_typeof__WEBPACK_IMPORTED_MODULE_12__[/* default */ "a"])(value);
+  var type = Object(_Users_sulei_Desktop_study_applets_node_modules_babel_runtime_helpers_esm_typeof__WEBPACK_IMPORTED_MODULE_12__[/* default */ "a"])(value);
 
   return type == 'string' || type == 'number' || type == 'symbol' || type == 'boolean' ? value !== '__proto__' : value === null;
 }
@@ -6034,12 +6034,12 @@ function get(object, path, defaultValue) {
 
 var Performance = /*#__PURE__*/function () {
   function Performance() {
-    Object(_Users_sulei_Desktop_applets_node_modules_babel_runtime_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_10__[/* default */ "a"])(this, Performance);
+    Object(_Users_sulei_Desktop_study_applets_node_modules_babel_runtime_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_10__[/* default */ "a"])(this, Performance);
 
     this.recorder = new Map();
   }
 
-  Object(_Users_sulei_Desktop_applets_node_modules_babel_runtime_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_11__[/* default */ "a"])(Performance, [{
+  Object(_Users_sulei_Desktop_study_applets_node_modules_babel_runtime_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_11__[/* default */ "a"])(Performance, [{
     key: "start",
     value: function start(id) {
       if (!options.debug) {
@@ -6070,7 +6070,7 @@ var perf = new Performance();
 
 var Events = /*#__PURE__*/function () {
   function Events(opts) {
-    Object(_Users_sulei_Desktop_applets_node_modules_babel_runtime_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_10__[/* default */ "a"])(this, Events);
+    Object(_Users_sulei_Desktop_study_applets_node_modules_babel_runtime_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_10__[/* default */ "a"])(this, Events);
 
     if (typeof opts !== 'undefined' && opts.callbacks) {
       this.callbacks = opts.callbacks;
@@ -6079,7 +6079,7 @@ var Events = /*#__PURE__*/function () {
     }
   }
 
-  Object(_Users_sulei_Desktop_applets_node_modules_babel_runtime_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_11__[/* default */ "a"])(Events, [{
+  Object(_Users_sulei_Desktop_study_applets_node_modules_babel_runtime_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_11__[/* default */ "a"])(Events, [{
     key: "on",
     value: function on(eventName, callback, context) {
       var event, node, tail, list;
@@ -6198,14 +6198,14 @@ if (false) {} else {
 }
 
 var TaroRootElement = /*#__PURE__*/function (_TaroElement2) {
-  Object(_Users_sulei_Desktop_applets_node_modules_babel_runtime_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_6__[/* default */ "a"])(TaroRootElement, _TaroElement2);
+  Object(_Users_sulei_Desktop_study_applets_node_modules_babel_runtime_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_6__[/* default */ "a"])(TaroRootElement, _TaroElement2);
 
-  var _super6 = Object(_Users_sulei_Desktop_applets_node_modules_babel_runtime_helpers_esm_createSuper__WEBPACK_IMPORTED_MODULE_7__[/* default */ "a"])(TaroRootElement);
+  var _super6 = Object(_Users_sulei_Desktop_study_applets_node_modules_babel_runtime_helpers_esm_createSuper__WEBPACK_IMPORTED_MODULE_7__[/* default */ "a"])(TaroRootElement);
 
   function TaroRootElement() {
     var _this14;
 
-    Object(_Users_sulei_Desktop_applets_node_modules_babel_runtime_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_10__[/* default */ "a"])(this, TaroRootElement);
+    Object(_Users_sulei_Desktop_study_applets_node_modules_babel_runtime_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_10__[/* default */ "a"])(this, TaroRootElement);
 
     _this14 = _super6.call(this, 1
     /* ELEMENT_NODE */
@@ -6218,7 +6218,7 @@ var TaroRootElement = /*#__PURE__*/function (_TaroElement2) {
     return _this14;
   }
 
-  Object(_Users_sulei_Desktop_applets_node_modules_babel_runtime_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_11__[/* default */ "a"])(TaroRootElement, [{
+  Object(_Users_sulei_Desktop_study_applets_node_modules_babel_runtime_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_11__[/* default */ "a"])(TaroRootElement, [{
     key: "enqueueUpdate",
     value: function enqueueUpdate(payload) {
       this.updatePayloads.push(payload);
@@ -6308,7 +6308,7 @@ var TaroRootElement = /*#__PURE__*/function (_TaroElement2) {
                     hasCustomWrapper = true;
                     customWrapperUpdate.push({
                       ctx: ctx.selectComponent("#".concat(customWrapperId)),
-                      data: Object(_Users_sulei_Desktop_applets_node_modules_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_9__[/* default */ "a"])({}, "i.".concat(splitedPath), data[p])
+                      data: Object(_Users_sulei_Desktop_study_applets_node_modules_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_9__[/* default */ "a"])({}, "i.".concat(splitedPath), data[p])
                     });
                   }
 
@@ -6404,19 +6404,19 @@ var doc = isBrowser ? document : EMPTY_OBJ;
 var win = isBrowser ? window : EMPTY_OBJ;
 
 var TaroDocument = /*#__PURE__*/function (_TaroElement3) {
-  Object(_Users_sulei_Desktop_applets_node_modules_babel_runtime_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_6__[/* default */ "a"])(TaroDocument, _TaroElement3);
+  Object(_Users_sulei_Desktop_study_applets_node_modules_babel_runtime_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_6__[/* default */ "a"])(TaroDocument, _TaroElement3);
 
-  var _super7 = Object(_Users_sulei_Desktop_applets_node_modules_babel_runtime_helpers_esm_createSuper__WEBPACK_IMPORTED_MODULE_7__[/* default */ "a"])(TaroDocument);
+  var _super7 = Object(_Users_sulei_Desktop_study_applets_node_modules_babel_runtime_helpers_esm_createSuper__WEBPACK_IMPORTED_MODULE_7__[/* default */ "a"])(TaroDocument);
 
   function TaroDocument() {
-    Object(_Users_sulei_Desktop_applets_node_modules_babel_runtime_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_10__[/* default */ "a"])(this, TaroDocument);
+    Object(_Users_sulei_Desktop_study_applets_node_modules_babel_runtime_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_10__[/* default */ "a"])(this, TaroDocument);
 
     return _super7.call(this, 9
     /* DOCUMENT_NODE */
     , '#document');
   }
 
-  Object(_Users_sulei_Desktop_applets_node_modules_babel_runtime_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_11__[/* default */ "a"])(TaroDocument, [{
+  Object(_Users_sulei_Desktop_study_applets_node_modules_babel_runtime_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_11__[/* default */ "a"])(TaroDocument, [{
     key: "createElement",
     value: function createElement(type) {
       if (type === 'root') {
@@ -6569,7 +6569,7 @@ var window$1 = isBrowser ? win : {
 };
 
 if (!isBrowser) {
-  var globalProperties = [].concat(Object(_Users_sulei_Desktop_applets_node_modules_babel_runtime_helpers_esm_toConsumableArray__WEBPACK_IMPORTED_MODULE_1__[/* default */ "a"])(Object.getOwnPropertyNames(global || win)), Object(_Users_sulei_Desktop_applets_node_modules_babel_runtime_helpers_esm_toConsumableArray__WEBPACK_IMPORTED_MODULE_1__[/* default */ "a"])(Object.getOwnPropertySymbols(global || win)));
+  var globalProperties = [].concat(Object(_Users_sulei_Desktop_study_applets_node_modules_babel_runtime_helpers_esm_toConsumableArray__WEBPACK_IMPORTED_MODULE_1__[/* default */ "a"])(Object.getOwnPropertyNames(global || win)), Object(_Users_sulei_Desktop_study_applets_node_modules_babel_runtime_helpers_esm_toConsumableArray__WEBPACK_IMPORTED_MODULE_1__[/* default */ "a"])(Object.getOwnPropertySymbols(global || win)));
   globalProperties.forEach(function (property) {
     if (!Object.prototype.hasOwnProperty.call(window$1, property)) {
       window$1[property] = global[property];
@@ -6919,7 +6919,7 @@ function createRecursiveComponentConfig() {
     properties: {
       i: {
         type: Object,
-        value: Object(_Users_sulei_Desktop_applets_node_modules_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_9__[/* default */ "a"])({}, "nn"
+        value: Object(_Users_sulei_Desktop_study_applets_node_modules_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_9__[/* default */ "a"])({}, "nn"
         /* NodeName */
         , 'view')
       },
@@ -6975,14 +6975,14 @@ function connectReactPage(R, id) {
     }
 
     return /*#__PURE__*/function (_R$Component) {
-      Object(_Users_sulei_Desktop_applets_node_modules_babel_runtime_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_6__[/* default */ "a"])(Page, _R$Component);
+      Object(_Users_sulei_Desktop_study_applets_node_modules_babel_runtime_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_6__[/* default */ "a"])(Page, _R$Component);
 
-      var _super8 = Object(_Users_sulei_Desktop_applets_node_modules_babel_runtime_helpers_esm_createSuper__WEBPACK_IMPORTED_MODULE_7__[/* default */ "a"])(Page);
+      var _super8 = Object(_Users_sulei_Desktop_study_applets_node_modules_babel_runtime_helpers_esm_createSuper__WEBPACK_IMPORTED_MODULE_7__[/* default */ "a"])(Page);
 
       function Page() {
         var _this19;
 
-        Object(_Users_sulei_Desktop_applets_node_modules_babel_runtime_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_10__[/* default */ "a"])(this, Page);
+        Object(_Users_sulei_Desktop_study_applets_node_modules_babel_runtime_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_10__[/* default */ "a"])(this, Page);
 
         _this19 = _super8.apply(this, arguments);
         _this19.state = {
@@ -6991,7 +6991,7 @@ function connectReactPage(R, id) {
         return _this19;
       }
 
-      Object(_Users_sulei_Desktop_applets_node_modules_babel_runtime_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_11__[/* default */ "a"])(Page, [{
+      Object(_Users_sulei_Desktop_study_applets_node_modules_babel_runtime_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_11__[/* default */ "a"])(Page, [{
         key: "componentDidCatch",
         // React 16 uncaught error 会导致整个应用 crash，
         // 目前把错误缩小到页面
@@ -7053,9 +7053,9 @@ function setReconciler() {
 
       Object.keys(prev).forEach(function (item) {
         if (isFunction(next[item])) {
-          next[item] = [next[item]].concat(Object(_Users_sulei_Desktop_applets_node_modules_babel_runtime_helpers_esm_toConsumableArray__WEBPACK_IMPORTED_MODULE_1__[/* default */ "a"])(prev[item]));
+          next[item] = [next[item]].concat(Object(_Users_sulei_Desktop_study_applets_node_modules_babel_runtime_helpers_esm_toConsumableArray__WEBPACK_IMPORTED_MODULE_1__[/* default */ "a"])(prev[item]));
         } else {
-          next[item] = [].concat(Object(_Users_sulei_Desktop_applets_node_modules_babel_runtime_helpers_esm_toConsumableArray__WEBPACK_IMPORTED_MODULE_1__[/* default */ "a"])(next[item] || []), Object(_Users_sulei_Desktop_applets_node_modules_babel_runtime_helpers_esm_toConsumableArray__WEBPACK_IMPORTED_MODULE_1__[/* default */ "a"])(prev[item]));
+          next[item] = [].concat(Object(_Users_sulei_Desktop_study_applets_node_modules_babel_runtime_helpers_esm_toConsumableArray__WEBPACK_IMPORTED_MODULE_1__[/* default */ "a"])(next[item] || []), Object(_Users_sulei_Desktop_study_applets_node_modules_babel_runtime_helpers_esm_toConsumableArray__WEBPACK_IMPORTED_MODULE_1__[/* default */ "a"])(prev[item]));
         }
       });
     }
@@ -7097,14 +7097,14 @@ function createReactApp(App, react, reactdom, config) {
   var wrapper;
 
   var AppWrapper = /*#__PURE__*/function (_R$Component2) {
-    Object(_Users_sulei_Desktop_applets_node_modules_babel_runtime_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_6__[/* default */ "a"])(AppWrapper, _R$Component2);
+    Object(_Users_sulei_Desktop_study_applets_node_modules_babel_runtime_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_6__[/* default */ "a"])(AppWrapper, _R$Component2);
 
-    var _super9 = Object(_Users_sulei_Desktop_applets_node_modules_babel_runtime_helpers_esm_createSuper__WEBPACK_IMPORTED_MODULE_7__[/* default */ "a"])(AppWrapper);
+    var _super9 = Object(_Users_sulei_Desktop_study_applets_node_modules_babel_runtime_helpers_esm_createSuper__WEBPACK_IMPORTED_MODULE_7__[/* default */ "a"])(AppWrapper);
 
     function AppWrapper() {
       var _this20;
 
-      Object(_Users_sulei_Desktop_applets_node_modules_babel_runtime_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_10__[/* default */ "a"])(this, AppWrapper);
+      Object(_Users_sulei_Desktop_study_applets_node_modules_babel_runtime_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_10__[/* default */ "a"])(this, AppWrapper);
 
       _this20 = _super9.apply(this, arguments); // run createElement() inside the render function to make sure that owner is right
 
@@ -7113,7 +7113,7 @@ function createReactApp(App, react, reactdom, config) {
       return _this20;
     }
 
-    Object(_Users_sulei_Desktop_applets_node_modules_babel_runtime_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_11__[/* default */ "a"])(AppWrapper, [{
+    Object(_Users_sulei_Desktop_study_applets_node_modules_babel_runtime_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_11__[/* default */ "a"])(AppWrapper, [{
       key: "mount",
       value: function mount(component, id, cb) {
         var key = id + pageKeyId();
@@ -7600,7 +7600,7 @@ var taroHooks = function taroHooks(lifecycle) {
       if (isFunction(inst[lifecycle])) {
         inst[lifecycle] = [inst[lifecycle], callback];
       } else {
-        inst[lifecycle] = [].concat(Object(_Users_sulei_Desktop_applets_node_modules_babel_runtime_helpers_esm_toConsumableArray__WEBPACK_IMPORTED_MODULE_1__[/* default */ "a"])(inst[lifecycle] || []), [callback]);
+        inst[lifecycle] = [].concat(Object(_Users_sulei_Desktop_study_applets_node_modules_babel_runtime_helpers_esm_toConsumableArray__WEBPACK_IMPORTED_MODULE_1__[/* default */ "a"])(inst[lifecycle] || []), [callback]);
       }
 
       if (first) {
