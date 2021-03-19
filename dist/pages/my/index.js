@@ -85,7 +85,7 @@ var My = function My() {
           switch (_context.prev = _context.next) {
             case 0:
               _context.next = 2;
-              return Object(_service_apiModules_user__WEBPACK_IMPORTED_MODULE_10__[/* getUserInfo */ "a"])();
+              return Object(_service_apiModules_user__WEBPACK_IMPORTED_MODULE_10__[/* getUserInfo */ "b"])();
 
             case 2:
               result = _context.sent;
@@ -216,7 +216,7 @@ var My = function My() {
           switch (_context4.prev = _context4.next) {
             case 0:
               _context4.next = 2;
-              return Object(_service_apiModules_user__WEBPACK_IMPORTED_MODULE_10__[/* updateUserName */ "c"])({
+              return Object(_service_apiModules_user__WEBPACK_IMPORTED_MODULE_10__[/* updateUserName */ "d"])({
                 userName: userName
               });
 
@@ -277,41 +277,41 @@ var My = function My() {
   }
 
   return Object(mobx_react__WEBPACK_IMPORTED_MODULE_5__[/* useObserver */ "d"])(function () {
-    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_tarojs_components__WEBPACK_IMPORTED_MODULE_6__[/* View */ "n"], {
+    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_tarojs_components__WEBPACK_IMPORTED_MODULE_6__[/* View */ "o"], {
       className: "container"
-    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_tarojs_components__WEBPACK_IMPORTED_MODULE_6__[/* View */ "n"], {
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_tarojs_components__WEBPACK_IMPORTED_MODULE_6__[/* View */ "o"], {
       className: "nav"
-    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_tarojs_components__WEBPACK_IMPORTED_MODULE_6__[/* View */ "n"], {
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_tarojs_components__WEBPACK_IMPORTED_MODULE_6__[/* View */ "o"], {
       className: "photo"
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_components_Phtot__WEBPACK_IMPORTED_MODULE_7__[/* default */ "a"], {
       photoUrl: User.userInfo.photo,
       uploadImg: uploadImg.bind(_this)
-    })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_tarojs_components__WEBPACK_IMPORTED_MODULE_6__[/* View */ "n"], {
+    })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_tarojs_components__WEBPACK_IMPORTED_MODULE_6__[/* View */ "o"], {
       className: "info",
       onTouchStart: function onTouchStart(e) {
         touchStart(e);
       }
-    }, isShowUserName ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_tarojs_components__WEBPACK_IMPORTED_MODULE_6__[/* View */ "n"], {
+    }, isShowUserName ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_tarojs_components__WEBPACK_IMPORTED_MODULE_6__[/* View */ "o"], {
       className: "changeInfo"
-    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_tarojs_components__WEBPACK_IMPORTED_MODULE_6__[/* Input */ "g"], {
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_tarojs_components__WEBPACK_IMPORTED_MODULE_6__[/* Input */ "h"], {
       focus: true,
       value: userName,
       onInput: function onInput(e) {
         setUserName(e.detail.value);
       }
-    }), " ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_tarojs_components__WEBPACK_IMPORTED_MODULE_6__[/* Text */ "l"], {
+    }), " ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_tarojs_components__WEBPACK_IMPORTED_MODULE_6__[/* Text */ "m"], {
       className: "btn",
       onClick: function onClick() {
         updateName();
       }
-    }, "OK")) : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_tarojs_components__WEBPACK_IMPORTED_MODULE_6__[/* Text */ "l"], null, userName))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_tarojs_components__WEBPACK_IMPORTED_MODULE_6__[/* View */ "n"], {
+    }, "OK")) : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_tarojs_components__WEBPACK_IMPORTED_MODULE_6__[/* Text */ "m"], null, userName))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_tarojs_components__WEBPACK_IMPORTED_MODULE_6__[/* View */ "o"], {
       className: "content"
-    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_tarojs_components__WEBPACK_IMPORTED_MODULE_6__[/* Text */ "l"], {
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_tarojs_components__WEBPACK_IMPORTED_MODULE_6__[/* Text */ "m"], {
       className: "lebalItem",
       onClick: function onClick() {
         clickToEmptyPage('about');
       }
-    }, "\u5173\u4E8E\u6211\u4EEC"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_tarojs_components__WEBPACK_IMPORTED_MODULE_6__[/* Text */ "l"], {
+    }, "\u5173\u4E8E\u6211\u4EEC"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_tarojs_components__WEBPACK_IMPORTED_MODULE_6__[/* Text */ "m"], {
       className: "lebalItem",
       onClick: function onClick() {
         exitLogin();
@@ -358,10 +358,10 @@ var My = function My() {
 
 function Phtot(props) {
   return Object(mobx_react__WEBPACK_IMPORTED_MODULE_1__[/* useObserver */ "d"])(function () {
-    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_tarojs_components__WEBPACK_IMPORTED_MODULE_2__[/* View */ "n"], {
+    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_tarojs_components__WEBPACK_IMPORTED_MODULE_2__[/* View */ "o"], {
       className: "userinfo-img-view portrait flex-box jc-sb ai-ce",
       "data-flag": "portrait"
-    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_tarojs_components__WEBPACK_IMPORTED_MODULE_2__[/* Image */ "f"], {
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_tarojs_components__WEBPACK_IMPORTED_MODULE_2__[/* Image */ "g"], {
       src: props.photoUrl,
       className: "userinfo-img",
       onClick: function onClick(e) {

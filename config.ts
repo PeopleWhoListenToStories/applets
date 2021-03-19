@@ -1,5 +1,6 @@
 (global as any).constants = {
     website: 'https://humanweaknesses.com',
+    // website: 'http://81.70.87.115:83',
     // website: 'http://127.0.0.1:7001',
     name: 'weChat',
     icon: {

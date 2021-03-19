@@ -1,11 +1,13 @@
 import { observable } from 'mobx'
 import Taro from "@tarojs/taro"
-import { postLogin } from "../../service/apiModules/user"
+import { postLogin, getUserCode } from "../../service/apiModules/user"
 
 import { UserStoreType } from "../interface/user"
 
 const UserStore = observable<UserStoreType>({
     userInfo: {},
+    code: '',
+    isOK: false,
 
     setuserInfo(params) {
         this.userInfo = params
@@ -49,6 +51,20 @@ const UserStore = observable<UserStoreType>({
     loginOut() {
         Taro.removeStorageSync('user_id')
         Taro.removeStorageSync('authority')
+    },
+
+    getCode(phone: number) {
+        getUserCode({ phone: phone }).then(res => {
+            if (res.data.code === 200) {
+                this.isOK = res.data.isOK
+                this.code = res.data.detail.code || ''
+            } else {
+                // 验证码请求失败
+            }
+        })
+    },
+    setCode() {
+        this.code = ''
     }
 })
 

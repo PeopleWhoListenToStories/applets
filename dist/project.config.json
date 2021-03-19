@@ -1,5 +1,4 @@
 {
-  "miniprogramRoot": "./",
   "projectname": "myApp",
   "description": "本是青灯不归客 缺因浊酒恋红尘·",
   "appid": "wx1ea68200e117a6f0",
@@ -21,8 +20,9 @@
     "checkSiteMap": false,
     "uploadWithSourceMap": true,
     "compileHotReLoad": false,
-    "useMultiFrameRuntime": false,
+    "useMultiFrameRuntime": true,
     "useApiHook": true,
+    "useApiHostProcess": true,
     "babelSetting": {
       "ignore": [],
       "disablePlugins": [],

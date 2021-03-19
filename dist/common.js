@@ -9,6 +9,7 @@
 
 /* WEBPACK VAR INJECTION */(function(global) {global.constants = {
   website: 'https://humanweaknesses.com',
+  // website: 'http://81.70.87.115:83',
   // website: 'http://127.0.0.1:7001',
   name: 'weChat',
   icon: {
@@ -235,15 +236,16 @@ var RESULT_STATUS = {
 /*!****************************************!*\
   !*** ./src/service/apiModules/user.js ***!
   \****************************************/
-/*! exports provided: postLogin, getUserInfo, postUpLoadImage, updateUserName */
-/*! exports used: getUserInfo, postLogin, updateUserName */
+/*! exports provided: postLogin, getUserInfo, postUpLoadImage, updateUserName, getUserCode */
+/*! exports used: getUserCode, getUserInfo, postLogin, updateUserName */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return postLogin; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return getUserInfo; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "c", function() { return postLogin; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return getUserInfo; });
 /* unused harmony export postUpLoadImage */
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "c", function() { return updateUserName; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "d", function() { return updateUserName; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return getUserCode; });
 /* harmony import */ var _request__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../request */ "./src/service/request.ts");
 
 var postLogin = function postLogin(params) {
@@ -260,6 +262,10 @@ var postUpLoadImage = function postUpLoadImage(params) {
 
 var updateUserName = function updateUserName(params) {
   return _request__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"].post('/api/updateUserName', params);
+}; // 获取登陆验证码
+
+var getUserCode = function getUserCode(parmas) {
+  return _request__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"].post("/api/note", parmas);
 };
 
 /***/ }),
@@ -290,7 +296,7 @@ var updateUserName = function updateUserName(params) {
 
  // eslint-disable-next-line no-unused-vars
 
-var whileList = ['/api/user/login'];
+var whileList = ['/api/user/login', '/api/note'];
 /* harmony default export */ __webpack_exports__["a"] = ({
   baseOptions: function baseOptions(params) {
     var _arguments = arguments;
@@ -603,6 +609,8 @@ var locationStore = Object(mobx__WEBPACK_IMPORTED_MODULE_0__[/* observable */ "l
 
 var UserStore = Object(mobx__WEBPACK_IMPORTED_MODULE_2__[/* observable */ "l"])({
   userInfo: {},
+  code: '',
+  isOK: false,
   setuserInfo: function setuserInfo(params) {
     this.userInfo = params;
   },
@@ -621,7 +629,7 @@ var UserStore = Object(mobx__WEBPACK_IMPORTED_MODULE_2__[/* observable */ "l"])(
                   }
 
                   _context.next = 3;
-                  return Object(_service_apiModules_user__WEBPACK_IMPORTED_MODULE_4__[/* postLogin */ "b"])({
+                  return Object(_service_apiModules_user__WEBPACK_IMPORTED_MODULE_4__[/* postLogin */ "c"])({
                     code: res.code
                   });
 
@@ -675,6 +683,22 @@ var UserStore = Object(mobx__WEBPACK_IMPORTED_MODULE_2__[/* observable */ "l"])(
   loginOut: function loginOut() {
     _tarojs_taro__WEBPACK_IMPORTED_MODULE_3___default.a.removeStorageSync('user_id');
     _tarojs_taro__WEBPACK_IMPORTED_MODULE_3___default.a.removeStorageSync('authority');
+  },
+  getCode: function getCode(phone) {
+    var _this = this;
+
+    Object(_service_apiModules_user__WEBPACK_IMPORTED_MODULE_4__[/* getUserCode */ "a"])({
+      phone: phone
+    }).then(function (res) {
+      if (res.data.code === 200) {
+        _this.isOK = res.data.isOK;
+        _this.code = res.data.detail.code || '';
+      } else {// 验证码请求失败
+      }
+    });
+  },
+  setCode: function setCode() {
+    this.code = '';
   }
 });
 /* harmony default export */ __webpack_exports__["a"] = (UserStore);
