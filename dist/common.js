@@ -1,5 +1,35 @@
 (wx["webpackJsonp"] = wx["webpackJsonp"] || []).push([["common"],{
 
+/***/ "./config.ts":
+/*!*******************!*\
+  !*** ./config.ts ***!
+  \*******************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+/* WEBPACK VAR INJECTION */(function(global) {global.constants = {
+  website: 'https://humanweaknesses.com',
+  // website: 'http://81.70.87.115:83',
+  // website: 'http://127.0.0.1:7001',
+  name: 'weChat',
+  icon: {
+    mapIcon: 'http://picture-1302857231.cos.ap-beijing.myqcloud.com/402_1611416547670818.png',
+    flagIcon: 'http://picture-1302857231.cos.ap-beijing.myqcloud.com/402_1611416512165149.png',
+    otherIcon: 'http://picture-1302857231.cos.ap-beijing.myqcloud.com/402_1611416467103273.png',
+    lukuangOffIcon: 'http://picture-1302857231.cos.ap-beijing.myqcloud.com/402_1611418418081583.png',
+    lukuangOpenIcon: 'http://picture-1302857231.cos.ap-beijing.myqcloud.com/402_161141845409626.png',
+    weixingOffIcon: 'http://picture-1302857231.cos.ap-beijing.myqcloud.com/402_1611419076167662.png',
+    weixingOpenIcon: 'http://picture-1302857231.cos.ap-beijing.myqcloud.com/402_161142058554750.png',
+    notAuthorityLogo: 'http://picture-1302857231.cos.ap-beijing.myqcloud.com/402_1611416591491965.png',
+    notAuthorityLogin: 'http://picture-1302857231.cos.ap-beijing.myqcloud.com/402_1611416725880498.png',
+    zanwushujuIcon: 'http://picture-1302857231.cos.ap-beijing.myqcloud.com/402_1611423136101319.png',
+    newyear: 'https://picture-1302857231.cos.ap-beijing.myqcloud.com/402_1610885259711231.png'
+  }
+};
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/webpack/buildin/global.js */ "./node_modules/webpack/buildin/global.js")))
+
+/***/ }),
+
 /***/ "./config/dev.js":
 /*!***********************!*\
   !*** ./config/dev.js ***!
@@ -48,7 +78,12 @@ var config = {
   plugins: [],
   defineConstants: {},
   copy: {
-    patterns: [],
+    patterns: [// 需添加如下配置
+    {
+      from: 'node_modules/taro-echarts/components/ec-canvas/',
+      to: 'dist/npm/taro-echarts/components/ec-canvas',
+      ignore: ['ec-canvas.js', 'wx-canvas.js']
+    }],
     options: {}
   },
   framework: 'react',
@@ -72,6 +107,19 @@ var config = {
           namingPattern: 'module',
           // 转换模式，取值为 global/module
           generateScopedName: '[name]__[local]___[hash:base64:5]'
+        }
+      }
+    }
+  },
+  weapp: {
+    module: {
+      postcss: {
+        autoprefixer: {
+          enable: true
+        },
+        url: {
+          enable: true,
+          limit: 10240
         }
       }
     }
@@ -188,15 +236,16 @@ var RESULT_STATUS = {
 /*!****************************************!*\
   !*** ./src/service/apiModules/user.js ***!
   \****************************************/
-/*! exports provided: postLogin, getUserInfo, postUpLoadImage, updateUserName */
-/*! exports used: getUserInfo, postLogin, updateUserName */
+/*! exports provided: postLogin, getUserInfo, postUpLoadImage, updateUserName, getUserCode */
+/*! exports used: getUserCode, getUserInfo, postLogin, updateUserName */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return postLogin; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return getUserInfo; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "c", function() { return postLogin; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return getUserInfo; });
 /* unused harmony export postUpLoadImage */
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "c", function() { return updateUserName; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "d", function() { return updateUserName; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return getUserCode; });
 /* harmony import */ var _request__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../request */ "./src/service/request.ts");
 
 var postLogin = function postLogin(params) {
@@ -213,6 +262,10 @@ var postUpLoadImage = function postUpLoadImage(params) {
 
 var updateUserName = function updateUserName(params) {
   return _request__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"].post('/api/updateUserName', params);
+}; // 获取登陆验证码
+
+var getUserCode = function getUserCode(parmas) {
+  return _request__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"].post("/api/note", parmas);
 };
 
 /***/ }),
@@ -226,9 +279,9 @@ var updateUserName = function updateUserName(params) {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(global) {/* harmony import */ var _Users_sulei_Desktop_applets_node_modules_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/@babel/runtime/regenerator */ "./node_modules/@babel/runtime/regenerator/index.js");
-/* harmony import */ var _Users_sulei_Desktop_applets_node_modules_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_Users_sulei_Desktop_applets_node_modules_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _Users_sulei_Desktop_applets_node_modules_babel_runtime_helpers_esm_asyncToGenerator__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/asyncToGenerator */ "./node_modules/@babel/runtime/helpers/esm/asyncToGenerator.js");
+/* WEBPACK VAR INJECTION */(function(global) {/* harmony import */ var _Users_sulei_Desktop_study_applets_node_modules_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/@babel/runtime/regenerator */ "./node_modules/@babel/runtime/regenerator/index.js");
+/* harmony import */ var _Users_sulei_Desktop_study_applets_node_modules_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_Users_sulei_Desktop_study_applets_node_modules_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _Users_sulei_Desktop_study_applets_node_modules_babel_runtime_helpers_esm_asyncToGenerator__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/asyncToGenerator */ "./node_modules/@babel/runtime/helpers/esm/asyncToGenerator.js");
 /* harmony import */ var _tarojs_taro__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @tarojs/taro */ "./node_modules/@tarojs/taro/index.js");
 /* harmony import */ var _tarojs_taro__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_tarojs_taro__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var _const_status__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../const/status */ "./src/const/status.js");
@@ -243,13 +296,13 @@ var updateUserName = function updateUserName(params) {
 
  // eslint-disable-next-line no-unused-vars
 
-var whileList = ['/api/user/login'];
+var whileList = ['/api/user/login', '/api/note'];
 /* harmony default export */ __webpack_exports__["a"] = ({
   baseOptions: function baseOptions(params) {
     var _arguments = arguments;
-    return Object(_Users_sulei_Desktop_applets_node_modules_babel_runtime_helpers_esm_asyncToGenerator__WEBPACK_IMPORTED_MODULE_1__[/* default */ "a"])( /*#__PURE__*/_Users_sulei_Desktop_applets_node_modules_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee() {
+    return Object(_Users_sulei_Desktop_study_applets_node_modules_babel_runtime_helpers_esm_asyncToGenerator__WEBPACK_IMPORTED_MODULE_1__[/* default */ "a"])( /*#__PURE__*/_Users_sulei_Desktop_study_applets_node_modules_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee() {
       var method, User, url, data, authority, contentType, option;
-      return _Users_sulei_Desktop_applets_node_modules_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.wrap(function _callee$(_context) {
+      return _Users_sulei_Desktop_study_applets_node_modules_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.wrap(function _callee$(_context) {
         while (1) {
           switch (_context.prev = _context.next) {
             case 0:
@@ -542,9 +595,9 @@ var locationStore = Object(mobx__WEBPACK_IMPORTED_MODULE_0__[/* observable */ "l
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var _Users_sulei_Desktop_applets_node_modules_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/@babel/runtime/regenerator */ "./node_modules/@babel/runtime/regenerator/index.js");
-/* harmony import */ var _Users_sulei_Desktop_applets_node_modules_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_Users_sulei_Desktop_applets_node_modules_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _Users_sulei_Desktop_applets_node_modules_babel_runtime_helpers_esm_asyncToGenerator__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/asyncToGenerator */ "./node_modules/@babel/runtime/helpers/esm/asyncToGenerator.js");
+/* harmony import */ var _Users_sulei_Desktop_study_applets_node_modules_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/@babel/runtime/regenerator */ "./node_modules/@babel/runtime/regenerator/index.js");
+/* harmony import */ var _Users_sulei_Desktop_study_applets_node_modules_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_Users_sulei_Desktop_study_applets_node_modules_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _Users_sulei_Desktop_study_applets_node_modules_babel_runtime_helpers_esm_asyncToGenerator__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/asyncToGenerator */ "./node_modules/@babel/runtime/helpers/esm/asyncToGenerator.js");
 /* harmony import */ var mobx__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! mobx */ "./node_modules/mobx/lib/mobx.module.js");
 /* harmony import */ var _tarojs_taro__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @tarojs/taro */ "./node_modules/@tarojs/taro/index.js");
 /* harmony import */ var _tarojs_taro__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_tarojs_taro__WEBPACK_IMPORTED_MODULE_3__);
@@ -556,15 +609,17 @@ var locationStore = Object(mobx__WEBPACK_IMPORTED_MODULE_0__[/* observable */ "l
 
 var UserStore = Object(mobx__WEBPACK_IMPORTED_MODULE_2__[/* observable */ "l"])({
   userInfo: {},
+  code: '',
+  isOK: false,
   setuserInfo: function setuserInfo(params) {
     this.userInfo = params;
   },
   login: function login() {
     _tarojs_taro__WEBPACK_IMPORTED_MODULE_3___default.a.login({
       success: function () {
-        var _success = Object(_Users_sulei_Desktop_applets_node_modules_babel_runtime_helpers_esm_asyncToGenerator__WEBPACK_IMPORTED_MODULE_1__[/* default */ "a"])( /*#__PURE__*/_Users_sulei_Desktop_applets_node_modules_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee(res) {
+        var _success = Object(_Users_sulei_Desktop_study_applets_node_modules_babel_runtime_helpers_esm_asyncToGenerator__WEBPACK_IMPORTED_MODULE_1__[/* default */ "a"])( /*#__PURE__*/_Users_sulei_Desktop_study_applets_node_modules_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee(res) {
           var result;
-          return _Users_sulei_Desktop_applets_node_modules_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.wrap(function _callee$(_context) {
+          return _Users_sulei_Desktop_study_applets_node_modules_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.wrap(function _callee$(_context) {
             while (1) {
               switch (_context.prev = _context.next) {
                 case 0:
@@ -574,7 +629,7 @@ var UserStore = Object(mobx__WEBPACK_IMPORTED_MODULE_2__[/* observable */ "l"])(
                   }
 
                   _context.next = 3;
-                  return Object(_service_apiModules_user__WEBPACK_IMPORTED_MODULE_4__[/* postLogin */ "b"])({
+                  return Object(_service_apiModules_user__WEBPACK_IMPORTED_MODULE_4__[/* postLogin */ "c"])({
                     code: res.code
                   });
 
@@ -628,6 +683,22 @@ var UserStore = Object(mobx__WEBPACK_IMPORTED_MODULE_2__[/* observable */ "l"])(
   loginOut: function loginOut() {
     _tarojs_taro__WEBPACK_IMPORTED_MODULE_3___default.a.removeStorageSync('user_id');
     _tarojs_taro__WEBPACK_IMPORTED_MODULE_3___default.a.removeStorageSync('authority');
+  },
+  getCode: function getCode(phone) {
+    var _this = this;
+
+    Object(_service_apiModules_user__WEBPACK_IMPORTED_MODULE_4__[/* getUserCode */ "a"])({
+      phone: phone
+    }).then(function (res) {
+      if (res.data.code === 200) {
+        _this.isOK = res.data.isOK;
+        _this.code = res.data.detail.code || '';
+      } else {// 验证码请求失败
+      }
+    });
+  },
+  setCode: function setCode() {
+    this.code = '';
   }
 });
 /* harmony default export */ __webpack_exports__["a"] = (UserStore);

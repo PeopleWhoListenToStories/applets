@@ -6,7 +6,7 @@ import stroe from "../store/index"
 
 // eslint-disable-next-line no-unused-vars
 
-const whileList = ['/api/user/login']
+const whileList = ['/api/user/login', '/api/note'];
 
 interface OptionType {
     url: string,

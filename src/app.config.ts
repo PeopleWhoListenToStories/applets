@@ -5,6 +5,7 @@ export default {
     'pages/index/index',
     'pages/record/index',
     'pages/my/about/index',
+    'pages/chartview/index',
     'pages/notauthority/index',
   ],
   permission: {
@@ -16,7 +17,7 @@ export default {
     backgroundTextStyle: 'light',
     navigationBarBackgroundColor: '#fff',
     navigationBarTitleText: 'WeChat',
-    navigationBarTextStyle: 'black'
+    navigationBarTextStyle: 'black',
   },
   tabBar: {
     color: "#a9b7b7",

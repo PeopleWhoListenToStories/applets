@@ -20,6 +20,12 @@ const config = {
   },
   copy: {
     patterns: [
+      // 需添加如下配置
+      {
+        from: 'node_modules/taro-echarts/components/ec-canvas/',
+        to: 'dist/npm/taro-echarts/components/ec-canvas',
+        ignore: ['ec-canvas.js', 'wx-canvas.js']
+      }
     ],
     options: {
     }
@@ -44,6 +50,19 @@ const config = {
         config: {
           namingPattern: 'module', // 转换模式，取值为 global/module
           generateScopedName: '[name]__[local]___[hash:base64:5]'
+        }
+      }
+    }
+  },
+  weapp: {
+    module: {
+      postcss: {
+        autoprefixer: {
+          enable: true
+        },
+        url: {
+          enable: true,
+          limit: 10240
         }
       }
     }

@@ -2,24 +2,28 @@ import React, { useState, useEffect } from 'react'
 import Taro, { useDidShow } from "@tarojs/taro"
 import { View, Text, Button, CoverImage, Icon, Picker, Radio, RadioGroup } from "@tarojs/components"
 import CreateFlag from "./components/createFlag"
+import Histogram from "../../components/Histogram/index"
 import {
     getRecordList,
     getRecordAllList,
+    getRecordMonthList,
     recordChangeStatus
 } from "../../service/apiModules/api"
 import "../../../config"
 import "./index.scss"
 
 const Record: React.FC = () => {
-    const [navMenu, setNavMenu] = useState(['今日', '全部'])
+    const [navMenu, setNavMenu] = useState(['今日', '全部', '图表'])
     const [currentMenu, setCurrentMenu] = useState('今日')
     const [todayList, setTodayList] = useState([])
     const [allList, setAllList] = useState([])
+    const [chartList, setChartList] = useState([])
     const [off, setOff] = useState(false)
     const [date, setDate] = useState([new Date().getFullYear(), new Date().getMonth() + 1, new Date().getDate()])
 
     useDidShow(() => {
         getList()
+        getChartList()
         Taro.setNavigationBarTitle({
             title: "每日一记"
         })
@@ -46,6 +50,16 @@ const Record: React.FC = () => {
         })
         if (result.data.status === 200) {
             setAllList(result.data.data)
+        }
+    }
+
+    async function getChartList() {
+        const result = await getRecordMonthList({
+            year: date[0],
+            month: date[1]
+        })
+        if (result.data.status === 200) {
+            setChartList(result.data.data)
         }
     }
 
@@ -79,6 +93,9 @@ const Record: React.FC = () => {
             case 1:
                 getAllList()
                 break;
+            case 2:
+                getChartList()
+                break;
             default:
                 break;
         }
@@ -94,7 +111,7 @@ const Record: React.FC = () => {
                 }
             </View>
             {
-                off ? <CreateFlag close={() => { showCreateFlag('close') }} />
+                off ? <CreateFlag close={() => showCreateFlag('close')} />
                     :
                     <View className='content'>
                         {
@@ -133,6 +150,9 @@ const Record: React.FC = () => {
                 !off && currentMenu === '今日' && <View className='createFlag'>
                     <Button size='mini' type='primary' plain onClick={() => { showCreateFlag('show') }}>Flag</Button>
                 </View>
+            }
+            {
+                !off && currentMenu === '图表' && <Histogram defaultData={chartList} />
             }
         </View >
     )

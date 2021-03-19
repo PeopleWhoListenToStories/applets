@@ -23,9 +23,9 @@ const Child: React.FC = () => {
       icon: (global as any).constants.icon.flagIcon
     },
     {
-      label: '其他',
-      value: '',
-      icon: (global as any).constants.icon.otherIcon
+      label: '图表',
+      value: 'chartview',
+      icon: (global as any).constants.icon.newyear
     },
     {
       label: '其他',

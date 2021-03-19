@@ -33,6 +33,11 @@
   text-align: center;
 }
 
+.container {
+  width: 100%;
+  height: 100%;
+}
+
 .record {
   width: 100%;
   height: 100%;
@@ -49,7 +54,7 @@
   width: 100vw;
   height: 80rpx;
   display: grid;
-  grid-template-columns: repeat(2, 50%);
+  grid-template-columns: repeat(3, 33%);
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;

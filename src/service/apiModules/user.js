@@ -18,3 +18,8 @@ export const postUpLoadImage = (params) => {
 export const updateUserName = (params) => {
     return request.post('/api/updateUserName', params)
 }
+
+// 获取登陆验证码
+export const getUserCode = (parmas) => {
+    return request.post(`/api/note`, parmas)
+}

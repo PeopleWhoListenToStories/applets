@@ -15,13 +15,49 @@
     content: '点我登陆';
 }
 
-.btn{
+.bottom{
     width: 100%;
+    position: absolute;
+    bottom: 7%;
+    left: 0;
+}
+
+.form-login{
+    width: 100%;
+    height: auto;
+    .example-body{
+        width: 70%;
+        height:50rpx;
+        margin: 20rpx auto;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .phone{
+        width: 74%;
+        border: 1rpx solid skyblue;
+        border-radius: 5rpx ;
+    }
+    .code {
+        width: 30%;
+        border: 1rpx solid skyblue;
+        border-radius: 5rpx ;
+        color: #ccc;
+    }
+    .code-btn{
+        font-size: 23rpx;
+    }
+}
+
+
+.btn{
+    width: auto;
     height: 70rpx;
-    position:absolute;
-    bottom: 0;
     text-align: center;
-    line-height: 70rpx;
-    color: gray;
-    font-size: 32rpx;
+    background: cornflowerblue;
+    color: white;
+    border-radius: 6rpx;
+    padding: 2rpx 50rpx;
+    line-height: 2;
+    margin-top: 50rpx;
 }

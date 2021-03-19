@@ -9,20 +9,22 @@
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(global) {/* harmony import */ var _Users_sulei_Desktop_applets_node_modules_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/@babel/runtime/regenerator */ "./node_modules/@babel/runtime/regenerator/index.js");
-/* harmony import */ var _Users_sulei_Desktop_applets_node_modules_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_Users_sulei_Desktop_applets_node_modules_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _Users_sulei_Desktop_applets_node_modules_babel_runtime_helpers_esm_asyncToGenerator__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/asyncToGenerator */ "./node_modules/@babel/runtime/helpers/esm/asyncToGenerator.js");
-/* harmony import */ var _Users_sulei_Desktop_applets_node_modules_babel_runtime_helpers_esm_slicedToArray__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/slicedToArray */ "./node_modules/@babel/runtime/helpers/esm/slicedToArray.js");
+/* WEBPACK VAR INJECTION */(function(global) {/* harmony import */ var _Users_sulei_Desktop_study_applets_node_modules_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/@babel/runtime/regenerator */ "./node_modules/@babel/runtime/regenerator/index.js");
+/* harmony import */ var _Users_sulei_Desktop_study_applets_node_modules_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_Users_sulei_Desktop_study_applets_node_modules_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _Users_sulei_Desktop_study_applets_node_modules_babel_runtime_helpers_esm_asyncToGenerator__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/asyncToGenerator */ "./node_modules/@babel/runtime/helpers/esm/asyncToGenerator.js");
+/* harmony import */ var _Users_sulei_Desktop_study_applets_node_modules_babel_runtime_helpers_esm_slicedToArray__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/slicedToArray */ "./node_modules/@babel/runtime/helpers/esm/slicedToArray.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react */ "./node_modules/react/cjs/react.production.min.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_3__);
 /* harmony import */ var _tarojs_taro__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @tarojs/taro */ "./node_modules/@tarojs/taro/index.js");
 /* harmony import */ var _tarojs_taro__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_tarojs_taro__WEBPACK_IMPORTED_MODULE_4__);
 /* harmony import */ var _tarojs_components__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @tarojs/components */ "./node_modules/@tarojs/components/mini/index.js");
 /* harmony import */ var _components_createFlag__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./components/createFlag */ "./src/pages/record/components/createFlag.tsx");
-/* harmony import */ var _service_apiModules_api__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../service/apiModules/api */ "./src/service/apiModules/api.js");
-/* harmony import */ var _config__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../../../config */ "./config/index.js");
-/* harmony import */ var _index_scss__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./index.scss */ "./src/pages/record/index.scss");
-/* harmony import */ var _index_scss__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(_index_scss__WEBPACK_IMPORTED_MODULE_9__);
+/* harmony import */ var _components_Histogram_index__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../components/Histogram/index */ "./src/components/Histogram/index.tsx");
+/* harmony import */ var _service_apiModules_api__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../../service/apiModules/api */ "./src/service/apiModules/api.js");
+/* harmony import */ var _config__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../../../config */ "./config/index.js");
+/* harmony import */ var _index_scss__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./index.scss */ "./src/pages/record/index.scss");
+/* harmony import */ var _index_scss__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(_index_scss__WEBPACK_IMPORTED_MODULE_10__);
+
 
 
 
@@ -35,38 +37,44 @@
 
 
 var Record = function Record() {
-  var _useState = Object(react__WEBPACK_IMPORTED_MODULE_3__["useState"])(['今日', '全部']),
-      _useState2 = Object(_Users_sulei_Desktop_applets_node_modules_babel_runtime_helpers_esm_slicedToArray__WEBPACK_IMPORTED_MODULE_2__[/* default */ "a"])(_useState, 2),
+  var _useState = Object(react__WEBPACK_IMPORTED_MODULE_3__["useState"])(['今日', '全部', '图表']),
+      _useState2 = Object(_Users_sulei_Desktop_study_applets_node_modules_babel_runtime_helpers_esm_slicedToArray__WEBPACK_IMPORTED_MODULE_2__[/* default */ "a"])(_useState, 2),
       navMenu = _useState2[0],
       setNavMenu = _useState2[1];
 
   var _useState3 = Object(react__WEBPACK_IMPORTED_MODULE_3__["useState"])('今日'),
-      _useState4 = Object(_Users_sulei_Desktop_applets_node_modules_babel_runtime_helpers_esm_slicedToArray__WEBPACK_IMPORTED_MODULE_2__[/* default */ "a"])(_useState3, 2),
+      _useState4 = Object(_Users_sulei_Desktop_study_applets_node_modules_babel_runtime_helpers_esm_slicedToArray__WEBPACK_IMPORTED_MODULE_2__[/* default */ "a"])(_useState3, 2),
       currentMenu = _useState4[0],
       setCurrentMenu = _useState4[1];
 
   var _useState5 = Object(react__WEBPACK_IMPORTED_MODULE_3__["useState"])([]),
-      _useState6 = Object(_Users_sulei_Desktop_applets_node_modules_babel_runtime_helpers_esm_slicedToArray__WEBPACK_IMPORTED_MODULE_2__[/* default */ "a"])(_useState5, 2),
+      _useState6 = Object(_Users_sulei_Desktop_study_applets_node_modules_babel_runtime_helpers_esm_slicedToArray__WEBPACK_IMPORTED_MODULE_2__[/* default */ "a"])(_useState5, 2),
       todayList = _useState6[0],
       setTodayList = _useState6[1];
 
   var _useState7 = Object(react__WEBPACK_IMPORTED_MODULE_3__["useState"])([]),
-      _useState8 = Object(_Users_sulei_Desktop_applets_node_modules_babel_runtime_helpers_esm_slicedToArray__WEBPACK_IMPORTED_MODULE_2__[/* default */ "a"])(_useState7, 2),
+      _useState8 = Object(_Users_sulei_Desktop_study_applets_node_modules_babel_runtime_helpers_esm_slicedToArray__WEBPACK_IMPORTED_MODULE_2__[/* default */ "a"])(_useState7, 2),
       allList = _useState8[0],
       setAllList = _useState8[1];
 
-  var _useState9 = Object(react__WEBPACK_IMPORTED_MODULE_3__["useState"])(false),
-      _useState10 = Object(_Users_sulei_Desktop_applets_node_modules_babel_runtime_helpers_esm_slicedToArray__WEBPACK_IMPORTED_MODULE_2__[/* default */ "a"])(_useState9, 2),
-      off = _useState10[0],
-      setOff = _useState10[1];
+  var _useState9 = Object(react__WEBPACK_IMPORTED_MODULE_3__["useState"])([]),
+      _useState10 = Object(_Users_sulei_Desktop_study_applets_node_modules_babel_runtime_helpers_esm_slicedToArray__WEBPACK_IMPORTED_MODULE_2__[/* default */ "a"])(_useState9, 2),
+      chartList = _useState10[0],
+      setChartList = _useState10[1];
 
-  var _useState11 = Object(react__WEBPACK_IMPORTED_MODULE_3__["useState"])([new Date().getFullYear(), new Date().getMonth() + 1, new Date().getDate()]),
-      _useState12 = Object(_Users_sulei_Desktop_applets_node_modules_babel_runtime_helpers_esm_slicedToArray__WEBPACK_IMPORTED_MODULE_2__[/* default */ "a"])(_useState11, 2),
-      date = _useState12[0],
-      setDate = _useState12[1];
+  var _useState11 = Object(react__WEBPACK_IMPORTED_MODULE_3__["useState"])(false),
+      _useState12 = Object(_Users_sulei_Desktop_study_applets_node_modules_babel_runtime_helpers_esm_slicedToArray__WEBPACK_IMPORTED_MODULE_2__[/* default */ "a"])(_useState11, 2),
+      off = _useState12[0],
+      setOff = _useState12[1];
+
+  var _useState13 = Object(react__WEBPACK_IMPORTED_MODULE_3__["useState"])([new Date().getFullYear(), new Date().getMonth() + 1, new Date().getDate()]),
+      _useState14 = Object(_Users_sulei_Desktop_study_applets_node_modules_babel_runtime_helpers_esm_slicedToArray__WEBPACK_IMPORTED_MODULE_2__[/* default */ "a"])(_useState13, 2),
+      date = _useState14[0],
+      setDate = _useState14[1];
 
   Object(_tarojs_taro__WEBPACK_IMPORTED_MODULE_4__["useDidShow"])(function () {
     getList();
+    getChartList();
     _tarojs_taro__WEBPACK_IMPORTED_MODULE_4___default.a.setNavigationBarTitle({
       title: "每日一记"
     });
@@ -81,14 +89,14 @@ var Record = function Record() {
   }
 
   function _getList() {
-    _getList = Object(_Users_sulei_Desktop_applets_node_modules_babel_runtime_helpers_esm_asyncToGenerator__WEBPACK_IMPORTED_MODULE_1__[/* default */ "a"])( /*#__PURE__*/_Users_sulei_Desktop_applets_node_modules_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee() {
+    _getList = Object(_Users_sulei_Desktop_study_applets_node_modules_babel_runtime_helpers_esm_asyncToGenerator__WEBPACK_IMPORTED_MODULE_1__[/* default */ "a"])( /*#__PURE__*/_Users_sulei_Desktop_study_applets_node_modules_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee() {
       var result;
-      return _Users_sulei_Desktop_applets_node_modules_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.wrap(function _callee$(_context) {
+      return _Users_sulei_Desktop_study_applets_node_modules_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.wrap(function _callee$(_context) {
         while (1) {
           switch (_context.prev = _context.next) {
             case 0:
               _context.next = 2;
-              return Object(_service_apiModules_api__WEBPACK_IMPORTED_MODULE_7__[/* getRecordList */ "c"])();
+              return Object(_service_apiModules_api__WEBPACK_IMPORTED_MODULE_8__[/* getRecordList */ "c"])();
 
             case 2:
               result = _context.sent;
@@ -112,14 +120,14 @@ var Record = function Record() {
   }
 
   function _getAllList() {
-    _getAllList = Object(_Users_sulei_Desktop_applets_node_modules_babel_runtime_helpers_esm_asyncToGenerator__WEBPACK_IMPORTED_MODULE_1__[/* default */ "a"])( /*#__PURE__*/_Users_sulei_Desktop_applets_node_modules_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee2() {
+    _getAllList = Object(_Users_sulei_Desktop_study_applets_node_modules_babel_runtime_helpers_esm_asyncToGenerator__WEBPACK_IMPORTED_MODULE_1__[/* default */ "a"])( /*#__PURE__*/_Users_sulei_Desktop_study_applets_node_modules_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee2() {
       var result;
-      return _Users_sulei_Desktop_applets_node_modules_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.wrap(function _callee2$(_context2) {
+      return _Users_sulei_Desktop_study_applets_node_modules_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.wrap(function _callee2$(_context2) {
         while (1) {
           switch (_context2.prev = _context2.next) {
             case 0:
               _context2.next = 2;
-              return Object(_service_apiModules_api__WEBPACK_IMPORTED_MODULE_7__[/* getRecordAllList */ "b"])({
+              return Object(_service_apiModules_api__WEBPACK_IMPORTED_MODULE_8__[/* getRecordAllList */ "b"])({
                 year: date[0],
                 month: date[1],
                 day: date[2]
@@ -142,29 +150,28 @@ var Record = function Record() {
     return _getAllList.apply(this, arguments);
   }
 
-  function changeStatus(_x, _x2, _x3) {
-    return _changeStatus.apply(this, arguments);
+  function getChartList() {
+    return _getChartList.apply(this, arguments);
   }
 
-  function _changeStatus() {
-    _changeStatus = Object(_Users_sulei_Desktop_applets_node_modules_babel_runtime_helpers_esm_asyncToGenerator__WEBPACK_IMPORTED_MODULE_1__[/* default */ "a"])( /*#__PURE__*/_Users_sulei_Desktop_applets_node_modules_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee3(status, user_id, type_id) {
+  function _getChartList() {
+    _getChartList = Object(_Users_sulei_Desktop_study_applets_node_modules_babel_runtime_helpers_esm_asyncToGenerator__WEBPACK_IMPORTED_MODULE_1__[/* default */ "a"])( /*#__PURE__*/_Users_sulei_Desktop_study_applets_node_modules_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee3() {
       var result;
-      return _Users_sulei_Desktop_applets_node_modules_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.wrap(function _callee3$(_context3) {
+      return _Users_sulei_Desktop_study_applets_node_modules_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.wrap(function _callee3$(_context3) {
         while (1) {
           switch (_context3.prev = _context3.next) {
             case 0:
               _context3.next = 2;
-              return Object(_service_apiModules_api__WEBPACK_IMPORTED_MODULE_7__[/* recordChangeStatus */ "d"])({
-                status: 1,
-                user_id: user_id,
-                type_id: type_id
+              return Object(_service_apiModules_api__WEBPACK_IMPORTED_MODULE_8__[/* getRecordMonthList */ "d"])({
+                year: date[0],
+                month: date[1]
               });
 
             case 2:
               result = _context3.sent;
 
               if (result.data.status === 200) {
-                getList();
+                setChartList(result.data.data);
               }
 
             case 4:
@@ -173,6 +180,41 @@ var Record = function Record() {
           }
         }
       }, _callee3);
+    }));
+    return _getChartList.apply(this, arguments);
+  }
+
+  function changeStatus(_x, _x2, _x3) {
+    return _changeStatus.apply(this, arguments);
+  }
+
+  function _changeStatus() {
+    _changeStatus = Object(_Users_sulei_Desktop_study_applets_node_modules_babel_runtime_helpers_esm_asyncToGenerator__WEBPACK_IMPORTED_MODULE_1__[/* default */ "a"])( /*#__PURE__*/_Users_sulei_Desktop_study_applets_node_modules_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee4(status, user_id, type_id) {
+      var result;
+      return _Users_sulei_Desktop_study_applets_node_modules_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.wrap(function _callee4$(_context4) {
+        while (1) {
+          switch (_context4.prev = _context4.next) {
+            case 0:
+              _context4.next = 2;
+              return Object(_service_apiModules_api__WEBPACK_IMPORTED_MODULE_8__[/* recordChangeStatus */ "e"])({
+                status: 1,
+                user_id: user_id,
+                type_id: type_id
+              });
+
+            case 2:
+              result = _context4.sent;
+
+              if (result.data.status === 200) {
+                getList();
+              }
+
+            case 4:
+            case "end":
+              return _context4.stop();
+          }
+        }
+      }, _callee4);
     }));
     return _changeStatus.apply(this, arguments);
   }
@@ -199,17 +241,21 @@ var Record = function Record() {
         getAllList();
         break;
 
+      case 2:
+        getChartList();
+        break;
+
       default:
         break;
     }
   }
 
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_tarojs_components__WEBPACK_IMPORTED_MODULE_5__[/* View */ "m"], {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_tarojs_components__WEBPACK_IMPORTED_MODULE_5__[/* View */ "o"], {
     className: "record"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_tarojs_components__WEBPACK_IMPORTED_MODULE_5__[/* View */ "m"], {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_tarojs_components__WEBPACK_IMPORTED_MODULE_5__[/* View */ "o"], {
     className: "recoed_nav"
   }, navMenu.map(function (navName, index) {
-    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_tarojs_components__WEBPACK_IMPORTED_MODULE_5__[/* Text */ "k"], {
+    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_tarojs_components__WEBPACK_IMPORTED_MODULE_5__[/* Text */ "m"], {
       className: 'text ' + (currentMenu === navName ? 'text-active' : ''),
       key: navName,
       onClick: function onClick() {
@@ -218,48 +264,48 @@ var Record = function Record() {
     }, navName);
   })), off ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_components_createFlag__WEBPACK_IMPORTED_MODULE_6__[/* default */ "a"], {
     close: function close() {
-      showCreateFlag('close');
+      return showCreateFlag('close');
     }
-  }) : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_tarojs_components__WEBPACK_IMPORTED_MODULE_5__[/* View */ "m"], {
+  }) : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_tarojs_components__WEBPACK_IMPORTED_MODULE_5__[/* View */ "o"], {
     className: "content"
-  }, currentMenu === '全部' && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_tarojs_components__WEBPACK_IMPORTED_MODULE_5__[/* View */ "m"], {
+  }, currentMenu === '全部' && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_tarojs_components__WEBPACK_IMPORTED_MODULE_5__[/* View */ "o"], {
     className: "page-section"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_tarojs_components__WEBPACK_IMPORTED_MODULE_5__[/* Picker */ "h"], {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_tarojs_components__WEBPACK_IMPORTED_MODULE_5__[/* Picker */ "j"], {
     mode: "date",
     onChange: function onChange(e) {
       onDateChange(e);
     }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_tarojs_components__WEBPACK_IMPORTED_MODULE_5__[/* View */ "m"], {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_tarojs_components__WEBPACK_IMPORTED_MODULE_5__[/* View */ "o"], {
     className: "picker"
   }, date[0], " - ", date[1], " - ", date[2]))), currentMenu === '今日' && (todayList.length ? todayList.map(function (item) {
-    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_tarojs_components__WEBPACK_IMPORTED_MODULE_5__[/* View */ "m"], {
+    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_tarojs_components__WEBPACK_IMPORTED_MODULE_5__[/* View */ "o"], {
       className: "item",
       key: item.user_id
-    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_tarojs_components__WEBPACK_IMPORTED_MODULE_5__[/* Text */ "k"], null, " ", item.label, "  "), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_tarojs_components__WEBPACK_IMPORTED_MODULE_5__[/* RadioGroup */ "j"], {
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_tarojs_components__WEBPACK_IMPORTED_MODULE_5__[/* Text */ "m"], null, " ", item.label, "  "), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_tarojs_components__WEBPACK_IMPORTED_MODULE_5__[/* RadioGroup */ "l"], {
       onChange: function onChange() {
         changeStatus(null, item.user_id, item.type_id);
       }
-    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_tarojs_components__WEBPACK_IMPORTED_MODULE_5__[/* Radio */ "i"], {
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_tarojs_components__WEBPACK_IMPORTED_MODULE_5__[/* Radio */ "k"], {
       checked: item.status === '1'
     })));
-  }) : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_tarojs_components__WEBPACK_IMPORTED_MODULE_5__[/* CoverImage */ "b"], {
+  }) : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_tarojs_components__WEBPACK_IMPORTED_MODULE_5__[/* CoverImage */ "c"], {
     className: "img",
     src: global.constants.icon.zanwushujuIcon
   })), currentMenu === '全部' && (allList.length ? allList.map(function (item) {
-    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_tarojs_components__WEBPACK_IMPORTED_MODULE_5__[/* View */ "m"], {
+    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_tarojs_components__WEBPACK_IMPORTED_MODULE_5__[/* View */ "o"], {
       className: "item",
       key: item.user_id
-    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_tarojs_components__WEBPACK_IMPORTED_MODULE_5__[/* Text */ "k"], null, " ", item.label, "  "), item.status === '1' ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_tarojs_components__WEBPACK_IMPORTED_MODULE_5__[/* Icon */ "d"], {
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_tarojs_components__WEBPACK_IMPORTED_MODULE_5__[/* Text */ "m"], null, " ", item.label, "  "), item.status === '1' ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_tarojs_components__WEBPACK_IMPORTED_MODULE_5__[/* Icon */ "f"], {
       size: "20",
       type: "success"
-    }) : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_tarojs_components__WEBPACK_IMPORTED_MODULE_5__[/* Icon */ "d"], {
+    }) : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_tarojs_components__WEBPACK_IMPORTED_MODULE_5__[/* Icon */ "f"], {
       size: "20",
       type: "waiting"
     }));
-  }) : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_tarojs_components__WEBPACK_IMPORTED_MODULE_5__[/* CoverImage */ "b"], {
+  }) : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_tarojs_components__WEBPACK_IMPORTED_MODULE_5__[/* CoverImage */ "c"], {
     className: "img",
     src: global.constants.icon.zanwushujuIcon
-  }))), !off && currentMenu === '今日' && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_tarojs_components__WEBPACK_IMPORTED_MODULE_5__[/* View */ "m"], {
+  }))), !off && currentMenu === '今日' && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_tarojs_components__WEBPACK_IMPORTED_MODULE_5__[/* View */ "o"], {
     className: "createFlag"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_tarojs_components__WEBPACK_IMPORTED_MODULE_5__[/* Button */ "a"], {
     size: "mini",
@@ -268,11 +314,323 @@ var Record = function Record() {
     onClick: function onClick() {
       showCreateFlag('show');
     }
-  }, "Flag")));
+  }, "Flag")), !off && currentMenu === '图表' && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_components_Histogram_index__WEBPACK_IMPORTED_MODULE_7__[/* default */ "a"], {
+    defaultData: chartList
+  }));
 };
 
 /* harmony default export */ __webpack_exports__["a"] = (Record);
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../../../node_modules/webpack/buildin/global.js */ "./node_modules/webpack/buildin/global.js")))
+
+/***/ }),
+
+/***/ "./src/components/Histogram/index.scss":
+/*!*********************************************!*\
+  !*** ./src/components/Histogram/index.scss ***!
+  \*********************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+// extracted by mini-css-extract-plugin
+
+/***/ }),
+
+/***/ "./src/components/Histogram/index.tsx":
+/*!********************************************!*\
+  !*** ./src/components/Histogram/index.tsx ***!
+  \********************************************/
+/*! exports provided: default */
+/*! exports used: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var _Users_sulei_Desktop_study_applets_node_modules_babel_runtime_helpers_esm_slicedToArray__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/slicedToArray */ "./node_modules/@babel/runtime/helpers/esm/slicedToArray.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/cjs/react.production.min.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _tarojs_taro__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @tarojs/taro */ "./node_modules/@tarojs/taro/index.js");
+/* harmony import */ var _tarojs_taro__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_tarojs_taro__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var mobx_react__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! mobx-react */ "./node_modules/mobx-react-lite/es/index.js");
+/* harmony import */ var _tarojs_components__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @tarojs/components */ "./node_modules/@tarojs/components/mini/index.js");
+/* harmony import */ var _index_scss__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./index.scss */ "./src/components/Histogram/index.scss");
+/* harmony import */ var _index_scss__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_index_scss__WEBPACK_IMPORTED_MODULE_5__);
+
+
+
+
+
+
+
+var Histogram = function Histogram(props) {
+  var _useState = Object(react__WEBPACK_IMPORTED_MODULE_1__["useState"])({
+    screenWidth: 375,
+    screenHeight: 500
+  }),
+      _useState2 = Object(_Users_sulei_Desktop_study_applets_node_modules_babel_runtime_helpers_esm_slicedToArray__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])(_useState, 2),
+      defaultState = _useState2[0],
+      setDefaultState = _useState2[1];
+
+  Object(react__WEBPACK_IMPORTED_MODULE_1__["useEffect"])(function () {
+    var info = _tarojs_taro__WEBPACK_IMPORTED_MODULE_2___default.a.getSystemInfoSync();
+    setDefaultState({
+      screenWidth: info.screenWidth,
+      screenHeight: 500 //info.screenHeight,
+
+    });
+  }, []);
+  goBarChart(props.defaultData); //封装绘制图表的方法
+
+  function goBarChart(params) {
+    // 获得canvas上下文
+    var ctx = _tarojs_taro__WEBPACK_IMPORTED_MODULE_2___default.a.createCanvasContext('Histogram', this);
+    var initObj = {
+      myCanvas: null,
+      width: defaultState.screenWidth,
+      height: defaultState.screenHeight,
+      cWidth: 0,
+      cHeight: 0,
+      cMargin: 20,
+      cSpace: 20,
+      originX: null,
+      originY: null,
+      bMargin: 15,
+      tobalBars: null,
+      bWidth: null,
+      maxValue: 0,
+      totalYNomber: 10,
+      ctr: 1,
+      numctr: 100,
+      speed: 10,
+      gradient: null,
+      xTitle: params.xTitle || '',
+      yTitle: params.yTitle || ''
+    };
+
+    if (ctx && ctx._context) {
+      initObj.myCanvas = ctx._context.canvas;
+    } else {
+      initObj.myCanvas = ctx;
+    } //鼠标移动
+
+
+    var mousePosition = {}; //     // 图表信息
+
+    initObj.cHeight = initObj.height - initObj.cMargin * 2 - initObj.cSpace;
+    initObj.cWidth = initObj.width - initObj.cMargin * 2 - initObj.cSpace;
+    initObj.originX = initObj.cMargin + initObj.cSpace;
+    initObj.originY = initObj.cMargin + initObj.cHeight; //     // 柱状图信息
+
+    initObj.tobalBars = params.dataArr.length;
+    initObj.bWidth = parseInt(initObj.cWidth / initObj.tobalBars - initObj.bMargin + '');
+
+    for (var i = 0; i < params.dataArr.length; i++) {
+      var barVal = parseInt(params.dataArr[i][1]);
+
+      if (barVal > initObj.maxValue) {
+        initObj.maxValue = barVal;
+      }
+    }
+
+    initObj.maxValue += 50; // //柱状图渐变色
+
+    initObj.gradient = ctx.createLinearGradient(0, 0, 0, 300);
+    initObj.gradient.addColorStop(0, 'green');
+    initObj.gradient.addColorStop(1, 'rgba(67,203,36,1)');
+    drawLineLabelMarkers(ctx, initObj); // 绘制标记
+
+    drawMarkers(ctx, params.dataArr, initObj); //绘制柱形图
+
+    drawBarAnimate(ctx, params.dataArr, initObj, false); // 绘制柱状图的动画
+    //检测鼠标移动
+    // var mouseTimer: any = null;
+    // initObj.myCanvas.addEventListener("touchmove", function (e) {
+    //     e = e || window.event;
+    //     if (e.layerX || e.layerX == 0) {
+    //         initObj.mousePosition.x = e.layerX;
+    //         initObj.mousePosition.y = e.layerY;
+    //     } else if (e.offsetX || e.offsetX == 0) {
+    //         initObj.mousePosition.x = e.offsetX;
+    //         initObj.mousePosition.y = e.offsetY;
+    //     }
+    //     clearTimeout(mouseTimer);
+    //     mouseTimer = setTimeout(function () {
+    //         ctx.clearRect(0, 0, initObj.width, initObj.height);
+    //         drawLineLabelMarkers(ctx, initObj)
+    //         drawBarAnimate(ctx, dataArr, initObj, true); // 绘制柱状图的动画
+    //     }, 10);
+    // });
+    //点击刷新图表
+    // initObj.myCanvas.ontouchstart = function () {
+    //     // initChart(); // 图表初始化
+    //     // drawLineLabelMarkers(); // 绘制图表轴、标签和标记
+    //     // drawBarAnimate(); // 绘制折线图的动画
+    // };
+
+    ctx.draw();
+  } // 绘制图表轴、标签和标记
+
+
+  function drawLineLabelMarkers(ctx, initObj) {
+    var originX = initObj.originX,
+        originY = initObj.originY,
+        cMargin = initObj.cMargin,
+        cWidth = initObj.cWidth;
+    ctx.translate(0.5, 0.5); // 当只绘制1像素的线的时候，坐标点需要偏移，这样才能画出1像素实线
+
+    ctx.font = "12px Arial";
+    ctx.lineWidth = 1;
+    ctx.fillStyle = "#000";
+    ctx.strokeStyle = "#000"; // y轴
+
+    drawLine(ctx, originX, originY, originX, cMargin); // x轴
+
+    drawLine(ctx, originX, originY, originX + cWidth, originY);
+    ctx.translate(-0.5, -0.5); // 还原位置
+  } // 画线的方法
+
+
+  function drawLine(ctx, x, y, X, Y) {
+    ctx.beginPath();
+    ctx.moveTo(x, y);
+    ctx.lineTo(X, Y);
+    ctx.stroke();
+    ctx.closePath();
+  } // 绘制标记
+
+
+  function drawMarkers(ctx, dataArr, initObj) {
+    var width = initObj.width,
+        xTitle = initObj.xTitle,
+        yTitle = initObj.yTitle,
+        maxValue = initObj.maxValue,
+        totalYNomber = initObj.totalYNomber,
+        originX = initObj.originX,
+        cHeight = initObj.cHeight,
+        cMargin = initObj.cMargin,
+        cSpace = initObj.cSpace,
+        cWidth = initObj.cWidth,
+        tobalBars = initObj.tobalBars,
+        bMargin = initObj.bMargin,
+        bWidth = initObj.bWidth,
+        originY = initObj.originY;
+    ctx.strokeStyle = "#E0E0E0"; // 绘制 y
+
+    var oneVal = parseInt(maxValue / totalYNomber + '');
+    ctx.textAlign = "right";
+    ctx.font = "10px Calibri";
+
+    for (var i = 0; i <= totalYNomber; i++) {
+      var markerVal = Math.floor(i * oneVal / 100) * 100; // let markerVal = i * oneVal;
+
+      var _xMarker = originX - 5;
+
+      var _yMarker = parseInt(cHeight * (1 - markerVal / maxValue) + '') + cMargin;
+
+      ctx.fillText(markerVal, _xMarker, _yMarker + 3, cSpace); // 文字
+
+      if (i > 0) {
+        drawLine(ctx, originX, _yMarker, originX + cWidth, _yMarker);
+      }
+    } // 绘制 x
+
+
+    ctx.textAlign = "center";
+
+    for (var i = 0; i < tobalBars; i++) {
+      var _markerVal = dataArr[i][0];
+      var xMarker = parseInt(originX + cWidth * (i / tobalBars) + bMargin + bWidth / 2);
+      var yMarker = originY + 15;
+      ctx.fillText(_markerVal, xMarker, yMarker, cSpace); // 文字
+    } // 绘制标题 y
+
+
+    ctx.save();
+    ctx.rotate(-Math.PI / 2);
+    ctx.fillText(yTitle, -width / 2 - 50, cSpace - 8);
+    ctx.restore(); // 绘制标题 x
+
+    ctx.fillText(xTitle, originX + cWidth / 2, originY + 30);
+  }
+
+  ; //绘制柱形图
+
+  function drawBarAnimate(ctx, dataArr, initObj) {
+    var isMouseMove = arguments.length > 3 && arguments[3] !== undefined ? arguments[3] : false;
+    var canvas = initObj.canvas,
+        width = initObj.width,
+        cMargin = initObj.cMargin,
+        cSpace = initObj.cSpace,
+        tobalBars = initObj.tobalBars,
+        maxValue = initObj.maxValue,
+        totalYNomber = initObj.totalYNomber,
+        cHeight = initObj.cHeight,
+        originX = initObj.originX,
+        originY = initObj.originY,
+        bWidth = initObj.bWidth,
+        bMargin = initObj.bMargin,
+        gradient = initObj.gradient,
+        mousePosition = initObj.mousePosition;
+    var space = 0;
+
+    for (var i = 0; i < tobalBars; i++) {
+      var oneVal = parseInt(maxValue / totalYNomber + '');
+      var barVal = dataArr[i][1]; // var barH = parseInt(cHeight * barVal / maxValue * ctr / numctr + '');
+
+      var barH = parseInt(cHeight / maxValue * barVal + '');
+      var y = originY - barH;
+      var x = originX + (bWidth + bMargin) * i + bMargin;
+      space = (width - cMargin * 2 - cSpace * 2 - (dataArr.length + 1) * 10) / dataArr.length / 2;
+      drawRect(canvas, ctx, x, y, bWidth, barH, mousePosition, gradient, isMouseMove); //高度减一避免盖住x轴
+
+      ctx.fillText(barVal, x + space, y - 8); // 文字
+    } // if (ctr < numctr) {
+    //     ctr++;
+    //     setTimeout(function () {
+    //         ctx.clearRect(0, 0, width, height);
+    //         drawLineLabelMarkers(ctx, initObj);
+    //         drawBarAnimate(ctx, dataArr, initObj);
+    //     }, speed);
+    // }
+
+  } //绘制方块
+
+
+  function drawRect(canvas, ctx, x, y, X, Y, mousePosition, gradient, mouseMove) {
+    ctx.beginPath();
+    ctx.rect(x, y, X, Y);
+
+    if (mouseMove && canvas.isPointInPath(mousePosition.x, mousePosition.y)) {
+      //如果是鼠标移动的到柱状图上，重新绘制图表
+      ctx.fillStyle = "green";
+    } else {
+      ctx.fillStyle = gradient;
+      ctx.strokeStyle = gradient;
+    }
+
+    ctx.fill();
+    ctx.closePath();
+  }
+
+  function move(e) {
+    console.log(e);
+  }
+
+  return Object(mobx_react__WEBPACK_IMPORTED_MODULE_3__[/* useObserver */ "d"])(function () {
+    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_tarojs_components__WEBPACK_IMPORTED_MODULE_4__[/* View */ "o"], {
+      className: "container"
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_tarojs_components__WEBPACK_IMPORTED_MODULE_4__[/* Canvas */ "b"], {
+      style: {
+        width: defaultState.screenWidth,
+        height: defaultState.screenHeight
+      },
+      canvasId: "Histogram",
+      onLongTap: function onLongTap(e) {
+        move(e);
+      }
+    }));
+  });
+};
+
+/* harmony default export */ __webpack_exports__["a"] = (Histogram);
 
 /***/ }),
 
@@ -296,10 +654,10 @@ var Record = function Record() {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var _Users_sulei_Desktop_applets_node_modules_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/@babel/runtime/regenerator */ "./node_modules/@babel/runtime/regenerator/index.js");
-/* harmony import */ var _Users_sulei_Desktop_applets_node_modules_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_Users_sulei_Desktop_applets_node_modules_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _Users_sulei_Desktop_applets_node_modules_babel_runtime_helpers_esm_asyncToGenerator__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/asyncToGenerator */ "./node_modules/@babel/runtime/helpers/esm/asyncToGenerator.js");
-/* harmony import */ var _Users_sulei_Desktop_applets_node_modules_babel_runtime_helpers_esm_slicedToArray__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/slicedToArray */ "./node_modules/@babel/runtime/helpers/esm/slicedToArray.js");
+/* harmony import */ var _Users_sulei_Desktop_study_applets_node_modules_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/@babel/runtime/regenerator */ "./node_modules/@babel/runtime/regenerator/index.js");
+/* harmony import */ var _Users_sulei_Desktop_study_applets_node_modules_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_Users_sulei_Desktop_study_applets_node_modules_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _Users_sulei_Desktop_study_applets_node_modules_babel_runtime_helpers_esm_asyncToGenerator__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/asyncToGenerator */ "./node_modules/@babel/runtime/helpers/esm/asyncToGenerator.js");
+/* harmony import */ var _Users_sulei_Desktop_study_applets_node_modules_babel_runtime_helpers_esm_slicedToArray__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/slicedToArray */ "./node_modules/@babel/runtime/helpers/esm/slicedToArray.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react */ "./node_modules/react/cjs/react.production.min.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_3__);
 /* harmony import */ var _tarojs_taro__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @tarojs/taro */ "./node_modules/@tarojs/taro/index.js");
@@ -319,7 +677,7 @@ var Record = function Record() {
 
 var CreateFlag = function CreateFlag(props) {
   var _useState = Object(react__WEBPACK_IMPORTED_MODULE_3__["useState"])(''),
-      _useState2 = Object(_Users_sulei_Desktop_applets_node_modules_babel_runtime_helpers_esm_slicedToArray__WEBPACK_IMPORTED_MODULE_2__[/* default */ "a"])(_useState, 2),
+      _useState2 = Object(_Users_sulei_Desktop_study_applets_node_modules_babel_runtime_helpers_esm_slicedToArray__WEBPACK_IMPORTED_MODULE_2__[/* default */ "a"])(_useState, 2),
       value = _useState2[0],
       setValue = _useState2[1];
 
@@ -328,9 +686,9 @@ var CreateFlag = function CreateFlag(props) {
   }
 
   function _save() {
-    _save = Object(_Users_sulei_Desktop_applets_node_modules_babel_runtime_helpers_esm_asyncToGenerator__WEBPACK_IMPORTED_MODULE_1__[/* default */ "a"])( /*#__PURE__*/_Users_sulei_Desktop_applets_node_modules_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee() {
+    _save = Object(_Users_sulei_Desktop_study_applets_node_modules_babel_runtime_helpers_esm_asyncToGenerator__WEBPACK_IMPORTED_MODULE_1__[/* default */ "a"])( /*#__PURE__*/_Users_sulei_Desktop_study_applets_node_modules_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee() {
       var result;
-      return _Users_sulei_Desktop_applets_node_modules_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.wrap(function _callee$(_context) {
+      return _Users_sulei_Desktop_study_applets_node_modules_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.wrap(function _callee$(_context) {
         while (1) {
           switch (_context.prev = _context.next) {
             case 0:
@@ -381,18 +739,18 @@ var CreateFlag = function CreateFlag(props) {
     setValue(e);
   }
 
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_tarojs_components__WEBPACK_IMPORTED_MODULE_5__[/* View */ "m"], {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_tarojs_components__WEBPACK_IMPORTED_MODULE_5__[/* View */ "o"], {
     className: "CreateFlag"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_tarojs_components__WEBPACK_IMPORTED_MODULE_5__[/* View */ "m"], {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_tarojs_components__WEBPACK_IMPORTED_MODULE_5__[/* View */ "o"], {
     className: "title"
-  }, "\u8F93\u5165\u521B\u5EFA\u7684\u6807\u9898"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_tarojs_components__WEBPACK_IMPORTED_MODULE_5__[/* Textarea */ "l"], {
+  }, "\u8F93\u5165\u521B\u5EFA\u7684\u6807\u9898"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_tarojs_components__WEBPACK_IMPORTED_MODULE_5__[/* Textarea */ "n"], {
     className: "text",
     placeholder: "\u5927\u80C6\u7684\u8F93\u5165\u5427\uFF01",
     autoFocus: true,
     onInput: function onInput(e) {
       changeText(e.detail.value);
     }
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_tarojs_components__WEBPACK_IMPORTED_MODULE_5__[/* View */ "m"], {
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_tarojs_components__WEBPACK_IMPORTED_MODULE_5__[/* View */ "o"], {
     className: "save"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_tarojs_components__WEBPACK_IMPORTED_MODULE_5__[/* Button */ "a"], {
     size: "mini",
@@ -446,14 +804,15 @@ var inst = Page(Object(_tarojs_runtime__WEBPACK_IMPORTED_MODULE_0__["createPageC
 /*!***************************************!*\
   !*** ./src/service/apiModules/api.js ***!
   \***************************************/
-/*! exports provided: getRecordList, getRecordAllList, recordChangeStatus, createType */
-/*! exports used: createType, getRecordAllList, getRecordList, recordChangeStatus */
+/*! exports provided: getRecordList, getRecordAllList, getRecordMonthList, recordChangeStatus, createType */
+/*! exports used: createType, getRecordAllList, getRecordList, getRecordMonthList, recordChangeStatus */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "c", function() { return getRecordList; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return getRecordAllList; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "d", function() { return recordChangeStatus; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "d", function() { return getRecordMonthList; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "e", function() { return recordChangeStatus; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return createType; });
 /* harmony import */ var _request__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../request */ "./src/service/request.ts");
 
@@ -462,6 +821,9 @@ var getRecordList = function getRecordList() {
 };
 var getRecordAllList = function getRecordAllList(params) {
   return _request__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"].get('/api/target/date', params);
+};
+var getRecordMonthList = function getRecordMonthList(params) {
+  return _request__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"].get('/api/targetChart', params);
 };
 var recordChangeStatus = function recordChangeStatus(params) {
   return _request__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"].put("/api/target/".concat(1), params);

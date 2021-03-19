@@ -1,5 +1,6 @@
 (global as any).constants = {
     website: 'https://humanweaknesses.com',
+    // website: 'http://81.70.87.115:83',
     // website: 'http://127.0.0.1:7001',
     name: 'weChat',
     icon: {
@@ -12,6 +13,7 @@
         weixingOpenIcon: 'http://picture-1302857231.cos.ap-beijing.myqcloud.com/402_161142058554750.png',
         notAuthorityLogo: 'http://picture-1302857231.cos.ap-beijing.myqcloud.com/402_1611416591491965.png',
         notAuthorityLogin: 'http://picture-1302857231.cos.ap-beijing.myqcloud.com/402_1611416725880498.png',
-        zanwushujuIcon: 'http://picture-1302857231.cos.ap-beijing.myqcloud.com/402_1611423136101319.png'
+        zanwushujuIcon: 'http://picture-1302857231.cos.ap-beijing.myqcloud.com/402_1611423136101319.png',
+        newyear: 'https://picture-1302857231.cos.ap-beijing.myqcloud.com/402_1610885259711231.png'
     }
 };
