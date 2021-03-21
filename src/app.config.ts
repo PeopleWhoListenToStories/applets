@@ -4,9 +4,10 @@ export default {
     'pages/map/index',
     'pages/index/index',
     'pages/record/index',
-    'pages/my/about/index',
     'pages/chartview/index',
     'pages/notauthority/index',
+    'pages/my/about/index',
+    'pages/my/leaving-message/index',
   ],
   permission: {
     'scope.userLocation': {

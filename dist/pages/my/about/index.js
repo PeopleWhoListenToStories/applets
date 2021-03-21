@@ -27,7 +27,7 @@ var About = function About() {
       title: "关于我们"
     });
   });
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_tarojs_components__WEBPACK_IMPORTED_MODULE_2__[/* View */ "o"], {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_tarojs_components__WEBPACK_IMPORTED_MODULE_2__[/* View */ "x"], {
     className: "about"
   }, "\u77E5\u4E16\u6545\u800C\u4E0D\u4E8B\u6545 \u5584\u81EA\u5632\u800C\u4E0D\u5632\u4EBA \uFF01");
 };

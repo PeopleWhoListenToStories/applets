@@ -17,13 +17,20 @@
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_3__);
 /* harmony import */ var _tarojs_taro__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @tarojs/taro */ "./node_modules/@tarojs/taro/index.js");
 /* harmony import */ var _tarojs_taro__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_tarojs_taro__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var _tarojs_components__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @tarojs/components */ "./node_modules/@tarojs/components/mini/index.js");
-/* harmony import */ var _components_createFlag__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./components/createFlag */ "./src/pages/record/components/createFlag.tsx");
-/* harmony import */ var _components_Histogram_index__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../components/Histogram/index */ "./src/components/Histogram/index.tsx");
-/* harmony import */ var _service_apiModules_api__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../../service/apiModules/api */ "./src/service/apiModules/api.js");
-/* harmony import */ var _config__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../../../config */ "./config/index.js");
-/* harmony import */ var _index_scss__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./index.scss */ "./src/pages/record/index.scss");
-/* harmony import */ var _index_scss__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(_index_scss__WEBPACK_IMPORTED_MODULE_10__);
+/* harmony import */ var taro_ui__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! taro-ui */ "./node_modules/taro-ui/dist/index.esm.js");
+/* harmony import */ var _tarojs_components__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @tarojs/components */ "./node_modules/@tarojs/components/mini/index.js");
+/* harmony import */ var _utils_tool__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../utils/tool */ "./src/utils/tool.ts");
+/* harmony import */ var _components_createFlag__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./components/createFlag */ "./src/pages/record/components/createFlag.tsx");
+/* harmony import */ var _components_Histogram_index__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../../components/Histogram/index */ "./src/components/Histogram/index.tsx");
+/* harmony import */ var _service_apiModules_api__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../../service/apiModules/api */ "./src/service/apiModules/api.js");
+/* harmony import */ var taro_ui_dist_style_components_swipe_action_scss__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! taro-ui/dist/style/components/swipe-action.scss */ "./node_modules/taro-ui/dist/style/components/swipe-action.scss");
+/* harmony import */ var taro_ui_dist_style_components_swipe_action_scss__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(taro_ui_dist_style_components_swipe_action_scss__WEBPACK_IMPORTED_MODULE_11__);
+/* harmony import */ var _config__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ../../../config */ "./config/index.js");
+/* harmony import */ var _index_scss__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./index.scss */ "./src/pages/record/index.scss");
+/* harmony import */ var _index_scss__WEBPACK_IMPORTED_MODULE_13___default = /*#__PURE__*/__webpack_require__.n(_index_scss__WEBPACK_IMPORTED_MODULE_13__);
+
+
+
 
 
 
@@ -96,7 +103,7 @@ var Record = function Record() {
           switch (_context.prev = _context.next) {
             case 0:
               _context.next = 2;
-              return Object(_service_apiModules_api__WEBPACK_IMPORTED_MODULE_8__[/* getRecordList */ "c"])();
+              return Object(_service_apiModules_api__WEBPACK_IMPORTED_MODULE_10__[/* getRecordList */ "d"])();
 
             case 2:
               result = _context.sent;
@@ -127,7 +134,7 @@ var Record = function Record() {
           switch (_context2.prev = _context2.next) {
             case 0:
               _context2.next = 2;
-              return Object(_service_apiModules_api__WEBPACK_IMPORTED_MODULE_8__[/* getRecordAllList */ "b"])({
+              return Object(_service_apiModules_api__WEBPACK_IMPORTED_MODULE_10__[/* getRecordAllList */ "c"])({
                 year: date[0],
                 month: date[1],
                 day: date[2]
@@ -162,7 +169,7 @@ var Record = function Record() {
           switch (_context3.prev = _context3.next) {
             case 0:
               _context3.next = 2;
-              return Object(_service_apiModules_api__WEBPACK_IMPORTED_MODULE_8__[/* getRecordMonthList */ "d"])({
+              return Object(_service_apiModules_api__WEBPACK_IMPORTED_MODULE_10__[/* getRecordMonthList */ "e"])({
                 year: date[0],
                 month: date[1]
               });
@@ -196,8 +203,8 @@ var Record = function Record() {
           switch (_context4.prev = _context4.next) {
             case 0:
               _context4.next = 2;
-              return Object(_service_apiModules_api__WEBPACK_IMPORTED_MODULE_8__[/* recordChangeStatus */ "e"])({
-                status: 1,
+              return Object(_service_apiModules_api__WEBPACK_IMPORTED_MODULE_10__[/* recordChangeStatus */ "f"])({
+                status: +status === 1 ? 0 : 1,
                 user_id: user_id,
                 type_id: type_id
               });
@@ -250,77 +257,207 @@ var Record = function Record() {
     }
   }
 
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_tarojs_components__WEBPACK_IMPORTED_MODULE_5__[/* View */ "o"], {
+  function handleClick(_x4, _x5) {
+    return _handleClick.apply(this, arguments);
+  }
+
+  function _handleClick() {
+    _handleClick = Object(_Users_sulei_Desktop_study_applets_node_modules_babel_runtime_helpers_esm_asyncToGenerator__WEBPACK_IMPORTED_MODULE_1__[/* default */ "a"])( /*#__PURE__*/_Users_sulei_Desktop_study_applets_node_modules_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee5(e, type_id) {
+      var _yield$removeFlagType, data, timer;
+
+      return _Users_sulei_Desktop_study_applets_node_modules_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.wrap(function _callee5$(_context5) {
+        while (1) {
+          switch (_context5.prev = _context5.next) {
+            case 0:
+              if (!(e.text === '确认')) {
+                _context5.next = 6;
+                break;
+              }
+
+              _context5.next = 3;
+              return Object(_service_apiModules_api__WEBPACK_IMPORTED_MODULE_10__[/* removeFlagType */ "h"])(type_id);
+
+            case 3:
+              _yield$removeFlagType = _context5.sent;
+              data = _yield$removeFlagType.data;
+
+              if (data.status === 200) {
+                Object(_utils_tool__WEBPACK_IMPORTED_MODULE_7__[/* Toast */ "a"])('删除成功', 'success', 500);
+                timer = setTimeout(function () {
+                  getList();
+                  clearTimeout(timer);
+                }, 300);
+              }
+
+            case 6:
+            case "end":
+              return _context5.stop();
+          }
+        }
+      }, _callee5);
+    }));
+    return _handleClick.apply(this, arguments);
+  }
+
+  function handleAllClick(_x6, _x7) {
+    return _handleAllClick.apply(this, arguments);
+  }
+
+  function _handleAllClick() {
+    _handleAllClick = Object(_Users_sulei_Desktop_study_applets_node_modules_babel_runtime_helpers_esm_asyncToGenerator__WEBPACK_IMPORTED_MODULE_1__[/* default */ "a"])( /*#__PURE__*/_Users_sulei_Desktop_study_applets_node_modules_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee6(e, type_id) {
+      var _yield$removeDayFlagT, data, timer;
+
+      return _Users_sulei_Desktop_study_applets_node_modules_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.wrap(function _callee6$(_context6) {
+        while (1) {
+          switch (_context6.prev = _context6.next) {
+            case 0:
+              if (!(e.text === '确认')) {
+                _context6.next = 6;
+                break;
+              }
+
+              _context6.next = 3;
+              return Object(_service_apiModules_api__WEBPACK_IMPORTED_MODULE_10__[/* removeDayFlagType */ "g"])({
+                type_id: type_id,
+                updateTime: date[0] + '-' + date[1] + '-' + date[2]
+              });
+
+            case 3:
+              _yield$removeDayFlagT = _context6.sent;
+              data = _yield$removeDayFlagT.data;
+
+              if (data.status === 200) {
+                Object(_utils_tool__WEBPACK_IMPORTED_MODULE_7__[/* Toast */ "a"])('删除成功', 'success', 500);
+                timer = setTimeout(function () {
+                  getAllList();
+                  clearTimeout(timer);
+                }, 300);
+              }
+
+            case 6:
+            case "end":
+              return _context6.stop();
+          }
+        }
+      }, _callee6);
+    }));
+    return _handleAllClick.apply(this, arguments);
+  }
+
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_tarojs_components__WEBPACK_IMPORTED_MODULE_6__[/* View */ "x"], {
     className: "record"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_tarojs_components__WEBPACK_IMPORTED_MODULE_5__[/* View */ "o"], {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_tarojs_components__WEBPACK_IMPORTED_MODULE_6__[/* View */ "x"], {
     className: "recoed_nav"
   }, navMenu.map(function (navName, index) {
-    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_tarojs_components__WEBPACK_IMPORTED_MODULE_5__[/* Text */ "m"], {
+    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_tarojs_components__WEBPACK_IMPORTED_MODULE_6__[/* Text */ "v"], {
       className: 'text ' + (currentMenu === navName ? 'text-active' : ''),
       key: navName,
       onClick: function onClick() {
         setMenu(index);
       }
     }, navName);
-  })), off ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_components_createFlag__WEBPACK_IMPORTED_MODULE_6__[/* default */ "a"], {
+  })), off ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_components_createFlag__WEBPACK_IMPORTED_MODULE_8__[/* default */ "a"], {
     close: function close() {
       return showCreateFlag('close');
     }
-  }) : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_tarojs_components__WEBPACK_IMPORTED_MODULE_5__[/* View */ "o"], {
+  }) : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_tarojs_components__WEBPACK_IMPORTED_MODULE_6__[/* View */ "x"], {
     className: "content"
-  }, currentMenu === '全部' && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_tarojs_components__WEBPACK_IMPORTED_MODULE_5__[/* View */ "o"], {
+  }, currentMenu === '全部' && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_tarojs_components__WEBPACK_IMPORTED_MODULE_6__[/* View */ "x"], {
     className: "page-section"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_tarojs_components__WEBPACK_IMPORTED_MODULE_5__[/* Picker */ "j"], {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_tarojs_components__WEBPACK_IMPORTED_MODULE_6__[/* Picker */ "o"], {
     mode: "date",
     onChange: function onChange(e) {
       onDateChange(e);
     }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_tarojs_components__WEBPACK_IMPORTED_MODULE_5__[/* View */ "o"], {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_tarojs_components__WEBPACK_IMPORTED_MODULE_6__[/* View */ "x"], {
     className: "picker"
   }, date[0], " - ", date[1], " - ", date[2]))), currentMenu === '今日' && (todayList.length ? todayList.map(function (item) {
-    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_tarojs_components__WEBPACK_IMPORTED_MODULE_5__[/* View */ "o"], {
-      className: "item",
+    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(taro_ui__WEBPACK_IMPORTED_MODULE_5__[/* AtSwipeAction */ "i"], {
+      autoClose: true,
+      onClick: function onClick(e) {
+        handleClick(e, item.type_id);
+      },
+      options: [{
+        text: '取消',
+        style: {
+          backgroundColor: '#6190E8'
+        }
+      }, {
+        text: '确认',
+        style: {
+          backgroundColor: '#FF4949'
+        }
+      }]
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_tarojs_components__WEBPACK_IMPORTED_MODULE_6__[/* View */ "x"], {
+      className: "normal item",
       key: item.user_id
-    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_tarojs_components__WEBPACK_IMPORTED_MODULE_5__[/* Text */ "m"], null, " ", item.label, "  "), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_tarojs_components__WEBPACK_IMPORTED_MODULE_5__[/* RadioGroup */ "l"], {
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_tarojs_components__WEBPACK_IMPORTED_MODULE_6__[/* Text */ "v"], null, " ", item.label, "  "), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_tarojs_components__WEBPACK_IMPORTED_MODULE_6__[/* RadioGroup */ "p"], {
       onChange: function onChange() {
-        changeStatus(null, item.user_id, item.type_id);
+        changeStatus(item.status, item.user_id, item.type_id);
       }
-    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_tarojs_components__WEBPACK_IMPORTED_MODULE_5__[/* Radio */ "k"], {
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_tarojs_components__WEBPACK_IMPORTED_MODULE_6__[/* Checkbox */ "c"], {
       checked: item.status === '1'
-    })));
-  }) : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_tarojs_components__WEBPACK_IMPORTED_MODULE_5__[/* CoverImage */ "c"], {
+    }))));
+  }) : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_tarojs_components__WEBPACK_IMPORTED_MODULE_6__[/* CoverImage */ "d"], {
     className: "img",
     src: global.constants.icon.zanwushujuIcon
   })), currentMenu === '全部' && (allList.length ? allList.map(function (item) {
-    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_tarojs_components__WEBPACK_IMPORTED_MODULE_5__[/* View */ "o"], {
+    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(taro_ui__WEBPACK_IMPORTED_MODULE_5__[/* AtSwipeAction */ "i"], {
+      autoClose: true,
+      onClick: function onClick(e) {
+        handleAllClick(e, item.type_id);
+      },
+      options: [{
+        text: '取消',
+        style: {
+          backgroundColor: '#6190E8'
+        }
+      }, {
+        text: '确认',
+        style: {
+          backgroundColor: '#FF4949'
+        }
+      }]
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_tarojs_components__WEBPACK_IMPORTED_MODULE_6__[/* View */ "x"], {
       className: "item",
       key: item.user_id
-    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_tarojs_components__WEBPACK_IMPORTED_MODULE_5__[/* Text */ "m"], null, " ", item.label, "  "), item.status === '1' ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_tarojs_components__WEBPACK_IMPORTED_MODULE_5__[/* Icon */ "f"], {
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_tarojs_components__WEBPACK_IMPORTED_MODULE_6__[/* Text */ "v"], null, " ", item.label, "  "), item.status === '1' ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_tarojs_components__WEBPACK_IMPORTED_MODULE_6__[/* Icon */ "g"], {
       size: "20",
       type: "success"
-    }) : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_tarojs_components__WEBPACK_IMPORTED_MODULE_5__[/* Icon */ "f"], {
+    }) : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_tarojs_components__WEBPACK_IMPORTED_MODULE_6__[/* Icon */ "g"], {
       size: "20",
       type: "waiting"
-    }));
-  }) : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_tarojs_components__WEBPACK_IMPORTED_MODULE_5__[/* CoverImage */ "c"], {
+    })));
+  }) : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_tarojs_components__WEBPACK_IMPORTED_MODULE_6__[/* CoverImage */ "d"], {
     className: "img",
     src: global.constants.icon.zanwushujuIcon
-  }))), !off && currentMenu === '今日' && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_tarojs_components__WEBPACK_IMPORTED_MODULE_5__[/* View */ "o"], {
+  }))), !off && currentMenu === '今日' && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_tarojs_components__WEBPACK_IMPORTED_MODULE_6__[/* View */ "x"], {
     className: "createFlag"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_tarojs_components__WEBPACK_IMPORTED_MODULE_5__[/* Button */ "a"], {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_tarojs_components__WEBPACK_IMPORTED_MODULE_6__[/* Button */ "a"], {
     size: "mini",
     type: "primary",
     plain: true,
     onClick: function onClick() {
       showCreateFlag('show');
     }
-  }, "Flag")), !off && currentMenu === '图表' && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_components_Histogram_index__WEBPACK_IMPORTED_MODULE_7__[/* default */ "a"], {
+  }, "Flag")), !off && currentMenu === '图表' && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_components_Histogram_index__WEBPACK_IMPORTED_MODULE_9__[/* default */ "a"], {
     defaultData: chartList
   }));
 };
 
 /* harmony default export */ __webpack_exports__["a"] = (Record);
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../../../node_modules/webpack/buildin/global.js */ "./node_modules/webpack/buildin/global.js")))
+
+/***/ }),
+
+/***/ "./node_modules/taro-ui/dist/style/components/swipe-action.scss":
+/*!**********************************************************************!*\
+  !*** ./node_modules/taro-ui/dist/style/components/swipe-action.scss ***!
+  \**********************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+// extracted by mini-css-extract-plugin
 
 /***/ }),
 
@@ -615,7 +752,7 @@ var Histogram = function Histogram(props) {
   }
 
   return Object(mobx_react__WEBPACK_IMPORTED_MODULE_3__[/* useObserver */ "d"])(function () {
-    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_tarojs_components__WEBPACK_IMPORTED_MODULE_4__[/* View */ "o"], {
+    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_tarojs_components__WEBPACK_IMPORTED_MODULE_4__[/* View */ "x"], {
       className: "container"
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_tarojs_components__WEBPACK_IMPORTED_MODULE_4__[/* Canvas */ "b"], {
       style: {
@@ -707,7 +844,7 @@ var CreateFlag = function CreateFlag(props) {
 
             case 3:
               _context.next = 5;
-              return Object(_service_apiModules_api__WEBPACK_IMPORTED_MODULE_6__[/* createType */ "a"])({
+              return Object(_service_apiModules_api__WEBPACK_IMPORTED_MODULE_6__[/* createType */ "b"])({
                 label: value
               });
 
@@ -739,18 +876,18 @@ var CreateFlag = function CreateFlag(props) {
     setValue(e);
   }
 
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_tarojs_components__WEBPACK_IMPORTED_MODULE_5__[/* View */ "o"], {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_tarojs_components__WEBPACK_IMPORTED_MODULE_5__[/* View */ "x"], {
     className: "CreateFlag"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_tarojs_components__WEBPACK_IMPORTED_MODULE_5__[/* View */ "o"], {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_tarojs_components__WEBPACK_IMPORTED_MODULE_5__[/* View */ "x"], {
     className: "title"
-  }, "\u8F93\u5165\u521B\u5EFA\u7684\u6807\u9898"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_tarojs_components__WEBPACK_IMPORTED_MODULE_5__[/* Textarea */ "n"], {
+  }, "\u8F93\u5165\u521B\u5EFA\u7684\u6807\u9898"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_tarojs_components__WEBPACK_IMPORTED_MODULE_5__[/* Textarea */ "w"], {
     className: "text",
     placeholder: "\u5927\u80C6\u7684\u8F93\u5165\u5427\uFF01",
     autoFocus: true,
     onInput: function onInput(e) {
       changeText(e.detail.value);
     }
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_tarojs_components__WEBPACK_IMPORTED_MODULE_5__[/* View */ "o"], {
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_tarojs_components__WEBPACK_IMPORTED_MODULE_5__[/* View */ "x"], {
     className: "save"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_tarojs_components__WEBPACK_IMPORTED_MODULE_5__[/* Button */ "a"], {
     size: "mini",
@@ -797,40 +934,6 @@ var config = {};
 var inst = Page(Object(_tarojs_runtime__WEBPACK_IMPORTED_MODULE_0__["createPageConfig"])(_node_modules_tarojs_mini_runner_node_modules_babel_loader_lib_index_js_index_tsx__WEBPACK_IMPORTED_MODULE_1__[/* default */ "a"], 'pages/record/index', {}, config || {}))
 
 
-
-/***/ }),
-
-/***/ "./src/service/apiModules/api.js":
-/*!***************************************!*\
-  !*** ./src/service/apiModules/api.js ***!
-  \***************************************/
-/*! exports provided: getRecordList, getRecordAllList, getRecordMonthList, recordChangeStatus, createType */
-/*! exports used: createType, getRecordAllList, getRecordList, getRecordMonthList, recordChangeStatus */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "c", function() { return getRecordList; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return getRecordAllList; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "d", function() { return getRecordMonthList; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "e", function() { return recordChangeStatus; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return createType; });
-/* harmony import */ var _request__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../request */ "./src/service/request.ts");
-
-var getRecordList = function getRecordList() {
-  return _request__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"].get('/api/target');
-};
-var getRecordAllList = function getRecordAllList(params) {
-  return _request__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"].get('/api/target/date', params);
-};
-var getRecordMonthList = function getRecordMonthList(params) {
-  return _request__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"].get('/api/targetChart', params);
-};
-var recordChangeStatus = function recordChangeStatus(params) {
-  return _request__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"].put("/api/target/".concat(1), params);
-};
-var createType = function createType(params) {
-  return _request__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"].post('/api/target', params);
-};
 
 /***/ })
 

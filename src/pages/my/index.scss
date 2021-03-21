@@ -45,6 +45,9 @@
 }
 .content{
     flex: 1;
+    .at-accordion .at-accordion__info__title,.at-accordion__info__note{
+        text-align: center;
+    }
     .lebalItem{
         display: inline-block;
         width: 100%;

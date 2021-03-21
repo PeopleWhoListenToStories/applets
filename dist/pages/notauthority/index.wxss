@@ -16,50 +16,59 @@
 .bottom {
   width: 100%;
   position: absolute;
-  bottom: 7%;
-  left: 0;
 }
 .form-login {
   width: 100%;
   height: auto;
+  margin-top: 50rpx;
 }
-.form-login .example-body {
-  width: 70%;
-  height: 50rpx;
-  margin: 20rpx auto;
+.example-body {
+  width: 100%;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-justify-content: space-around;
-      -ms-flex-pack: distribute;
-          justify-content: space-around;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
 }
-.form-login .phone {
-  width: 74%;
+.example-body .label {
+  padding: 0 30rpx;
+}
+.phone {
+  width: 75%;
   border: 1rpx solid skyblue;
   border-radius: 5rpx;
 }
-.form-login .code {
-  width: 30%;
-  border: 1rpx solid skyblue;
+.code {
+  width: 65%;
   border-radius: 5rpx;
-  color: #ccc;
-}
-.form-login .code-btn {
-  font-size: 23rpx;
 }
 .btn {
-  width: auto;
-  height: 70rpx;
-  text-align: center;
-  background: cornflowerblue;
-  color: white;
-  border-radius: 6rpx;
-  padding: 2rpx 50rpx;
-  line-height: 2;
-  margin-top: 50rpx;
+  width: 30%;
+  margin: 0 auto;
+  margin-top: 30rpx;
+}
+.btn::after {
+  content: '';
+  position: absolute;
+  -webkit-transform-origin: center;
+  -ms-transform-origin: center;
+  transform-origin: center;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  pointer-events: none;
+  top: -50%;
+  left: -50%;
+  right: -50%;
+  bottom: -50%;
+  border: 0 solid #fff !important;
+  -webkit-transform: scale(0.5);
+  -ms-transform: scale(0.5);
+  transform: scale(0.5);
+  border-top-width: 1PX;
+  border-bottom-width: 1PX;
 }
 

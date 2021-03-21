@@ -1,14 +1,20 @@
 import React, { useState, useEffect } from 'react'
 import Taro, { useDidShow } from "@tarojs/taro"
-import { View, Text, Button, CoverImage, Icon, Picker, Radio, RadioGroup } from "@tarojs/components"
+import { AtSwipeAction } from "taro-ui"
+import { View, Text, Button, CoverImage, Icon, Picker, Checkbox, RadioGroup } from "@tarojs/components"
+import { Toast } from '../../utils/tool'
+
 import CreateFlag from "./components/createFlag"
 import Histogram from "../../components/Histogram/index"
 import {
     getRecordList,
+    removeFlagType,
     getRecordAllList,
+    removeDayFlagType,
     getRecordMonthList,
     recordChangeStatus
 } from "../../service/apiModules/api"
+import "taro-ui/dist/style/components/swipe-action.scss";
 import "../../../config"
 import "./index.scss"
 
@@ -63,9 +69,9 @@ const Record: React.FC = () => {
         }
     }
 
-    async function changeStatus(status: null, user_id: string, type_id: number) {
+    async function changeStatus(status: any, user_id: string, type_id: number) {
         const result = await recordChangeStatus({
-            status: 1,
+            status: +status === 1 ? 0 : 1,
             user_id,
             type_id
         })
@@ -101,6 +107,32 @@ const Record: React.FC = () => {
         }
     }
 
+    async function handleClick(e, type_id) {
+        if (e.text === '确认') {
+            const { data } = await removeFlagType(type_id)
+            if (data.status === 200) {
+                Toast('删除成功', 'success', 500)
+                let timer = setTimeout(() => {
+                    getList()
+                    clearTimeout(timer)
+                }, 300)
+            }
+        }
+    }
+
+    async function handleAllClick(e, type_id) {
+        if (e.text === '确认') {
+            const { data } = await removeDayFlagType({ type_id, updateTime: date[0] + '-' + date[1] + '-' + date[2] })
+            if (data.status === 200) {
+                Toast('删除成功', 'success', 500)
+                let timer = setTimeout(() => {
+                    getAllList()
+                    clearTimeout(timer)
+                }, 300)
+            }
+        }
+    }
+
     return (
         <View className='record'>
             <View className='recoed_nav'>
@@ -110,6 +142,7 @@ const Record: React.FC = () => {
                     })
                 }
             </View>
+
             {
                 off ? <CreateFlag close={() => showCreateFlag('close')} />
                     :
@@ -125,22 +158,26 @@ const Record: React.FC = () => {
                         }
                         {
                             currentMenu === '今日' && (todayList.length ? todayList.map((item: any) => {
-                                return <View className='item' key={item.user_id}>
-                                    <Text > {item.label}  </Text>
-                                    <RadioGroup onChange={() => { changeStatus(null, item.user_id, item.type_id) }}>
-                                        <Radio checked={item.status === '1'} />
-                                    </RadioGroup>
-                                </View>
+                                return <AtSwipeAction autoClose={true} onClick={(e) => { handleClick(e, item.type_id) }} options={[{ text: '取消', style: { backgroundColor: '#6190E8' } }, { text: '确认', style: { backgroundColor: '#FF4949' } }]}>
+                                    <View className='normal item' key={item.user_id}>
+                                        <Text > {item.label}  </Text>
+                                        <RadioGroup onChange={() => { changeStatus(item.status, item.user_id, item.type_id) }}>
+                                            <Checkbox checked={item.status === '1'} />
+                                        </RadioGroup>
+                                    </View>
+                                </AtSwipeAction>
                             }) : <CoverImage className='img' src={(global as any).constants.icon.zanwushujuIcon} />)
                         }
                         {
                             currentMenu === '全部' && (allList.length ? allList.map((item: any) => {
-                                return <View className='item' key={item.user_id}>
-                                    <Text > {item.label}  </Text>
-                                    {
-                                        item.status === '1' ? <Icon size='20' type='success' /> : <Icon size='20' type='waiting' />
-                                    }
-                                </View>
+                                return <AtSwipeAction autoClose={true} onClick={(e) => { handleAllClick(e, item.type_id) }} options={[{ text: '取消', style: { backgroundColor: '#6190E8' } }, { text: '确认', style: { backgroundColor: '#FF4949' } }]}>
+                                    <View className='item' key={item.user_id}>
+                                        <Text > {item.label}  </Text>
+                                        {
+                                            item.status === '1' ? <Icon size='20' type='success' /> : <Icon size='20' type='waiting' />
+                                        }
+                                    </View>
+                                </AtSwipeAction>
                             }) : <CoverImage className='img' src={(global as any).constants.icon.zanwushujuIcon} />)
                         }
                     </View>
@@ -157,4 +194,4 @@ const Record: React.FC = () => {
         </View >
     )
 }
-export default Record 
+export default Record

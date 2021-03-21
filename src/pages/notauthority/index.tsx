@@ -1,7 +1,9 @@
 import React, { useState, useEffect } from "react"
-import { View, Form, Input, Text, CoverImage, Button } from "@tarojs/components"
 import Taro, { useDidShow } from "@tarojs/taro"
-import { Toast } from '../../utils/tool'
+import { AtForm, AtInput, AtButton } from 'taro-ui'
+import { View, Form, Input, Text, CoverImage, Button } from "@tarojs/components"
+
+import { Toast, Throttle } from '../../utils/tool'
 import store from "../../store/index"
 import "../../../config"
 import "./index.scss"
@@ -11,7 +13,7 @@ import "./index.scss"
 
 const Notauthority = () => {
     const { User, Fingerprint } = store
-    const [phone, setPhone] = useState('')
+    const [phone, setPhone] = useState<string | number>('')
     const [code, setCode] = useState(User.code)
     const [disabledCode, setDisabledCode] = useState(60)
 
@@ -85,7 +87,34 @@ const Notauthority = () => {
             <View onClick={() => { login() }} >
                 <CoverImage className='login' src={(global as any).constants.icon.notAuthorityLogin} />
             </View>
-            <View className="bottom">
+            <AtForm className="form-login" >
+                <AtInput
+                    name='phone'
+                    title='手机号'
+                    type='text'
+                    placeholder='请输入手机号...'
+                    value={phone as any}
+                    onChange={(value) => { setPhone(value) }}
+                />
+                <View className='example-body'>
+                    <AtInput
+                        className="code"
+                        name='code'
+                        title='验证码'
+                        type='text'
+                        placeholder='请输入验证码...'
+                        value={code as any}
+                        onChange={(value) => { setCode(value) }}
+                    />
+                    {
+                        disabledCode >= 60 ? <AtButton className="code-btn" onClick={() => { getCode() }}>获取验证码</AtButton> :
+                            <AtButton className="code-btn" >{disabledCode}秒后再次获取</AtButton>
+                    }
+                </View>
+                <AtButton className="btn" formType='submit' onClick={() => { Userlogin() }}>提交</AtButton>
+                {/* <AtButton formType='reset'>清空</AtButton> */}
+            </AtForm>
+            {/* <View className="bottom">
                 <Form className="form-login" onSubmit={() => { }} >
                     <View className='example-body'>
                         <Text>手机号：</Text><Input maxlength={11} value={phone} onInput={(e) => { setPhone(e.detail.value) }} className="phone" />
@@ -101,12 +130,12 @@ const Notauthority = () => {
                         <Text className="btn" onClick={() => { Userlogin() }}>登陆</Text>
                     </View>
                 </Form>
-            </View>
+            </View> */}
 
             {/* <View className='btn' onClick={() => { Userlogin() }} >
                 免密登陆
             </View> */}
-        </View>
+        </View >
     )
 }
 

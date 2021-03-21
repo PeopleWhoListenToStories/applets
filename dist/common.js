@@ -232,6 +232,52 @@ var RESULT_STATUS = {
 
 /***/ }),
 
+/***/ "./src/service/apiModules/api.js":
+/*!***************************************!*\
+  !*** ./src/service/apiModules/api.js ***!
+  \***************************************/
+/*! exports provided: getRecordList, getRecordAllList, getRecordMonthList, recordChangeStatus, createType, removeFlagType, removeDayFlagType, createLeavingMessage */
+/*! exports used: createLeavingMessage, createType, getRecordAllList, getRecordList, getRecordMonthList, recordChangeStatus, removeDayFlagType, removeFlagType */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "d", function() { return getRecordList; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "c", function() { return getRecordAllList; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "e", function() { return getRecordMonthList; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "f", function() { return recordChangeStatus; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return createType; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "h", function() { return removeFlagType; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "g", function() { return removeDayFlagType; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return createLeavingMessage; });
+/* harmony import */ var _request__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../request */ "./src/service/request.ts");
+
+var getRecordList = function getRecordList() {
+  return _request__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"].get('/api/target');
+};
+var getRecordAllList = function getRecordAllList(params) {
+  return _request__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"].get('/api/target/date', params);
+};
+var getRecordMonthList = function getRecordMonthList(params) {
+  return _request__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"].get('/api/targetChart', params);
+};
+var recordChangeStatus = function recordChangeStatus(params) {
+  return _request__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"].put("/api/target/".concat(1), params);
+};
+var createType = function createType(params) {
+  return _request__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"].post('/api/target', params);
+};
+var removeFlagType = function removeFlagType(params) {
+  return _request__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"].delete("/api/target/".concat(params));
+};
+var removeDayFlagType = function removeDayFlagType(params) {
+  return _request__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"].post("/api/deleteTarget", params);
+};
+var createLeavingMessage = function createLeavingMessage(params) {
+  return _request__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"].post('/api/createLeavingMessage', params);
+};
+
+/***/ }),
+
 /***/ "./src/service/apiModules/user.js":
 /*!****************************************!*\
   !*** ./src/service/apiModules/user.js ***!
@@ -428,6 +474,14 @@ var whileList = ['/api/user/login', '/api/note'];
       contentType: contentType
     };
     return this.baseOptions(params, 'PUT');
+  },
+  delete: function _delete(url, data, contentType) {
+    var params = {
+      url: url,
+      data: data,
+      contentType: contentType
+    };
+    return this.baseOptions(params, 'DELETE');
   }
 });
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../../node_modules/webpack/buildin/global.js */ "./node_modules/webpack/buildin/global.js")))
@@ -709,12 +763,13 @@ var UserStore = Object(mobx__WEBPACK_IMPORTED_MODULE_2__[/* observable */ "l"])(
 /*!***************************!*\
   !*** ./src/utils/tool.ts ***!
   \***************************/
-/*! exports provided: Toast */
+/*! exports provided: Toast, Throttle */
 /*! exports used: Toast */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Toast; });
+/* unused harmony export Throttle */
 /* harmony import */ var _tarojs_taro__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @tarojs/taro */ "./node_modules/@tarojs/taro/index.js");
 /* harmony import */ var _tarojs_taro__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_tarojs_taro__WEBPACK_IMPORTED_MODULE_0__);
  // export const promisify = (func, ctx) => {
@@ -814,6 +869,12 @@ var Toast = function Toast() {
     duration: duration,
     mask: mask
   });
+};
+var Throttle = function Throttle(method, context) {
+  clearTimeout(method.timer);
+  method.timer = setTimeout(function () {
+    method.call(context);
+  }, 100);
 };
 
 /***/ })

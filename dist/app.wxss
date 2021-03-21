@@ -10530,12 +10530,20 @@
 .at-swipe-action {
   position: relative;
   overflow: hidden;
+  width: 100%;
   /* elements */
+}
+.at-swipe-action__area {
+  height: auto;
 }
 .at-swipe-action__content {
   position: relative;
   font-size: 32rpx;
   background-color: #FFF;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
   z-index: 2;
 }
 .at-swipe-action__content.animtion {
@@ -10560,6 +10568,7 @@
   height: 100%;
   color: #FFF;
   font-size: 28rpx;
+  width: 120rpx;
   text-align: center;
   background-color: #999;
 }
@@ -10579,6 +10588,7 @@
   right: 0;
   height: 100%;
   z-index: 1;
+  opacity: 0;
 }
 /**
  * Default variables
@@ -12326,3 +12336,5 @@ page {
   overflow: hidden;
 }
 
+
+@import "./common.wxss";

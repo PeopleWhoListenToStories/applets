@@ -110,3 +110,10 @@ export const Toast = (title: string = ' ', icon: string | undefined = undefined,
         mask
     })
 }
+
+export const Throttle = (method, context) => {
+    clearTimeout(method.timer)
+    method.timer = setTimeout(function () {
+        method.call(context)
+    }, 100)
+}

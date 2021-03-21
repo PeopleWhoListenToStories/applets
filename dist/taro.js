@@ -739,57 +739,57 @@ var Taro = {
   !*** ./node_modules/@tarojs/components/mini/index.js ***!
   \*******************************************************/
 /*! exports provided: View, Icon, Progress, RichText, Text, Button, Checkbox, CheckboxGroup, Editor, Form, Input, Label, Picker, PickerView, PickerViewColumn, Radio, RadioGroup, Slider, Switch, CoverImage, Textarea, CoverView, MatchMedia, MoveableArea, MoveableView, ScrollView, Swiper, SwiperItem, FunctionalPageNavigator, Navigator, Audio, Camera, Image, LivePlayer, LivePusher, Video, Map, Canvas, Ad, OfficialAccount, OpenData, WebView, NavigationBar, PageMeta, Block, MovableArea, MovableView, Slot, CustomWrapper */
-/*! exports used: Button, Canvas, CoverImage, CoverView, Form, Icon, Image, Input, Map, Picker, Radio, RadioGroup, Text, Textarea, View */
+/*! exports used: Button, Canvas, Checkbox, CoverImage, CoverView, Form, Icon, Image, Input, Label, Map, MovableArea, MovableView, OpenData, Picker, RadioGroup, ScrollView, Slider, Swiper, SwiperItem, Switch, Text, Textarea, View */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "o", function() { return View; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "f", function() { return Icon; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "x", function() { return View; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "g", function() { return Icon; });
 /* unused harmony export Progress */
 /* unused harmony export RichText */
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "m", function() { return Text; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "v", function() { return Text; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Button; });
-/* unused harmony export Checkbox */
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "c", function() { return Checkbox; });
 /* unused harmony export CheckboxGroup */
 /* unused harmony export Editor */
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "e", function() { return Form; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "h", function() { return Input; });
-/* unused harmony export Label */
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "j", function() { return Picker; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "f", function() { return Form; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "i", function() { return Input; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "j", function() { return Label; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "o", function() { return Picker; });
 /* unused harmony export PickerView */
 /* unused harmony export PickerViewColumn */
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "k", function() { return Radio; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "l", function() { return RadioGroup; });
-/* unused harmony export Slider */
-/* unused harmony export Switch */
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "c", function() { return CoverImage; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "n", function() { return Textarea; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "d", function() { return CoverView; });
+/* unused harmony export Radio */
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "p", function() { return RadioGroup; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "r", function() { return Slider; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "u", function() { return Switch; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "d", function() { return CoverImage; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "w", function() { return Textarea; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "e", function() { return CoverView; });
 /* unused harmony export MatchMedia */
 /* unused harmony export MoveableArea */
 /* unused harmony export MoveableView */
-/* unused harmony export ScrollView */
-/* unused harmony export Swiper */
-/* unused harmony export SwiperItem */
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "q", function() { return ScrollView; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "s", function() { return Swiper; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "t", function() { return SwiperItem; });
 /* unused harmony export FunctionalPageNavigator */
 /* unused harmony export Navigator */
 /* unused harmony export Audio */
 /* unused harmony export Camera */
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "g", function() { return Image; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "h", function() { return Image; });
 /* unused harmony export LivePlayer */
 /* unused harmony export LivePusher */
 /* unused harmony export Video */
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "i", function() { return Map; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "k", function() { return Map; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return Canvas; });
 /* unused harmony export Ad */
 /* unused harmony export OfficialAccount */
-/* unused harmony export OpenData */
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "n", function() { return OpenData; });
 /* unused harmony export WebView */
 /* unused harmony export NavigationBar */
 /* unused harmony export PageMeta */
 /* unused harmony export Block */
-/* unused harmony export MovableArea */
-/* unused harmony export MovableView */
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "l", function() { return MovableArea; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "m", function() { return MovableView; });
 /* unused harmony export Slot */
 /* unused harmony export CustomWrapper */
 var View = 'view';
@@ -3974,6 +3974,62 @@ var TaroNode = /*#__PURE__*/function (_TaroEventTarget) {
   }
 
   Object(_Users_sulei_Desktop_study_applets_node_modules_babel_runtime_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_11__[/* default */ "a"])(TaroNode, [{
+    key: "_path",
+    get: function get() {
+      if (this.parentNode !== null) {
+        var index =  false ? undefined : '[' + this.parentNode.childNodes.indexOf(this) + ']';
+        return "".concat(this.parentNode._path, ".", "cn"
+        /* Childnodes */
+        , ".").concat(index);
+      }
+
+      return '';
+    }
+  }, {
+    key: "_root",
+    get: function get() {
+      if (this.parentNode !== null) {
+        return this.parentNode._root;
+      }
+
+      return null;
+    }
+  }, {
+    key: "parentElement",
+    get: function get() {
+      var parentNode = this.parentNode;
+
+      if (parentNode != null && parentNode.nodeType === 1
+      /* ELEMENT_NODE */
+      ) {
+          return parentNode;
+        }
+
+      return null;
+    }
+  }, {
+    key: "nextSibling",
+    get: function get() {
+      var parentNode = this.parentNode;
+
+      if (parentNode) {
+        return parentNode.childNodes[this.findIndex(parentNode.childNodes, this) + 1] || null;
+      }
+
+      return null;
+    }
+  }, {
+    key: "previousSibling",
+    get: function get() {
+      var parentNode = this.parentNode;
+
+      if (parentNode) {
+        return parentNode.childNodes[this.findIndex(parentNode.childNodes, this) - 1] || null;
+      }
+
+      return null;
+    }
+  }, {
     key: "insertBefore",
     value: function insertBefore(newChild, refChild, isReplace) {
       var _this3 = this;
@@ -4074,6 +4130,17 @@ var TaroNode = /*#__PURE__*/function (_TaroEventTarget) {
       }
     }
   }, {
+    key: "firstChild",
+    get: function get() {
+      return this.childNodes[0] || null;
+    }
+  }, {
+    key: "lastChild",
+    get: function get() {
+      var c = this.childNodes;
+      return c[c.length - 1] || null;
+    }
+  }, {
     key: "hasChildNodes",
     value: function hasChildNodes() {
       return this.childNodes.length > 0;
@@ -4106,6 +4173,32 @@ var TaroNode = /*#__PURE__*/function (_TaroEventTarget) {
      * @TODO 等待完整 innerHTML 实现
      */
 
+  }, {
+    key: "textContent",
+    set: function set(text) {
+      this._empty();
+
+      if (text === '') {
+        this.enqueueUpdate({
+          path: "".concat(this._path, ".", "cn"
+          /* Childnodes */
+          ),
+          value: function value() {
+            return [];
+          }
+        });
+      } else {
+        this.appendChild(document$1.createTextNode(text));
+      }
+    }
+  }, {
+    key: "innerHTML",
+    get: function get() {
+      return '';
+    },
+    set: function set(html) {
+      setInnerHTML(this, html);
+    }
   }, {
     key: "findIndex",
     value: function findIndex(childeNodes, refChild) {
@@ -4151,99 +4244,6 @@ var TaroNode = /*#__PURE__*/function (_TaroEventTarget) {
 
       return newNode;
     }
-  }, {
-    key: "_path",
-    get: function get() {
-      if (this.parentNode !== null) {
-        var index =  false ? undefined : '[' + this.parentNode.childNodes.indexOf(this) + ']';
-        return "".concat(this.parentNode._path, ".", "cn"
-        /* Childnodes */
-        , ".").concat(index);
-      }
-
-      return '';
-    }
-  }, {
-    key: "_root",
-    get: function get() {
-      if (this.parentNode !== null) {
-        return this.parentNode._root;
-      }
-
-      return null;
-    }
-  }, {
-    key: "parentElement",
-    get: function get() {
-      var parentNode = this.parentNode;
-
-      if (parentNode != null && parentNode.nodeType === 1
-      /* ELEMENT_NODE */
-      ) {
-          return parentNode;
-        }
-
-      return null;
-    }
-  }, {
-    key: "nextSibling",
-    get: function get() {
-      var parentNode = this.parentNode;
-
-      if (parentNode) {
-        return parentNode.childNodes[this.findIndex(parentNode.childNodes, this) + 1] || null;
-      }
-
-      return null;
-    }
-  }, {
-    key: "previousSibling",
-    get: function get() {
-      var parentNode = this.parentNode;
-
-      if (parentNode) {
-        return parentNode.childNodes[this.findIndex(parentNode.childNodes, this) - 1] || null;
-      }
-
-      return null;
-    }
-  }, {
-    key: "firstChild",
-    get: function get() {
-      return this.childNodes[0] || null;
-    }
-  }, {
-    key: "lastChild",
-    get: function get() {
-      var c = this.childNodes;
-      return c[c.length - 1] || null;
-    }
-  }, {
-    key: "textContent",
-    set: function set(text) {
-      this._empty();
-
-      if (text === '') {
-        this.enqueueUpdate({
-          path: "".concat(this._path, ".", "cn"
-          /* Childnodes */
-          ),
-          value: function value() {
-            return [];
-          }
-        });
-      } else {
-        this.appendChild(document$1.createTextNode(text));
-      }
-    }
-  }, {
-    key: "innerHTML",
-    set: function set(html) {
-      setInnerHTML(this, html);
-    },
-    get: function get() {
-      return '';
-    }
   }]);
 
   return TaroNode;
@@ -4268,6 +4268,9 @@ var TaroText = /*#__PURE__*/function (_TaroNode) {
 
   Object(_Users_sulei_Desktop_study_applets_node_modules_babel_runtime_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_11__[/* default */ "a"])(TaroText, [{
     key: "textContent",
+    get: function get() {
+      return this._value;
+    },
     set: function set(text) {
       this._value = text;
       this.enqueueUpdate({
@@ -4276,17 +4279,14 @@ var TaroText = /*#__PURE__*/function (_TaroNode) {
         ),
         value: text
       });
-    },
-    get: function get() {
-      return this._value;
     }
   }, {
     key: "nodeValue",
-    set: function set(text) {
-      this.textContent = text;
-    },
     get: function get() {
       return this._value;
+    },
+    set: function set(text) {
+      this.textContent = text;
     }
   }]);
 
@@ -4372,53 +4372,6 @@ var Style = /*#__PURE__*/function () {
       });
     }
   }, {
-    key: "setProperty",
-    value: function setProperty(propertyName, value) {
-      if (propertyName[0] === '-') {
-        this.setCssVariables(propertyName);
-      } else {
-        propertyName = toCamelCase(propertyName);
-      }
-
-      if (isUndefined(value)) {
-        return;
-      }
-
-      if (value === null || value === '') {
-        this.removeProperty(propertyName);
-      } else {
-        this[propertyName] = value;
-      }
-    }
-  }, {
-    key: "removeProperty",
-    value: function removeProperty(propertyName) {
-      propertyName = toCamelCase(propertyName);
-
-      if (!this._usedStyleProp.has(propertyName)) {
-        return '';
-      }
-
-      var value = this[propertyName];
-      this[propertyName] = '';
-
-      this._usedStyleProp.delete(propertyName);
-
-      return value;
-    }
-  }, {
-    key: "getPropertyValue",
-    value: function getPropertyValue(propertyName) {
-      propertyName = toCamelCase(propertyName);
-      var value = this[propertyName];
-
-      if (!value) {
-        return '';
-      }
-
-      return value;
-    }
-  }, {
     key: "cssText",
     get: function get() {
       var _this7 = this;
@@ -4468,6 +4421,53 @@ var Style = /*#__PURE__*/function () {
 
         this.setProperty(propName.trim(), val.trim());
       }
+    }
+  }, {
+    key: "setProperty",
+    value: function setProperty(propertyName, value) {
+      if (propertyName[0] === '-') {
+        this.setCssVariables(propertyName);
+      } else {
+        propertyName = toCamelCase(propertyName);
+      }
+
+      if (isUndefined(value)) {
+        return;
+      }
+
+      if (value === null || value === '') {
+        this.removeProperty(propertyName);
+      } else {
+        this[propertyName] = value;
+      }
+    }
+  }, {
+    key: "removeProperty",
+    value: function removeProperty(propertyName) {
+      propertyName = toCamelCase(propertyName);
+
+      if (!this._usedStyleProp.has(propertyName)) {
+        return '';
+      }
+
+      var value = this[propertyName];
+      this[propertyName] = '';
+
+      this._usedStyleProp.delete(propertyName);
+
+      return value;
+    }
+  }, {
+    key: "getPropertyValue",
+    value: function getPropertyValue(propertyName) {
+      propertyName = toCamelCase(propertyName);
+      var value = this[propertyName];
+
+      if (!value) {
+        return '';
+      }
+
+      return value;
     }
   }]);
 
@@ -4541,6 +4541,11 @@ var ClassList = /*#__PURE__*/function (_Set) {
   }
 
   Object(_Users_sulei_Desktop_study_applets_node_modules_babel_runtime_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_11__[/* default */ "a"])(ClassList, [{
+    key: "value",
+    get: function get() {
+      return Object(_Users_sulei_Desktop_study_applets_node_modules_babel_runtime_helpers_esm_toConsumableArray__WEBPACK_IMPORTED_MODULE_1__[/* default */ "a"])(this).join(' ');
+    }
+  }, {
     key: "add",
     value: function add(s) {
       Object(_Users_sulei_Desktop_study_applets_node_modules_babel_runtime_helpers_esm_get__WEBPACK_IMPORTED_MODULE_2__[/* default */ "a"])(Object(_Users_sulei_Desktop_study_applets_node_modules_babel_runtime_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_3__[/* default */ "a"])(ClassList.prototype), "add", this).call(this, s);
@@ -4591,11 +4596,6 @@ var ClassList = /*#__PURE__*/function (_Set) {
     value: function _update() {
       this.el.className = this.value;
     }
-  }, {
-    key: "value",
-    get: function get() {
-      return Object(_Users_sulei_Desktop_study_applets_node_modules_babel_runtime_helpers_esm_toConsumableArray__WEBPACK_IMPORTED_MODULE_1__[/* default */ "a"])(this).join(' ');
-    }
   }]);
 
   return ClassList;
@@ -4625,6 +4625,37 @@ var TaroElement = /*#__PURE__*/function (_TaroNode2) {
   }
 
   Object(_Users_sulei_Desktop_study_applets_node_modules_babel_runtime_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_11__[/* default */ "a"])(TaroElement, [{
+    key: "id",
+    get: function get() {
+      return this.getAttribute('id');
+    },
+    set: function set(val) {
+      this.setAttribute('id', val);
+    }
+  }, {
+    key: "classList",
+    get: function get() {
+      return new ClassList(this.className, this);
+    }
+  }, {
+    key: "className",
+    get: function get() {
+      return this.getAttribute('class') || '';
+    },
+    set: function set(val) {
+      this.setAttribute('class', val);
+    }
+  }, {
+    key: "cssText",
+    get: function get() {
+      return this.getAttribute('style') || '';
+    }
+  }, {
+    key: "children",
+    get: function get() {
+      return this.childNodes.filter(isElement);
+    }
+  }, {
     key: "hasAttribute",
     value: function hasAttribute(qualifiedName) {
       return !isUndefined(this.props[qualifiedName]);
@@ -4709,12 +4740,30 @@ var TaroElement = /*#__PURE__*/function (_TaroNode2) {
       return attr !== null && attr !== void 0 ? attr : '';
     }
   }, {
-    key: "getElementsByTagName",
-    value: function getElementsByTagName(tagName) {
+    key: "attributes",
+    get: function get() {
       var _this11 = this;
 
+      var propKeys = Object.keys(this.props);
+      var style = this.style.cssText;
+      var attrs = propKeys.map(function (p) {
+        return {
+          name: p,
+          value: _this11.props[p]
+        };
+      });
+      return attrs.concat(style ? {
+        name: 'style',
+        value: style
+      } : []);
+    }
+  }, {
+    key: "getElementsByTagName",
+    value: function getElementsByTagName(tagName) {
+      var _this12 = this;
+
       return treeToArray(this, function (el) {
-        return el.nodeName === tagName || tagName === '*' && _this11 !== el;
+        return el.nodeName === tagName || tagName === '*' && _this12 !== el;
       });
     }
   }, {
@@ -4766,6 +4815,21 @@ var TaroElement = /*#__PURE__*/function (_TaroNode2) {
       return listeners != null;
     }
   }, {
+    key: "textContent",
+    get: function get() {
+      var text = '';
+
+      for (var i = 0; i < this.childNodes.length; i++) {
+        var element = this.childNodes[i];
+        text += element.textContent;
+      }
+
+      return text;
+    },
+    set: function set(text) {
+      Object(_Users_sulei_Desktop_study_applets_node_modules_babel_runtime_helpers_esm_set__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])(Object(_Users_sulei_Desktop_study_applets_node_modules_babel_runtime_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_3__[/* default */ "a"])(TaroElement.prototype), "textContent", text, this, true);
+    }
+  }, {
     key: "_stopPropagation",
     value: function _stopPropagation(event) {
       // eslint-disable-next-line @typescript-eslint/no-this-alias
@@ -4784,70 +4848,6 @@ var TaroElement = /*#__PURE__*/function (_TaroNode2) {
         }
       }
     }
-  }, {
-    key: "id",
-    get: function get() {
-      return this.getAttribute('id');
-    },
-    set: function set(val) {
-      this.setAttribute('id', val);
-    }
-  }, {
-    key: "classList",
-    get: function get() {
-      return new ClassList(this.className, this);
-    }
-  }, {
-    key: "className",
-    get: function get() {
-      return this.getAttribute('class') || '';
-    },
-    set: function set(val) {
-      this.setAttribute('class', val);
-    }
-  }, {
-    key: "cssText",
-    get: function get() {
-      return this.getAttribute('style') || '';
-    }
-  }, {
-    key: "children",
-    get: function get() {
-      return this.childNodes.filter(isElement);
-    }
-  }, {
-    key: "attributes",
-    get: function get() {
-      var _this12 = this;
-
-      var propKeys = Object.keys(this.props);
-      var style = this.style.cssText;
-      var attrs = propKeys.map(function (p) {
-        return {
-          name: p,
-          value: _this12.props[p]
-        };
-      });
-      return attrs.concat(style ? {
-        name: 'style',
-        value: style
-      } : []);
-    }
-  }, {
-    key: "textContent",
-    get: function get() {
-      var text = '';
-
-      for (var i = 0; i < this.childNodes.length; i++) {
-        var element = this.childNodes[i];
-        text += element.textContent;
-      }
-
-      return text;
-    },
-    set: function set(text) {
-      Object(_Users_sulei_Desktop_study_applets_node_modules_babel_runtime_helpers_esm_set__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])(Object(_Users_sulei_Desktop_study_applets_node_modules_babel_runtime_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_3__[/* default */ "a"])(TaroElement.prototype), "textContent", text, this, true);
-    }
   }]);
 
   return TaroElement;
@@ -4865,16 +4865,6 @@ var FormElement = /*#__PURE__*/function (_TaroElement) {
   }
 
   Object(_Users_sulei_Desktop_study_applets_node_modules_babel_runtime_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_11__[/* default */ "a"])(FormElement, [{
-    key: "dispatchEvent",
-    value: function dispatchEvent(event) {
-      if ((event.type === 'input' || event.type === 'change') && event.mpEvent) {
-        var val = event.mpEvent.detail.value;
-        this.props.value = val;
-      }
-
-      return Object(_Users_sulei_Desktop_study_applets_node_modules_babel_runtime_helpers_esm_get__WEBPACK_IMPORTED_MODULE_2__[/* default */ "a"])(Object(_Users_sulei_Desktop_study_applets_node_modules_babel_runtime_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_3__[/* default */ "a"])(FormElement.prototype), "dispatchEvent", this).call(this, event);
-    }
-  }, {
     key: "value",
     get: function get() {
       // eslint-disable-next-line dot-notation
@@ -4883,6 +4873,16 @@ var FormElement = /*#__PURE__*/function (_TaroElement) {
     },
     set: function set(val) {
       this.setAttribute('value', val);
+    }
+  }, {
+    key: "dispatchEvent",
+    value: function dispatchEvent(event) {
+      if ((event.type === 'input' || event.type === 'change') && event.mpEvent) {
+        var val = event.mpEvent.detail.value;
+        this.props.value = val;
+      }
+
+      return Object(_Users_sulei_Desktop_study_applets_node_modules_babel_runtime_helpers_esm_get__WEBPACK_IMPORTED_MODULE_2__[/* default */ "a"])(Object(_Users_sulei_Desktop_study_applets_node_modules_babel_runtime_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_3__[/* default */ "a"])(FormElement.prototype), "dispatchEvent", this).call(this, event);
     }
   }]);
 
@@ -6219,6 +6219,16 @@ var TaroRootElement = /*#__PURE__*/function (_TaroElement2) {
   }
 
   Object(_Users_sulei_Desktop_study_applets_node_modules_babel_runtime_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_11__[/* default */ "a"])(TaroRootElement, [{
+    key: "_path",
+    get: function get() {
+      return 'root';
+    }
+  }, {
+    key: "_root",
+    get: function get() {
+      return this;
+    }
+  }, {
     key: "enqueueUpdate",
     value: function enqueueUpdate(payload) {
       this.updatePayloads.push(payload);
@@ -6383,16 +6393,6 @@ var TaroRootElement = /*#__PURE__*/function (_TaroElement2) {
       for (var i = 0; i < copies.length; i++) {
         copies[i]();
       }
-    }
-  }, {
-    key: "_path",
-    get: function get() {
-      return 'root';
-    }
-  }, {
-    key: "_root",
-    get: function get() {
-      return this;
     }
   }]);
 
@@ -6993,9 +6993,9 @@ function connectReactPage(R, id) {
 
       Object(_Users_sulei_Desktop_study_applets_node_modules_babel_runtime_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_11__[/* default */ "a"])(Page, [{
         key: "componentDidCatch",
-        // React 16 uncaught error 会导致整个应用 crash，
+        value: // React 16 uncaught error 会导致整个应用 crash，
         // 目前把错误缩小到页面
-        value: function componentDidCatch(error, info) {
+        function componentDidCatch(error, info) {
           console.warn(error);
           console.error(info.componentStack);
         }
