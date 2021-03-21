@@ -10,7 +10,7 @@
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return _objectSpread2; });
-/* harmony import */ var _babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/esm/defineProperty */ "./node_modules/@babel/runtime/helpers/esm/defineProperty.js");
+/* harmony import */ var _defineProperty_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./defineProperty.js */ "./node_modules/@babel/runtime/helpers/esm/defineProperty.js");
 
 
 function ownKeys(object, enumerableOnly) {
@@ -33,7 +33,7 @@ function _objectSpread2(target) {
 
     if (i % 2) {
       ownKeys(Object(source), true).forEach(function (key) {
-        Object(_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])(target, key, source[key]);
+        Object(_defineProperty_js__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])(target, key, source[key]);
       });
     } else if (Object.getOwnPropertyDescriptors) {
       Object.defineProperties(target, Object.getOwnPropertyDescriptors(source));
@@ -475,21 +475,21 @@ var MapLoaction = function MapLoaction() {
   }
 
   return Object(mobx_react__WEBPACK_IMPORTED_MODULE_5__[/* useObserver */ "d"])(function () {
-    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_tarojs_components__WEBPACK_IMPORTED_MODULE_6__[/* View */ "o"], {
+    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_tarojs_components__WEBPACK_IMPORTED_MODULE_6__[/* View */ "x"], {
       id: "mapLoaction"
-    }, !Location.isLocationCom && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_tarojs_components__WEBPACK_IMPORTED_MODULE_6__[/* View */ "o"], {
+    }, !Location.isLocationCom && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_tarojs_components__WEBPACK_IMPORTED_MODULE_6__[/* View */ "x"], {
       className: "nav"
-    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_tarojs_components__WEBPACK_IMPORTED_MODULE_6__[/* Picker */ "j"], {
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_tarojs_components__WEBPACK_IMPORTED_MODULE_6__[/* Picker */ "o"], {
       onChange: function onChange(e) {
         bindPickerChange(e);
       },
       range: typeArray,
       "range-key": "name"
-    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_tarojs_components__WEBPACK_IMPORTED_MODULE_6__[/* View */ "o"], {
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_tarojs_components__WEBPACK_IMPORTED_MODULE_6__[/* View */ "x"], {
       className: "picker"
-    }, traffic)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_components_start_end_form_index__WEBPACK_IMPORTED_MODULE_7__[/* default */ "a"], null)), !Location.isLocationCom && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_tarojs_components__WEBPACK_IMPORTED_MODULE_6__[/* View */ "o"], {
+    }, traffic)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_components_start_end_form_index__WEBPACK_IMPORTED_MODULE_7__[/* default */ "a"], null)), !Location.isLocationCom && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_tarojs_components__WEBPACK_IMPORTED_MODULE_6__[/* View */ "x"], {
       className: "map-wrapper"
-    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_tarojs_components__WEBPACK_IMPORTED_MODULE_6__[/* Map */ "i"], {
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_tarojs_components__WEBPACK_IMPORTED_MODULE_6__[/* Map */ "k"], {
       id: "map",
       "show-location": true,
       scale: setting.scale,
@@ -500,28 +500,28 @@ var MapLoaction = function MapLoaction() {
       onClick: function onClick(e) {
         onTap(e);
       }
-    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_tarojs_components__WEBPACK_IMPORTED_MODULE_6__[/* CoverView */ "d"], {
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_tarojs_components__WEBPACK_IMPORTED_MODULE_6__[/* CoverView */ "e"], {
       className: "weixing",
       onClick: function onClick() {
         checkSettingProps('enableSatellite');
       }
-    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_tarojs_components__WEBPACK_IMPORTED_MODULE_6__[/* CoverImage */ "c"], {
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_tarojs_components__WEBPACK_IMPORTED_MODULE_6__[/* CoverImage */ "d"], {
       className: "img",
       src: global.constants.icon["".concat(setting.enableSatellite ? 'weixingOpenIcon' : 'weixingOffIcon')]
-    })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_tarojs_components__WEBPACK_IMPORTED_MODULE_6__[/* CoverView */ "d"], {
+    })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_tarojs_components__WEBPACK_IMPORTED_MODULE_6__[/* CoverView */ "e"], {
       className: "lukuang",
       onClick: function onClick() {
         checkSettingProps('enableTraffic');
       }
-    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_tarojs_components__WEBPACK_IMPORTED_MODULE_6__[/* CoverImage */ "c"], {
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_tarojs_components__WEBPACK_IMPORTED_MODULE_6__[/* CoverImage */ "d"], {
       className: "img",
       src: global.constants.icon["".concat(setting.enableTraffic ? 'lukuangOpenIcon' : 'lukuangOffIcon')]
-    })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_tarojs_components__WEBPACK_IMPORTED_MODULE_6__[/* CoverView */ "d"], {
+    })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_tarojs_components__WEBPACK_IMPORTED_MODULE_6__[/* CoverView */ "e"], {
       className: "dingwei",
       onClick: function onClick() {
         clickLocation();
       }
-    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_tarojs_components__WEBPACK_IMPORTED_MODULE_6__[/* CoverImage */ "c"], {
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_tarojs_components__WEBPACK_IMPORTED_MODULE_6__[/* CoverImage */ "d"], {
       className: "img",
       src: global.constants.icon.mapIcon
     })))), Location.isLocationCom && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_components_location_index__WEBPACK_IMPORTED_MODULE_8__[/* default */ "a"], null));
@@ -654,45 +654,45 @@ var LocationCom = function LocationCom() {
     setCity(cityList[e.detail.value]);
   }
 
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_tarojs_components__WEBPACK_IMPORTED_MODULE_3__[/* View */ "o"], {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_tarojs_components__WEBPACK_IMPORTED_MODULE_3__[/* View */ "x"], {
     className: "location"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_tarojs_components__WEBPACK_IMPORTED_MODULE_3__[/* View */ "o"], {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_tarojs_components__WEBPACK_IMPORTED_MODULE_3__[/* View */ "x"], {
     className: "nav"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_tarojs_components__WEBPACK_IMPORTED_MODULE_3__[/* View */ "o"], {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_tarojs_components__WEBPACK_IMPORTED_MODULE_3__[/* View */ "x"], {
     className: "city"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_tarojs_components__WEBPACK_IMPORTED_MODULE_3__[/* Picker */ "j"], {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_tarojs_components__WEBPACK_IMPORTED_MODULE_3__[/* Picker */ "o"], {
     mode: "selector",
     range: cityList,
     onChange: function onChange(e) {
       onChangeCity(e);
     }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_tarojs_components__WEBPACK_IMPORTED_MODULE_3__[/* View */ "o"], {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_tarojs_components__WEBPACK_IMPORTED_MODULE_3__[/* View */ "x"], {
     className: "picker"
-  }, city))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_tarojs_components__WEBPACK_IMPORTED_MODULE_3__[/* Input */ "h"], {
+  }, city))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_tarojs_components__WEBPACK_IMPORTED_MODULE_3__[/* Input */ "i"], {
     className: "address",
     type: "text",
     onInput: function onInput(e) {
       inputText(e);
     },
     placeholder: "\u8BF7\u8F93\u5165"
-  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_tarojs_components__WEBPACK_IMPORTED_MODULE_3__[/* View */ "o"], {
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_tarojs_components__WEBPACK_IMPORTED_MODULE_3__[/* View */ "x"], {
     className: "content"
   }, filterList && filterList.map(function (item) {
-    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_tarojs_components__WEBPACK_IMPORTED_MODULE_3__[/* View */ "o"], {
+    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_tarojs_components__WEBPACK_IMPORTED_MODULE_3__[/* View */ "x"], {
       className: "item",
       key: item.id
-    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_tarojs_components__WEBPACK_IMPORTED_MODULE_3__[/* CoverImage */ "c"], {
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_tarojs_components__WEBPACK_IMPORTED_MODULE_3__[/* CoverImage */ "d"], {
       className: "img",
       src: global.constants.icon.mapIcon
-    }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_tarojs_components__WEBPACK_IMPORTED_MODULE_3__[/* View */ "o"], {
+    }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_tarojs_components__WEBPACK_IMPORTED_MODULE_3__[/* View */ "x"], {
       className: "text",
       key: item.id,
       onClick: function onClick() {
         tapAddress(item);
       }
-    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_tarojs_components__WEBPACK_IMPORTED_MODULE_3__[/* Text */ "m"], {
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_tarojs_components__WEBPACK_IMPORTED_MODULE_3__[/* Text */ "v"], {
       className: "title"
-    }, item.title), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_tarojs_components__WEBPACK_IMPORTED_MODULE_3__[/* Text */ "m"], {
+    }, item.title), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_tarojs_components__WEBPACK_IMPORTED_MODULE_3__[/* Text */ "v"], {
       className: "value"
     }, item.address)));
   })));
@@ -774,9 +774,9 @@ function StartEndForm() {
     return function () {};
   }, []);
   return Object(mobx_react__WEBPACK_IMPORTED_MODULE_3__[/* useObserver */ "d"])(function () {
-    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_tarojs_components__WEBPACK_IMPORTED_MODULE_2__[/* View */ "o"], {
+    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_tarojs_components__WEBPACK_IMPORTED_MODULE_2__[/* View */ "x"], {
       className: "input-box"
-    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_tarojs_components__WEBPACK_IMPORTED_MODULE_2__[/* Input */ "h"], {
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_tarojs_components__WEBPACK_IMPORTED_MODULE_2__[/* Input */ "i"], {
       className: "input",
       value: Location.startAddress.title,
       type: "text",
@@ -784,7 +784,7 @@ function StartEndForm() {
         changeText("startAddress");
       },
       placeholder: "\u8F93\u5165\u8D77\u59CB\u4F4D\u7F6E"
-    }), "-", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_tarojs_components__WEBPACK_IMPORTED_MODULE_2__[/* Input */ "h"], {
+    }), "-", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_tarojs_components__WEBPACK_IMPORTED_MODULE_2__[/* Input */ "i"], {
       className: "input",
       value: Location.endAddress.title,
       type: "text",
@@ -1580,7 +1580,7 @@ var QQMapWX = /*#__PURE__*/function () {
 
   Object(_Users_sulei_Desktop_study_applets_node_modules_babel_runtime_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_1__[/* default */ "a"])(QQMapWX, [{
     key: "search",
-
+    value:
     /**
      * POI周边检索
      *
@@ -1589,7 +1589,7 @@ var QQMapWX = /*#__PURE__*/function () {
      * 参数对象结构可以参考
      * @see http://lbs.qq.com/webservice_v1/guide-search.html
      */
-    value: function search(options) {
+    function search(options) {
       var that = this;
       options = options || {};
       Utils.polyfillParam(options);
@@ -1662,7 +1662,7 @@ var QQMapWX = /*#__PURE__*/function () {
     }
   }, {
     key: "getSuggestion",
-
+    value:
     /**
      * sug模糊检索
      *
@@ -1671,7 +1671,7 @@ var QQMapWX = /*#__PURE__*/function () {
      * 参数对象结构可以参考
      * http://lbs.qq.com/webservice_v1/guide-suggestion.html
      */
-    value: function getSuggestion(options) {
+    function getSuggestion(options) {
       var that = this;
       options = options || {};
       Utils.polyfillParam(options);
@@ -1733,7 +1733,7 @@ var QQMapWX = /*#__PURE__*/function () {
     }
   }, {
     key: "reverseGeocoder",
-
+    value:
     /**
      * 逆地址解析
      *
@@ -1742,7 +1742,7 @@ var QQMapWX = /*#__PURE__*/function () {
      * 请求参数结构可以参考
      * http://lbs.qq.com/webservice_v1/guide-gcoder.html
      */
-    value: function reverseGeocoder(options) {
+    function reverseGeocoder(options) {
       var that = this;
       options = options || {};
       Utils.polyfillParam(options);
@@ -1774,7 +1774,7 @@ var QQMapWX = /*#__PURE__*/function () {
     }
   }, {
     key: "geocoder",
-
+    value:
     /**
      * 地址解析
      *
@@ -1783,7 +1783,7 @@ var QQMapWX = /*#__PURE__*/function () {
      * 请求参数结构可以参考
      * http://lbs.qq.com/webservice_v1/guide-geocoder.html
      */
-    value: function geocoder(options) {
+    function geocoder(options) {
       var that = this;
       options = options || {};
       Utils.polyfillParam(options);
@@ -1813,7 +1813,7 @@ var QQMapWX = /*#__PURE__*/function () {
     }
   }, {
     key: "getCityList",
-
+    value:
     /**
      * 获取城市列表
      *
@@ -1822,7 +1822,7 @@ var QQMapWX = /*#__PURE__*/function () {
      * 请求参数结构可以参考
      * http://lbs.qq.com/webservice_v1/guide-region.html
      */
-    value: function getCityList(options) {
+    function getCityList(options) {
       var that = this;
       options = options || {};
       Utils.polyfillParam(options);
@@ -1842,7 +1842,7 @@ var QQMapWX = /*#__PURE__*/function () {
     }
   }, {
     key: "getDistrictByCityId",
-
+    value:
     /**
      * 获取对应城市ID的区县列表
      *
@@ -1851,7 +1851,7 @@ var QQMapWX = /*#__PURE__*/function () {
      * 请求参数结构可以参考
      * http://lbs.qq.com/webservice_v1/guide-region.html
      */
-    value: function getDistrictByCityId(options) {
+    function getDistrictByCityId(options) {
       var that = this;
       options = options || {};
       Utils.polyfillParam(options);
@@ -1877,7 +1877,7 @@ var QQMapWX = /*#__PURE__*/function () {
     }
   }, {
     key: "calculateDistance",
-
+    value:
     /**
      * 用于单起点到多终点的路线距离(非直线距离)计算：
      * 支持两种距离计算方式：步行和驾车。
@@ -1890,7 +1890,7 @@ var QQMapWX = /*#__PURE__*/function () {
      * 请求参数结构可以参考
      * http://lbs.qq.com/webservice_v1/guide-distance.html
      */
-    value: function calculateDistance(options) {
+    function calculateDistance(options) {
       var that = this;
       options = options || {};
       Utils.polyfillParam(options);
@@ -1972,7 +1972,7 @@ var QQMapWX = /*#__PURE__*/function () {
     }
   }, {
     key: "direction",
-
+    value:
     /**
      * 路线规划：
      * 
@@ -1981,7 +1981,7 @@ var QQMapWX = /*#__PURE__*/function () {
      * 请求参数结构可以参考
      * https://lbs.qq.com/webservice_v1/guide-road.html
      */
-    value: function direction(options) {
+    function direction(options) {
       var that = this;
       options = options || {};
       Utils.polyfillParam(options);

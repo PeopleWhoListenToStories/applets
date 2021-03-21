@@ -111,5 +111,9 @@ export default {
     put: function (url, data, contentType) {
         let params = { url, data, contentType }
         return this.baseOptions(params, 'PUT')
+    },
+    delete: function (url, data, contentType) {
+        let params = { url, data, contentType }
+        return this.baseOptions(params, 'DELETE')
     }
 }

@@ -20,3 +20,14 @@ export const createType = (params) => {
     return request.post('/api/target', params)
 }
 
+export const removeFlagType = (params) => {
+    return request.delete(`/api/target/${params}`)
+}
+
+export const removeDayFlagType = (params) => {
+    return request.post(`/api/deleteTarget`, params)
+}
+
+export const createLeavingMessage = (params) => {
+    return request.post('/api/createLeavingMessage', params)
+}

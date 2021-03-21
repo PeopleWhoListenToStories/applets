@@ -1,11 +1,15 @@
 import React, { useEffect, useState } from 'react'
 import Taro, { useDidShow, useDidHide } from '@tarojs/taro'
+import { View, Text, Input } from '@tarojs/components'
+import { AtAccordion, AtList, AtListItem } from 'taro-ui'
+
 import { useObserver } from 'mobx-react'
-import { View, Text, Input, Button } from '@tarojs/components'
 import Photo from './components/Phtot'
 import store from '../../store/index'
 import { Toast } from '../../utils/tool'
 import { getUserInfo, updateUserName } from '../../service/apiModules/user'
+import "taro-ui/dist/style/components/accordion.scss";
+import "taro-ui/dist/style/components/icon.scss";
 import '../../../config.ts'
 import './index.scss'
 
@@ -14,6 +18,7 @@ const My: React.FC = () => {
   const [touchStartTime, setTouchStartTime] = useState<number>(0)
   const [isShowUserName, setShowUserName] = useState<boolean>(false)
   const [userName, setUserName] = useState<string>('')
+  const [open, setOpen] = useState<boolean>(false)
 
   useDidShow(() => {
     getUserInfoFn()
@@ -131,6 +136,10 @@ const My: React.FC = () => {
     }
   }
 
+  function handleOpenClick(value) {
+    setOpen(value)
+  }
+
   return useObserver(() => (
     <View className='container'>
       <View className='nav'>
@@ -146,8 +155,33 @@ const My: React.FC = () => {
         </View>
       </View>
       <View className='content'>
-        <Text className='lebalItem' onClick={() => { clickToEmptyPage('about') }}>关于我们</Text>
-        <Text className='lebalItem' onClick={() => { exitLogin() }}>退出登陆</Text>
+        <AtAccordion
+          open={open}
+          onClick={(e) => { handleOpenClick(e) }}
+          title='    本是青灯不归客，却因浊酒恋红尘.'
+          note='     星光不负赶路人，岁月不负有心人.'
+        >
+          <AtList hasBorder={false}>
+            <AtListItem
+              title='关于我们'
+              arrow='right'
+              thumb='https://img14.360buyimg.com/jdphoto/s72x72_jfs/t17251/336/1311038817/3177/72595a07/5ac44618Na1db7b09.png'
+              onClick={() => { clickToEmptyPage('about') }}
+            />
+            <AtListItem
+              title='意见留言'
+              note='您的建议是我们进步的动力！'
+              arrow='right'
+              thumb='http://img10.360buyimg.com/jdphoto/s72x72_jfs/t5872/209/5240187906/2872/8fa98cd/595c3b2aN4155b931.png'
+              onClick={() => { clickToEmptyPage('leaving-message') }}
+            />
+          </AtList>
+        </AtAccordion>
+        <AtListItem
+          className='lebalItem'
+          title='退出登陆'
+          onClick={() => { exitLogin() }}
+        />
       </View>
       {/* <CoverView className='play' >
                 <CoverImage className='img' src='../../assets/image/newyear.png' />
