@@ -17,7 +17,8 @@
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_3__);
 /* harmony import */ var _tarojs_taro__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @tarojs/taro */ "./node_modules/@tarojs/taro/index.js");
 /* harmony import */ var _tarojs_taro__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_tarojs_taro__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var taro_ui__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! taro-ui */ "./node_modules/taro-ui/dist/index.esm.js");
+/* harmony import */ var taro_ui__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! taro-ui */ "./node_modules/taro-ui/dist/index.umd.js");
+/* harmony import */ var taro_ui__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(taro_ui__WEBPACK_IMPORTED_MODULE_5__);
 /* harmony import */ var _tarojs_components__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @tarojs/components */ "./node_modules/@tarojs/components/mini/index.js");
 /* harmony import */ var _service_apiModules_api__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../../service/apiModules/api */ "./src/service/apiModules/api.js");
 /* harmony import */ var taro_ui_dist_style_components_message_scss__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! taro-ui/dist/style/components/message.scss */ "./node_modules/taro-ui/dist/style/components/message.scss");
@@ -114,6 +115,11 @@ var LeavingMessage = function LeavingMessage() {
                   'message': data.massage,
                   'type': 'success'
                 });
+              } else {
+                _tarojs_taro__WEBPACK_IMPORTED_MODULE_4___default.a.atMessage({
+                  'message': data.massage,
+                  'type': 'warning'
+                });
               }
 
               _context.next = 9;
@@ -141,9 +147,9 @@ var LeavingMessage = function LeavingMessage() {
     });
   }
 
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_tarojs_components__WEBPACK_IMPORTED_MODULE_6__[/* View */ "x"], {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_tarojs_components__WEBPACK_IMPORTED_MODULE_6__["View"], {
     className: "leaving-message"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(taro_ui__WEBPACK_IMPORTED_MODULE_5__[/* AtNavBar */ "h"], {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(taro_ui__WEBPACK_IMPORTED_MODULE_5__["AtNavBar"], {
     onClickRgIconSt: function onClickRgIconSt() {
       handleClickBack();
     },
@@ -157,7 +163,7 @@ var LeavingMessage = function LeavingMessage() {
     leftText: "\u8FD4\u56DE",
     title: "\u7559\u8A00",
     leftIconType: "chevron-left"
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(taro_ui__WEBPACK_IMPORTED_MODULE_5__[/* AtTextarea */ "j"], {
+  }, " "), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(taro_ui__WEBPACK_IMPORTED_MODULE_5__["AtTextarea"], {
     className: "text",
     value: message,
     onChange: function onChange(e) {
@@ -165,14 +171,14 @@ var LeavingMessage = function LeavingMessage() {
     },
     maxLength: 200,
     height: 300,
-    placeholder: "\u4F60\u7684\u95EE\u9898\u662F..."
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(taro_ui__WEBPACK_IMPORTED_MODULE_5__[/* AtButton */ "b"], {
+    placeholder: "\u60A8\u7684\u95EE\u9898\u662F..."
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(taro_ui__WEBPACK_IMPORTED_MODULE_5__["AtButton"], {
     className: "at-icon-menu",
     type: "primary",
     onClick: function onClick() {
       sendMessage();
     }
-  }, "\u63D0\u4EA4"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(taro_ui__WEBPACK_IMPORTED_MODULE_5__[/* AtMessage */ "g"], null));
+  }, "\u63D0\u4EA4"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(taro_ui__WEBPACK_IMPORTED_MODULE_5__["AtMessage"], null));
 };
 
 /* harmony default export */ __webpack_exports__["a"] = (LeavingMessage);

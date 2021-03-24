@@ -108,7 +108,7 @@ const Notauthority = () => {
                     />
                     {
                         disabledCode >= 60 ? <AtButton className="code-btn" onClick={() => { getCode() }}>获取验证码</AtButton> :
-                            <AtButton className="code-btn" >{disabledCode}秒后再次获取</AtButton>
+                            <AtButton className="code-btn" >{disabledCode}秒后再获取</AtButton>
                     }
                 </View>
                 <AtButton className="btn" formType='submit' onClick={() => { Userlogin() }}>提交</AtButton>

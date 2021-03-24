@@ -51,6 +51,11 @@ const LeavingMessage: React.FC = () => {
                     'message': data.massage,
                     'type': 'success',
                 })
+            } else {
+                Taro.atMessage({
+                    'message': data.massage,
+                    'type': 'warning',
+                })
             }
         } else {
             Taro.atMessage({
@@ -76,15 +81,14 @@ const LeavingMessage: React.FC = () => {
                 leftText='返回'
                 title="留言"
                 leftIconType='chevron-left'
-            >
-            </AtNavBar>
+            > </AtNavBar>
             <AtTextarea
                 className="text"
                 value={message}
                 onChange={(e) => { handleMessageChange(e) }}
                 maxLength={200}
                 height={300}
-                placeholder='你的问题是...'
+                placeholder='您的问题是...'
             />
             <AtButton className='at-icon-menu' type='primary' onClick={() => { sendMessage() }}>提交</AtButton>
             <AtMessage />

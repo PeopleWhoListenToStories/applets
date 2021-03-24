@@ -10,6 +10,8 @@ import { Toast } from '../../utils/tool'
 import { getUserInfo, updateUserName } from '../../service/apiModules/user'
 import "taro-ui/dist/style/components/accordion.scss";
 import "taro-ui/dist/style/components/icon.scss";
+import "taro-ui/dist/style/components/swipe-action.scss";
+
 import '../../../config.ts'
 import './index.scss'
 
@@ -170,7 +172,7 @@ const My: React.FC = () => {
             />
             <AtListItem
               title='意见留言'
-              note='您的建议是我们进步的动力！'
+              note='您的建议是我们的动力！'
               arrow='right'
               thumb='http://img10.360buyimg.com/jdphoto/s72x72_jfs/t5872/209/5240187906/2872/8fa98cd/595c3b2aN4155b931.png'
               onClick={() => { clickToEmptyPage('leaving-message') }}

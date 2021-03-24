@@ -24,6 +24,12 @@
 .content{
     flex: 1;
     overflow-y: scroll;
+    .at-swipe-action{
+        width: 100% !important;
+        .at-swipe-action__area{
+            width: 300rpx;
+        }
+    }
     .item{
         padding: 10rpx 0 10rpx 20rpx;
         display: grid;

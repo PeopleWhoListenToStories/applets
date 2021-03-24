@@ -41,6 +41,14 @@
   <icon type="{{i.type}}" size="{{xs.b(i.size,23)}}" color="{{i.color}}" style="{{i.st}}" class="{{i.cl}}" bindtap="eh"  id="{{i.uid}}"></icon>
 </template>
 
+<template name="tmpl_0_progress">
+  <progress percent="{{i.percent}}" show-info="{{xs.b(i.showInfo,false)}}" border-radius="{{xs.b(i.borderRadius,0)}}" font-size="{{xs.b(i.fontSize,16)}}" stroke-width="{{xs.b(i.strokeWidth,6)}}" color="{{xs.b(i.color,'#09BB07')}}" activeColor="{{xs.b(i.activeColor,'#09BB07')}}" backgroundColor="{{xs.b(i.backgroundColor,'#EBEBEB')}}" active="{{xs.b(i.active,false)}}" active-mode="{{xs.b(i.activeMode,'backwards')}}" duration="{{xs.b(i.duration,30)}}" bindactiveend="eh" style="{{i.st}}" class="{{i.cl}}" bindtap="eh"  id="{{i.uid}}"></progress>
+</template>
+
+<template name="tmpl_0_rich-text">
+  <rich-text nodes="{{xs.b(i.nodes,[])}}" space="{{i.space}}" style="{{i.st}}" class="{{i.cl}}" bindtap="eh"  id="{{i.uid}}"></rich-text>
+</template>
+
 <template name="tmpl_0_static-text">
   <text selectable="{{xs.b(i.selectable,false)}}" space="{{i.space}}" decode="{{xs.b(i.decode,false)}}" style="{{i.st}}" class="{{i.cl}}"  id="{{i.uid}}">
     <block wx:for="{{i.cn}}" wx:key="uid">
@@ -71,6 +79,26 @@
       <template is="{{xs.e(cid+1)}}" data="{{i:item,l:l}}" />
     </block>
   </checkbox>
+</template>
+
+<template name="tmpl_0_checkbox-group">
+  <checkbox-group bindchange="eh" name="{{i.name}}" style="{{i.st}}" class="{{i.cl}}" bindtap="eh"  id="{{i.uid}}">
+    <block wx:for="{{i.cn}}" wx:key="uid">
+      <template is="{{xs.e(cid+1)}}" data="{{i:item,l:l}}" />
+    </block>
+  </checkbox-group>
+</template>
+
+<template name="tmpl_0_editor">
+  <template is="{{xs.c(i, 'tmpl_0_')}}" data="{{i:i}}" />
+</template>
+
+<template name="tmpl_0_editor_focus">
+  <editor read-only="{{xs.b(i.readOnly,false)}}" placeholder="{{i.placeholder}}" show-img-size="{{xs.b(i.showImgSize,false)}}" show-img-toolbar="{{xs.b(i.showImgToolbar,false)}}" show-img-resize="{{xs.b(i.showImgResize,false)}}" focus="{{xs.b(i.focus,false)}}" bindready="eh" bindfocus="eh" bindblur="eh" bindinput="eh" bindstatuschange="eh" name="{{i.name}}" style="{{i.st}}" class="{{i.cl}}" bindtap="eh"  id="{{i.uid}}" />
+</template>
+
+<template name="tmpl_0_editor_blur">
+  <editor read-only="{{xs.b(i.readOnly,false)}}" placeholder="{{i.placeholder}}" show-img-size="{{xs.b(i.showImgSize,false)}}" show-img-toolbar="{{xs.b(i.showImgToolbar,false)}}" show-img-resize="{{xs.b(i.showImgResize,false)}}" bindready="eh" bindfocus="eh" bindblur="eh" bindinput="eh" bindstatuschange="eh" name="{{i.name}}" style="{{i.st}}" class="{{i.cl}}" bindtap="eh"  id="{{i.uid}}" />
 </template>
 
 <template name="tmpl_0_form">
@@ -107,6 +135,30 @@
       <template is="{{xs.e(cid+1)}}" data="{{i:item,l:l}}" />
     </block>
   </picker>
+</template>
+
+<template name="tmpl_0_picker-view">
+  <picker-view value="{{i.value}}" indicator-style="{{i.indicatorStyle}}" indicator-class="{{i.indicatorClass}}" mask-style="{{i.maskStyle}}" mask-class="{{i.maskClass}}" bindchange="eh" bindpickstart="eh" bindpickend="eh" name="{{i.name}}" style="{{i.st}}" class="{{i.cl}}" bindtap="eh"  id="{{i.uid}}">
+    <block wx:for="{{i.cn}}" wx:key="uid">
+      <template is="{{xs.e(cid+1)}}" data="{{i:item,l:l}}" />
+    </block>
+  </picker-view>
+</template>
+
+<template name="tmpl_0_picker-view-column">
+  <picker-view-column name="{{i.name}}" style="{{i.st}}" class="{{i.cl}}" bindtap="eh"  id="{{i.uid}}">
+    <block wx:for="{{i.cn}}" wx:key="uid">
+      <template is="{{xs.e(cid+1)}}" data="{{i:item,l:l}}" />
+    </block>
+  </picker-view-column>
+</template>
+
+<template name="tmpl_0_radio">
+  <radio value="{{i.value}}" checked="{{xs.b(i.checked,false)}}" disabled="{{i.disabled}}" color="{{xs.b(i.color,'#09BB07')}}" name="{{i.name}}" style="{{i.st}}" class="{{i.cl}}" bindtap="eh"  id="{{i.uid}}">
+    <block wx:for="{{i.cn}}" wx:key="uid">
+      <template is="{{xs.e(cid+1)}}" data="{{i:item,l:l}}" />
+    </block>
+  </radio>
 </template>
 
 <template name="tmpl_0_radio-group">
@@ -153,6 +205,14 @@
   </cover-view>
 </template>
 
+<template name="tmpl_0_match-media">
+  <match-media min-width="{{i.minWidth}}" max-width="{{i.maxWidth}}" width="{{i.width}}" min-height="{{i.minHeight}}" max-height="{{i.maxHeight}}" height="{{i.height}}" orientation="{{i.orientation}}" style="{{i.st}}" class="{{i.cl}}" bindtap="eh"  id="{{i.uid}}">
+    <block wx:for="{{i.cn}}" wx:key="uid">
+      <template is="{{xs.e(cid+1)}}" data="{{i:item,l:l}}" />
+    </block>
+  </match-media>
+</template>
+
 <template name="tmpl_0_movable-area">
   <movable-area scale-area="{{xs.b(i.scaleArea,false)}}" style="{{i.st}}" class="{{i.cl}}" bindtap="eh"  id="{{i.uid}}">
     <block wx:for="{{i.cn}}" wx:key="uid">
@@ -193,6 +253,34 @@
   </swiper-item>
 </template>
 
+<template name="tmpl_0_functional-page-navigator">
+  <functional-page-navigator version="{{xs.b(i.version,'release')}}" name="{{i.name}}" args="{{i.args}}" bindsuccess="eh" bindfail="eh" bindcancel="eh" style="{{i.st}}" class="{{i.cl}}" bindtap="eh"  id="{{i.uid}}">
+    <block wx:for="{{i.cn}}" wx:key="uid">
+      <template is="{{xs.e(cid+1)}}" data="{{i:item,l:l}}" />
+    </block>
+  </functional-page-navigator>
+</template>
+
+<template name="tmpl_0_navigator">
+  <navigator target="{{xs.b(i.target,'self')}}" url="{{i.url}}" open-type="{{xs.b(i.openType,'navigate')}}" delta="{{xs.b(i.delta,1)}}" app-id="{{i.appId}}" path="{{i.path}}" extra-data="{{i.extraData}}" version="{{xs.b(i.version,'version')}}" hover-class="{{xs.b(i.hoverClass,'navigator-hover')}}" hover-stop-propagation="{{xs.b(i.hoverStopPropagation,false)}}" hover-start-time="{{xs.b(i.hoverStartTime,50)}}" hover-stay-time="{{xs.b(i.hoverStayTime,600)}}" bindsuccess="eh" bindfail="eh" bindcomplete="eh" style="{{i.st}}" class="{{i.cl}}" bindtap="eh"  id="{{i.uid}}">
+    <block wx:for="{{i.cn}}" wx:key="uid">
+      <template is="{{xs.e(cid+1)}}" data="{{i:item,l:l}}" />
+    </block>
+  </navigator>
+</template>
+
+<template name="tmpl_0_audio">
+  <audio id="{{i.id}}" src="{{i.src}}" loop="{{xs.b(i.loop,false)}}" controls="{{xs.b(i.controls,false)}}" poster="{{i.poster}}" name="{{i.name}}" author="{{i.author}}" binderror="eh" bindplay="eh" bindpause="eh" bindtimeupdate="eh" bindended="eh" style="{{i.st}}" class="{{i.cl}}" bindtap="eh"  id="{{i.uid}}"></audio>
+</template>
+
+<template name="tmpl_0_camera">
+  <camera mode="{{xs.b(i.mode,'normal')}}" device-position="{{xs.b(i.devicePosition,'back')}}" flash="{{xs.b(i.flash,'auto')}}" frame-size="{{xs.b(i.frameSize,'medium')}}" bindstop="eh" binderror="eh" bindinitdone="eh" bindscancode="eh" style="{{i.st}}" class="{{i.cl}}" bindtap="eh"  id="{{i.uid}}">
+    <block wx:for="{{i.cn}}" wx:key="uid">
+      <template is="{{xs.e(cid+1)}}" data="{{i:item,l:l}}" />
+    </block>
+  </camera>
+</template>
+
 <template name="tmpl_0_static-image">
   <image src="{{i.src}}" mode="{{xs.b(i.mode,'scaleToFill')}}" webp="{{xs.b(i.webp,false)}}" lazy-load="{{xs.b(i.lazyLoad,false)}}" show-menu-by-longpress="{{xs.b(i.showMenuByLongpress,false)}}" style="{{i.st}}" class="{{i.cl}}"  id="{{i.uid}}">
     <block wx:for="{{i.cn}}" wx:key="uid">
@@ -209,6 +297,30 @@
   </image>
 </template>
 
+<template name="tmpl_0_live-player">
+  <live-player src="{{i.src}}" mode="{{xs.b(i.mode,'live')}}" autoplay="{{xs.b(i.autoplay,false)}}" muted="{{xs.b(i.muted,false)}}" orientation="{{xs.b(i.orientation,'vertical')}}" object-fit="{{xs.b(i.objectFit,'contain')}}" background-mute="{{xs.b(i.backgroundMute,false)}}" min-cache="{{xs.b(i.minCache,1)}}" max-cache="{{xs.b(i.maxCache,3)}}" sound-mode="{{xs.b(i.soundMode,'speaker')}}" auto-pause-if-navigate="{{xs.b(i.autoPauseIfNavigate,true)}}" auto-pause-if-open-native="{{xs.b(i.autoPauseIfOpenNative,true)}}" picture-in-picture-mode="{{xs.b(i.pictureInPictureMode,[])}}" animation="{{i.animation}}" bindstatechange="eh" bindfullscreenchange="eh" bindnetstatus="eh" bindaudiovolumenotify="eh" bindenterpictureinpicture="eh" bindleavepictureinpicture="eh" style="{{i.st}}" class="{{i.cl}}" bindtap="eh"  id="{{i.uid}}">
+    <block wx:for="{{i.cn}}" wx:key="uid">
+      <template is="{{xs.e(cid+1)}}" data="{{i:item,l:l}}" />
+    </block>
+  </live-player>
+</template>
+
+<template name="tmpl_0_live-pusher">
+  <live-pusher url="{{i.url}}" mode="{{xs.b(i.mode,'RTC')}}" autopush="{{xs.b(i.autopush,false)}}" muted="{{xs.b(i.muted,false)}}" enable-camera="{{xs.b(i.enableCamera,true)}}" auto-focus="{{xs.b(i.autoFocus,true)}}" orientation="{{xs.b(i.orientation,'vertical')}}" beauty="{{xs.b(i.beauty,0)}}" whiteness="{{xs.b(i.whiteness,0)}}" aspect="{{xs.b(i.aspect,'9:16')}}" min-bitrate="{{xs.b(i.minBitrate,200)}}" max-bitrate="{{xs.b(i.maxBitrate,1000)}}" audio-quality="{{xs.b(i.audioQuality,'high')}}" waiting-image="{{i.waitingImage}}" waiting-image-hash="{{i.waitingImageHash}}" zoom="{{xs.b(i.zoom,false)}}" device-position="{{xs.b(i.devicePosition,'front')}}" background-mute="{{xs.b(i.backgroundMute,false)}}" mirror="{{xs.b(i.mirror,false)}}" remote-mirror="{{xs.b(i.remoteMirror,false)}}" local-mirror="{{xs.b(i.localMirror,false)}}" audio-reverb-type="{{xs.b(i.audioReverbType,0)}}" enable-mic="{{xs.b(i.enableMic,true)}}" enable-agc="{{xs.b(i.enableAgc,false)}}" enable-ans="{{xs.b(i.enableAns,false)}}" audio-volume-type="{{xs.b(i.audioVolumeType,'voicecall')}}" video-width="{{xs.b(i.videoWidth,360)}}" video-height="{{xs.b(i.videoHeight,640)}}" animation="{{i.animation}}" bindstatechange="eh" bindnetstatus="eh" bindbgmstart="eh" bindbgmprogress="eh" bindbgmcomplete="eh" style="{{i.st}}" class="{{i.cl}}" bindtap="eh"  id="{{i.uid}}">
+    <block wx:for="{{i.cn}}" wx:key="uid">
+      <template is="{{xs.e(cid+1)}}" data="{{i:item,l:l}}" />
+    </block>
+  </live-pusher>
+</template>
+
+<template name="tmpl_0_video">
+  <video src="{{i.src}}" duration="{{i.duration}}" controls="{{xs.b(i.controls,true)}}" danmu-list="{{i.danmuList}}" danmu-btn="{{i.danmuBtn}}" enable-danmu="{{i.enableDanmu}}" autoplay="{{xs.b(i.autoplay,false)}}" loop="{{xs.b(i.loop,false)}}" muted="{{xs.b(i.muted,false)}}" initial-time="{{xs.b(i.initialTime,0)}}" page-gesture="{{xs.b(i.pageGesture,false)}}" direction="{{i.direction}}" show-progress="{{xs.b(i.showProgress,true)}}" show-fullscreen-btn="{{xs.b(i.showFullscreenBtn,true)}}" show-play-btn="{{xs.b(i.showPlayBtn,true)}}" show-center-play-btn="{{xs.b(i.showCenterPlayBtn,true)}}" enable-progress-gesture="{{xs.b(i.enableProgressGesture,true)}}" object-fit="{{xs.b(i.objectFit,'contain')}}" poster="{{i.poster}}" show-mute-btn="{{xs.b(i.showMuteBtn,false)}}" title="{{i.title}}" play-btn-position="{{xs.b(i.playBtnPosition,'bottom')}}" enable-play-gesture="{{xs.b(i.enablePlayGesture,false)}}" auto-pause-if-navigate="{{xs.b(i.autoPauseIfNavigate,true)}}" auto-pause-if-open-native="{{xs.b(i.autoPauseIfOpenNative,true)}}" vslide-gesture="{{xs.b(i.vslideGesture,false)}}" vslide-gesture-in-fullscreen="{{xs.b(i.vslideGestureInFullscreen,true)}}" ad-unit-id="{{i.adUnitId}}" poster-for-crawler="{{i.posterForCrawler}}" show-casting-button="{{xs.b(i.showCastingButton,false)}}" picture-in-picture-mode="{{xs.b(i.pictureInPictureMode,[])}}" enable-auto-rotation="{{xs.b(i.enableAutoRotation,false)}}" show-screen-lock-button="{{xs.b(i.showScreenLockButton,false)}}" animation="{{i.animation}}" bindplay="eh" bindpause="eh" bindended="eh" bindtimeupdate="eh" bindfullscreenchange="eh" bindwaiting="eh" binderror="eh" bindprogress="eh" bindloadedmetadata="eh" bindcontrolstoggle="eh" bindenterpictureinpicture="eh" bindleavepictureinpicture="eh" bindseekcomplete="eh" style="{{i.st}}" class="{{i.cl}}" bindtap="eh"  id="{{i.uid}}">
+    <block wx:for="{{i.cn}}" wx:key="uid">
+      <template is="{{xs.e(cid+1)}}" data="{{i:item,l:l}}" />
+    </block>
+  </video>
+</template>
+
 <template name="tmpl_0_canvas">
   <canvas type="{{i.type}}" canvas-id="{{i.canvasId}}" disable-scroll="{{xs.b(i.disableScroll,false)}}" bindtouchstart="eh" bindtouchmove="eh" bindtouchend="eh" bindtouchcancel="eh" bindlongtap="eh" binderror="eh" style="{{i.st}}" class="{{i.cl}}" bindtap="eh"  id="{{i.uid}}">
     <block wx:for="{{i.cn}}" wx:key="uid">
@@ -217,8 +329,44 @@
   </canvas>
 </template>
 
+<template name="tmpl_0_ad">
+  <ad ad-intervals="{{i.adIntervals}}" ad-type="{{xs.b(i.adType,'banner')}}" ad-theme="{{xs.b(i.adTheme,'white')}}" bindload="eh" binderror="eh" bindclose="eh" unit-id="{{i.unitId}}" style="{{i.st}}" class="{{i.cl}}" bindtap="eh"  id="{{i.uid}}"></ad>
+</template>
+
+<template name="tmpl_0_official-account">
+  <official-account bindload="eh" binderror="eh" style="{{i.st}}" class="{{i.cl}}" bindtap="eh"  id="{{i.uid}}"></official-account>
+</template>
+
 <template name="tmpl_0_open-data">
   <open-data type="{{i.type}}" open-gid="{{i.openGid}}" lang="{{xs.b(i.lang,'en')}}" default-text="{{i.defaultText}}" default-avatar="{{i.defaultAvatar}}" binderror="eh" style="{{i.st}}" class="{{i.cl}}" bindtap="eh"  id="{{i.uid}}"></open-data>
+</template>
+
+<template name="tmpl_0_web-view">
+  <web-view src="{{i.src}}" bindmessage="eh" bindload="eh" style="{{i.st}}" class="{{i.cl}}" bindtap="eh"  id="{{i.uid}}">
+    <block wx:for="{{i.cn}}" wx:key="uid">
+      <template is="{{xs.e(cid+1)}}" data="{{i:item,l:l}}" />
+    </block>
+  </web-view>
+</template>
+
+<template name="tmpl_0_navigation-bar">
+  <navigation-bar title="{{i.title}}" loading="{{xs.b(i.loading,false)}}" front-color="{{i.frontColor}}" background-color="{{i.backgroundColor}}" color-animation-duration="{{xs.b(i.colorAnimationDuration,0)}}" color-animation-timing-func="{{xs.b(i.colorAnimationTimingFunc,'linear')}}" style="{{i.st}}" class="{{i.cl}}" bindtap="eh"  id="{{i.uid}}"></navigation-bar>
+</template>
+
+<template name="tmpl_0_page-meta">
+  <page-meta background-text-style="{{i.backgroundTextStyle}}" background-color="{{i.backgroundColor}}" background-color-top="{{i.backgroundColorTop}}" background-color-bottom="{{i.backgroundColorBottom}}" scroll-top="{{xs.b(i.scrollTop,'')}}" scroll-duration="{{xs.b(i.scrollDuration,300)}}" page-style="{{xs.b(i.pageStyle,'')}}" root-font-size="{{xs.b(i.rootFontSize,'')}}" bindresize="eh" bindscroll="eh" bindscrolldone="eh" style="{{i.st}}" class="{{i.cl}}" bindtap="eh"  id="{{i.uid}}">
+    <block wx:for="{{i.cn}}" wx:key="uid">
+      <template is="{{xs.e(cid+1)}}" data="{{i:item,l:l}}" />
+    </block>
+  </page-meta>
+</template>
+
+<template name="tmpl_0_block">
+  <block  id="{{i.uid}}">
+    <block wx:for="{{i.cn}}" wx:key="uid">
+      <template is="{{xs.e(cid+1)}}" data="{{i:item,l:l}}" />
+    </block>
+  </block>
 </template>
 
 <template name="tmpl_0_map">
@@ -227,6 +375,22 @@
       <template is="{{xs.e(cid+1)}}" data="{{i:item,l:l}}" />
     </block>
   </map>
+</template>
+
+<template name="tmpl_0_slot">
+  <view slot="{{i.name}}"  id="{{i.uid}}">
+    <block wx:for="{{i.cn}}" wx:key="uid">
+      <template is="{{xs.e(cid+1)}}" data="{{i:item,l:l}}" />
+    </block>
+  </view>
+</template>
+
+<template name="tmpl_0_slot-view">
+  <view slot="{{i.name}}"  id="{{i.uid}}">
+    <block wx:for="{{i.cn}}" wx:key="uid">
+      <template is="{{xs.e(cid+1)}}" data="{{i:item,l:l}}" />
+    </block>
+  </view>
 </template>
 
 <template name="tmpl_0_#text" data="{{i:i}}">
@@ -333,6 +497,30 @@
   </swiper-item>
 </template>
 
+<template name="tmpl_1_block">
+  <block  id="{{i.uid}}">
+    <block wx:for="{{i.cn}}" wx:key="uid">
+      <template is="{{xs.e(cid+1)}}" data="{{i:item,l:l}}" />
+    </block>
+  </block>
+</template>
+
+<template name="tmpl_1_slot">
+  <view slot="{{i.name}}"  id="{{i.uid}}">
+    <block wx:for="{{i.cn}}" wx:key="uid">
+      <template is="{{xs.e(cid+1)}}" data="{{i:item,l:l}}" />
+    </block>
+  </view>
+</template>
+
+<template name="tmpl_1_slot-view">
+  <view slot="{{i.name}}"  id="{{i.uid}}">
+    <block wx:for="{{i.cn}}" wx:key="uid">
+      <template is="{{xs.e(cid+1)}}" data="{{i:item,l:l}}" />
+    </block>
+  </view>
+</template>
+
 <template name="tmpl_1_container">
   <template is="{{xs.a(1, i.nn, l)}}" data="{{i:i,cid:1,l:xs.f(l,i.nn)}}" />
 </template>
@@ -431,6 +619,30 @@
       <template is="{{xs.e(cid+1)}}" data="{{i:item,l:l}}" />
     </block>
   </swiper-item>
+</template>
+
+<template name="tmpl_2_block">
+  <block  id="{{i.uid}}">
+    <block wx:for="{{i.cn}}" wx:key="uid">
+      <template is="{{xs.e(cid+1)}}" data="{{i:item,l:l}}" />
+    </block>
+  </block>
+</template>
+
+<template name="tmpl_2_slot">
+  <view slot="{{i.name}}"  id="{{i.uid}}">
+    <block wx:for="{{i.cn}}" wx:key="uid">
+      <template is="{{xs.e(cid+1)}}" data="{{i:item,l:l}}" />
+    </block>
+  </view>
+</template>
+
+<template name="tmpl_2_slot-view">
+  <view slot="{{i.name}}"  id="{{i.uid}}">
+    <block wx:for="{{i.cn}}" wx:key="uid">
+      <template is="{{xs.e(cid+1)}}" data="{{i:item,l:l}}" />
+    </block>
+  </view>
 </template>
 
 <template name="tmpl_2_container">
@@ -533,6 +745,30 @@
   </swiper-item>
 </template>
 
+<template name="tmpl_3_block">
+  <block  id="{{i.uid}}">
+    <block wx:for="{{i.cn}}" wx:key="uid">
+      <template is="{{xs.e(cid+1)}}" data="{{i:item,l:l}}" />
+    </block>
+  </block>
+</template>
+
+<template name="tmpl_3_slot">
+  <view slot="{{i.name}}"  id="{{i.uid}}">
+    <block wx:for="{{i.cn}}" wx:key="uid">
+      <template is="{{xs.e(cid+1)}}" data="{{i:item,l:l}}" />
+    </block>
+  </view>
+</template>
+
+<template name="tmpl_3_slot-view">
+  <view slot="{{i.name}}"  id="{{i.uid}}">
+    <block wx:for="{{i.cn}}" wx:key="uid">
+      <template is="{{xs.e(cid+1)}}" data="{{i:item,l:l}}" />
+    </block>
+  </view>
+</template>
+
 <template name="tmpl_3_container">
   <template is="{{xs.a(3, i.nn, l)}}" data="{{i:i,cid:3,l:xs.f(l,i.nn)}}" />
 </template>
@@ -599,6 +835,30 @@
       <template is="{{xs.e(cid+1)}}" data="{{i:item,l:l}}" />
     </block>
   </cover-view>
+</template>
+
+<template name="tmpl_4_block">
+  <block  id="{{i.uid}}">
+    <block wx:for="{{i.cn}}" wx:key="uid">
+      <template is="{{xs.e(cid+1)}}" data="{{i:item,l:l}}" />
+    </block>
+  </block>
+</template>
+
+<template name="tmpl_4_slot">
+  <view slot="{{i.name}}"  id="{{i.uid}}">
+    <block wx:for="{{i.cn}}" wx:key="uid">
+      <template is="{{xs.e(cid+1)}}" data="{{i:item,l:l}}" />
+    </block>
+  </view>
+</template>
+
+<template name="tmpl_4_slot-view">
+  <view slot="{{i.name}}"  id="{{i.uid}}">
+    <block wx:for="{{i.cn}}" wx:key="uid">
+      <template is="{{xs.e(cid+1)}}" data="{{i:item,l:l}}" />
+    </block>
+  </view>
 </template>
 
 <template name="tmpl_4_container">
@@ -669,6 +929,30 @@
   </cover-view>
 </template>
 
+<template name="tmpl_5_block">
+  <block  id="{{i.uid}}">
+    <block wx:for="{{i.cn}}" wx:key="uid">
+      <template is="{{xs.e(cid+1)}}" data="{{i:item,l:l}}" />
+    </block>
+  </block>
+</template>
+
+<template name="tmpl_5_slot">
+  <view slot="{{i.name}}"  id="{{i.uid}}">
+    <block wx:for="{{i.cn}}" wx:key="uid">
+      <template is="{{xs.e(cid+1)}}" data="{{i:item,l:l}}" />
+    </block>
+  </view>
+</template>
+
+<template name="tmpl_5_slot-view">
+  <view slot="{{i.name}}"  id="{{i.uid}}">
+    <block wx:for="{{i.cn}}" wx:key="uid">
+      <template is="{{xs.e(cid+1)}}" data="{{i:item,l:l}}" />
+    </block>
+  </view>
+</template>
+
 <template name="tmpl_5_container">
   <template is="{{xs.a(5, i.nn, l)}}" data="{{i:i,cid:5,l:xs.f(l,i.nn)}}" />
 </template>
@@ -711,6 +995,30 @@
       <template is="{{xs.e(cid+1)}}" data="{{i:item,l:l}}" />
     </block>
   </cover-view>
+</template>
+
+<template name="tmpl_6_block">
+  <block  id="{{i.uid}}">
+    <block wx:for="{{i.cn}}" wx:key="uid">
+      <template is="{{xs.e(cid+1)}}" data="{{i:item,l:l}}" />
+    </block>
+  </block>
+</template>
+
+<template name="tmpl_6_slot">
+  <view slot="{{i.name}}"  id="{{i.uid}}">
+    <block wx:for="{{i.cn}}" wx:key="uid">
+      <template is="{{xs.e(cid+1)}}" data="{{i:item,l:l}}" />
+    </block>
+  </view>
+</template>
+
+<template name="tmpl_6_slot-view">
+  <view slot="{{i.name}}"  id="{{i.uid}}">
+    <block wx:for="{{i.cn}}" wx:key="uid">
+      <template is="{{xs.e(cid+1)}}" data="{{i:item,l:l}}" />
+    </block>
+  </view>
 </template>
 
 <template name="tmpl_6_container">
@@ -757,6 +1065,30 @@
   </cover-view>
 </template>
 
+<template name="tmpl_7_block">
+  <block  id="{{i.uid}}">
+    <block wx:for="{{i.cn}}" wx:key="uid">
+      <template is="{{xs.e(cid+1)}}" data="{{i:item,l:l}}" />
+    </block>
+  </block>
+</template>
+
+<template name="tmpl_7_slot">
+  <view slot="{{i.name}}"  id="{{i.uid}}">
+    <block wx:for="{{i.cn}}" wx:key="uid">
+      <template is="{{xs.e(cid+1)}}" data="{{i:item,l:l}}" />
+    </block>
+  </view>
+</template>
+
+<template name="tmpl_7_slot-view">
+  <view slot="{{i.name}}"  id="{{i.uid}}">
+    <block wx:for="{{i.cn}}" wx:key="uid">
+      <template is="{{xs.e(cid+1)}}" data="{{i:item,l:l}}" />
+    </block>
+  </view>
+</template>
+
 <template name="tmpl_7_container">
   <template is="{{xs.a(7, i.nn, l)}}" data="{{i:i,cid:7,l:xs.f(l,i.nn)}}" />
 </template>
@@ -799,6 +1131,14 @@
       <template is="{{xs.e(cid+1)}}" data="{{i:item,l:l}}" />
     </block>
   </cover-view>
+</template>
+
+<template name="tmpl_8_block">
+  <block  id="{{i.uid}}">
+    <block wx:for="{{i.cn}}" wx:key="uid">
+      <template is="{{xs.e(cid+1)}}" data="{{i:item,l:l}}" />
+    </block>
+  </block>
 </template>
 
 <template name="tmpl_8_container">
@@ -845,6 +1185,14 @@
   </cover-view>
 </template>
 
+<template name="tmpl_9_block">
+  <block  id="{{i.uid}}">
+    <block wx:for="{{i.cn}}" wx:key="uid">
+      <template is="{{xs.e(cid+1)}}" data="{{i:item,l:l}}" />
+    </block>
+  </block>
+</template>
+
 <template name="tmpl_9_container">
   <template is="{{xs.a(9, i.nn, l)}}" data="{{i:i,cid:9,l:xs.f(l,i.nn)}}" />
 </template>
@@ -887,6 +1235,14 @@
       <template is="{{xs.e(cid+1)}}" data="{{i:item,l:l}}" />
     </block>
   </cover-view>
+</template>
+
+<template name="tmpl_10_block">
+  <block  id="{{i.uid}}">
+    <block wx:for="{{i.cn}}" wx:key="uid">
+      <template is="{{xs.e(cid+1)}}" data="{{i:item,l:l}}" />
+    </block>
+  </block>
 </template>
 
 <template name="tmpl_10_container">
@@ -933,6 +1289,14 @@
   </cover-view>
 </template>
 
+<template name="tmpl_11_block">
+  <block  id="{{i.uid}}">
+    <block wx:for="{{i.cn}}" wx:key="uid">
+      <template is="{{xs.e(cid+1)}}" data="{{i:item,l:l}}" />
+    </block>
+  </block>
+</template>
+
 <template name="tmpl_11_container">
   <template is="{{xs.a(11, i.nn, l)}}" data="{{i:i,cid:11,l:xs.f(l,i.nn)}}" />
 </template>
@@ -975,6 +1339,14 @@
       <template is="{{xs.e(cid+1)}}" data="{{i:item,l:l}}" />
     </block>
   </cover-view>
+</template>
+
+<template name="tmpl_12_block">
+  <block  id="{{i.uid}}">
+    <block wx:for="{{i.cn}}" wx:key="uid">
+      <template is="{{xs.e(cid+1)}}" data="{{i:item,l:l}}" />
+    </block>
+  </block>
 </template>
 
 <template name="tmpl_12_container">
@@ -1021,6 +1393,14 @@
   </cover-view>
 </template>
 
+<template name="tmpl_13_block">
+  <block  id="{{i.uid}}">
+    <block wx:for="{{i.cn}}" wx:key="uid">
+      <template is="{{xs.e(cid+1)}}" data="{{i:item,l:l}}" />
+    </block>
+  </block>
+</template>
+
 <template name="tmpl_13_container">
   <template is="{{xs.a(13, i.nn, l)}}" data="{{i:i,cid:13,l:xs.f(l,i.nn)}}" />
 </template>
@@ -1063,6 +1443,14 @@
       <template is="{{xs.e(cid+1)}}" data="{{i:item,l:l}}" />
     </block>
   </cover-view>
+</template>
+
+<template name="tmpl_14_block">
+  <block  id="{{i.uid}}">
+    <block wx:for="{{i.cn}}" wx:key="uid">
+      <template is="{{xs.e(cid+1)}}" data="{{i:item,l:l}}" />
+    </block>
+  </block>
 </template>
 
 <template name="tmpl_14_container">

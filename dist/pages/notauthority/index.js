@@ -14,7 +14,8 @@
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _tarojs_taro__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @tarojs/taro */ "./node_modules/@tarojs/taro/index.js");
 /* harmony import */ var _tarojs_taro__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_tarojs_taro__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var taro_ui__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! taro-ui */ "./node_modules/taro-ui/dist/index.esm.js");
+/* harmony import */ var taro_ui__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! taro-ui */ "./node_modules/taro-ui/dist/index.umd.js");
+/* harmony import */ var taro_ui__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(taro_ui__WEBPACK_IMPORTED_MODULE_3__);
 /* harmony import */ var _tarojs_components__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @tarojs/components */ "./node_modules/@tarojs/components/mini/index.js");
 /* harmony import */ var _utils_tool__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../utils/tool */ "./src/utils/tool.ts");
 /* harmony import */ var _store_index__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../store/index */ "./src/store/index.ts");
@@ -110,19 +111,19 @@ var Notauthority = function Notauthority() {
   // }
 
 
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_tarojs_components__WEBPACK_IMPORTED_MODULE_4__[/* View */ "x"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_tarojs_components__WEBPACK_IMPORTED_MODULE_4__[/* View */ "x"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_tarojs_components__WEBPACK_IMPORTED_MODULE_4__[/* CoverImage */ "d"], {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_tarojs_components__WEBPACK_IMPORTED_MODULE_4__["View"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_tarojs_components__WEBPACK_IMPORTED_MODULE_4__["View"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_tarojs_components__WEBPACK_IMPORTED_MODULE_4__["CoverImage"], {
     className: "logo",
     src: global.constants.icon.notAuthorityLogo
-  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_tarojs_components__WEBPACK_IMPORTED_MODULE_4__[/* View */ "x"], {
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_tarojs_components__WEBPACK_IMPORTED_MODULE_4__["View"], {
     onClick: function onClick() {
       login();
     }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_tarojs_components__WEBPACK_IMPORTED_MODULE_4__[/* CoverImage */ "d"], {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_tarojs_components__WEBPACK_IMPORTED_MODULE_4__["CoverImage"], {
     className: "login",
     src: global.constants.icon.notAuthorityLogin
-  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(taro_ui__WEBPACK_IMPORTED_MODULE_3__[/* AtForm */ "c"], {
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(taro_ui__WEBPACK_IMPORTED_MODULE_3__["AtForm"], {
     className: "form-login"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(taro_ui__WEBPACK_IMPORTED_MODULE_3__[/* AtInput */ "d"], {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(taro_ui__WEBPACK_IMPORTED_MODULE_3__["AtInput"], {
     name: "phone",
     title: "\u624B\u673A\u53F7",
     type: "text",
@@ -131,9 +132,9 @@ var Notauthority = function Notauthority() {
     onChange: function onChange(value) {
       setPhone(value);
     }
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_tarojs_components__WEBPACK_IMPORTED_MODULE_4__[/* View */ "x"], {
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_tarojs_components__WEBPACK_IMPORTED_MODULE_4__["View"], {
     className: "example-body"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(taro_ui__WEBPACK_IMPORTED_MODULE_3__[/* AtInput */ "d"], {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(taro_ui__WEBPACK_IMPORTED_MODULE_3__["AtInput"], {
     className: "code",
     name: "code",
     title: "\u9A8C\u8BC1\u7801",
@@ -143,14 +144,14 @@ var Notauthority = function Notauthority() {
     onChange: function onChange(value) {
       setCode(value);
     }
-  }), disabledCode >= 60 ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(taro_ui__WEBPACK_IMPORTED_MODULE_3__[/* AtButton */ "b"], {
+  }), disabledCode >= 60 ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(taro_ui__WEBPACK_IMPORTED_MODULE_3__["AtButton"], {
     className: "code-btn",
     onClick: function onClick() {
       getCode();
     }
-  }, "\u83B7\u53D6\u9A8C\u8BC1\u7801") : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(taro_ui__WEBPACK_IMPORTED_MODULE_3__[/* AtButton */ "b"], {
+  }, "\u83B7\u53D6\u9A8C\u8BC1\u7801") : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(taro_ui__WEBPACK_IMPORTED_MODULE_3__["AtButton"], {
     className: "code-btn"
-  }, disabledCode, "\u79D2\u540E\u518D\u6B21\u83B7\u53D6")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(taro_ui__WEBPACK_IMPORTED_MODULE_3__[/* AtButton */ "b"], {
+  }, disabledCode, "\u79D2\u540E\u518D\u83B7\u53D6")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(taro_ui__WEBPACK_IMPORTED_MODULE_3__["AtButton"], {
     className: "btn",
     formType: "submit",
     onClick: function onClick() {

@@ -18,7 +18,8 @@
 /* harmony import */ var _tarojs_taro__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @tarojs/taro */ "./node_modules/@tarojs/taro/index.js");
 /* harmony import */ var _tarojs_taro__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_tarojs_taro__WEBPACK_IMPORTED_MODULE_4__);
 /* harmony import */ var _tarojs_components__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @tarojs/components */ "./node_modules/@tarojs/components/mini/index.js");
-/* harmony import */ var taro_ui__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! taro-ui */ "./node_modules/taro-ui/dist/index.esm.js");
+/* harmony import */ var taro_ui__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! taro-ui */ "./node_modules/taro-ui/dist/index.umd.js");
+/* harmony import */ var taro_ui__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(taro_ui__WEBPACK_IMPORTED_MODULE_6__);
 /* harmony import */ var mobx_react__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! mobx-react */ "./node_modules/mobx-react-lite/es/index.js");
 /* harmony import */ var _components_Phtot__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./components/Phtot */ "./src/pages/my/components/Phtot.tsx");
 /* harmony import */ var _store_index__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../../store/index */ "./src/store/index.ts");
@@ -28,15 +29,18 @@
 /* harmony import */ var taro_ui_dist_style_components_accordion_scss__WEBPACK_IMPORTED_MODULE_12___default = /*#__PURE__*/__webpack_require__.n(taro_ui_dist_style_components_accordion_scss__WEBPACK_IMPORTED_MODULE_12__);
 /* harmony import */ var taro_ui_dist_style_components_icon_scss__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! taro-ui/dist/style/components/icon.scss */ "./node_modules/taro-ui/dist/style/components/icon.scss");
 /* harmony import */ var taro_ui_dist_style_components_icon_scss__WEBPACK_IMPORTED_MODULE_13___default = /*#__PURE__*/__webpack_require__.n(taro_ui_dist_style_components_icon_scss__WEBPACK_IMPORTED_MODULE_13__);
-/* harmony import */ var _config_ts__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ../../../config.ts */ "./config.ts");
-/* harmony import */ var _config_ts__WEBPACK_IMPORTED_MODULE_14___default = /*#__PURE__*/__webpack_require__.n(_config_ts__WEBPACK_IMPORTED_MODULE_14__);
-/* harmony import */ var _index_scss__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./index.scss */ "./src/pages/my/index.scss");
-/* harmony import */ var _index_scss__WEBPACK_IMPORTED_MODULE_15___default = /*#__PURE__*/__webpack_require__.n(_index_scss__WEBPACK_IMPORTED_MODULE_15__);
+/* harmony import */ var taro_ui_dist_style_components_swipe_action_scss__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! taro-ui/dist/style/components/swipe-action.scss */ "./node_modules/taro-ui/dist/style/components/swipe-action.scss");
+/* harmony import */ var taro_ui_dist_style_components_swipe_action_scss__WEBPACK_IMPORTED_MODULE_14___default = /*#__PURE__*/__webpack_require__.n(taro_ui_dist_style_components_swipe_action_scss__WEBPACK_IMPORTED_MODULE_14__);
+/* harmony import */ var _config_ts__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ../../../config.ts */ "./config.ts");
+/* harmony import */ var _config_ts__WEBPACK_IMPORTED_MODULE_15___default = /*#__PURE__*/__webpack_require__.n(_config_ts__WEBPACK_IMPORTED_MODULE_15__);
+/* harmony import */ var _index_scss__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./index.scss */ "./src/pages/my/index.scss");
+/* harmony import */ var _index_scss__WEBPACK_IMPORTED_MODULE_16___default = /*#__PURE__*/__webpack_require__.n(_index_scss__WEBPACK_IMPORTED_MODULE_16__);
 
 
 
 
 var _this = undefined;
+
 
 
 
@@ -294,60 +298,60 @@ var My = function My() {
   }
 
   return Object(mobx_react__WEBPACK_IMPORTED_MODULE_7__[/* useObserver */ "d"])(function () {
-    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_tarojs_components__WEBPACK_IMPORTED_MODULE_5__[/* View */ "x"], {
+    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_tarojs_components__WEBPACK_IMPORTED_MODULE_5__["View"], {
       className: "container"
-    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_tarojs_components__WEBPACK_IMPORTED_MODULE_5__[/* View */ "x"], {
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_tarojs_components__WEBPACK_IMPORTED_MODULE_5__["View"], {
       className: "nav"
-    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_tarojs_components__WEBPACK_IMPORTED_MODULE_5__[/* View */ "x"], {
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_tarojs_components__WEBPACK_IMPORTED_MODULE_5__["View"], {
       className: "photo"
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_components_Phtot__WEBPACK_IMPORTED_MODULE_8__[/* default */ "a"], {
       photoUrl: User.userInfo.photo,
       uploadImg: uploadImg.bind(_this)
-    })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_tarojs_components__WEBPACK_IMPORTED_MODULE_5__[/* View */ "x"], {
+    })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_tarojs_components__WEBPACK_IMPORTED_MODULE_5__["View"], {
       className: "info",
       onTouchStart: function onTouchStart(e) {
         touchStart(e);
       }
-    }, isShowUserName ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_tarojs_components__WEBPACK_IMPORTED_MODULE_5__[/* View */ "x"], {
+    }, isShowUserName ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_tarojs_components__WEBPACK_IMPORTED_MODULE_5__["View"], {
       className: "changeInfo"
-    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_tarojs_components__WEBPACK_IMPORTED_MODULE_5__[/* Input */ "i"], {
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_tarojs_components__WEBPACK_IMPORTED_MODULE_5__["Input"], {
       focus: true,
       value: userName,
       onInput: function onInput(e) {
         setUserName(e.detail.value);
       }
-    }), " ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_tarojs_components__WEBPACK_IMPORTED_MODULE_5__[/* Text */ "v"], {
+    }), " ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_tarojs_components__WEBPACK_IMPORTED_MODULE_5__["Text"], {
       className: "btn",
       onClick: function onClick() {
         updateName();
       }
-    }, "OK")) : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_tarojs_components__WEBPACK_IMPORTED_MODULE_5__[/* Text */ "v"], null, userName))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_tarojs_components__WEBPACK_IMPORTED_MODULE_5__[/* View */ "x"], {
+    }, "OK")) : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_tarojs_components__WEBPACK_IMPORTED_MODULE_5__["Text"], null, userName))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_tarojs_components__WEBPACK_IMPORTED_MODULE_5__["View"], {
       className: "content"
-    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(taro_ui__WEBPACK_IMPORTED_MODULE_6__[/* AtAccordion */ "a"], {
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(taro_ui__WEBPACK_IMPORTED_MODULE_6__["AtAccordion"], {
       open: open,
       onClick: function onClick(e) {
         handleOpenClick(e);
       },
       title: "    \u672C\u662F\u9752\u706F\u4E0D\u5F52\u5BA2\uFF0C\u5374\u56E0\u6D4A\u9152\u604B\u7EA2\u5C18.",
       note: "     \u661F\u5149\u4E0D\u8D1F\u8D76\u8DEF\u4EBA\uFF0C\u5C81\u6708\u4E0D\u8D1F\u6709\u5FC3\u4EBA."
-    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(taro_ui__WEBPACK_IMPORTED_MODULE_6__[/* AtList */ "e"], {
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(taro_ui__WEBPACK_IMPORTED_MODULE_6__["AtList"], {
       hasBorder: false
-    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(taro_ui__WEBPACK_IMPORTED_MODULE_6__[/* AtListItem */ "f"], {
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(taro_ui__WEBPACK_IMPORTED_MODULE_6__["AtListItem"], {
       title: "\u5173\u4E8E\u6211\u4EEC",
       arrow: "right",
       thumb: "https://img14.360buyimg.com/jdphoto/s72x72_jfs/t17251/336/1311038817/3177/72595a07/5ac44618Na1db7b09.png",
       onClick: function onClick() {
         clickToEmptyPage('about');
       }
-    }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(taro_ui__WEBPACK_IMPORTED_MODULE_6__[/* AtListItem */ "f"], {
+    }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(taro_ui__WEBPACK_IMPORTED_MODULE_6__["AtListItem"], {
       title: "\u610F\u89C1\u7559\u8A00",
-      note: "\u60A8\u7684\u5EFA\u8BAE\u662F\u6211\u4EEC\u8FDB\u6B65\u7684\u52A8\u529B\uFF01",
+      note: "\u60A8\u7684\u5EFA\u8BAE\u662F\u6211\u4EEC\u7684\u52A8\u529B\uFF01",
       arrow: "right",
       thumb: "http://img10.360buyimg.com/jdphoto/s72x72_jfs/t5872/209/5240187906/2872/8fa98cd/595c3b2aN4155b931.png",
       onClick: function onClick() {
         clickToEmptyPage('leaving-message');
       }
-    }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(taro_ui__WEBPACK_IMPORTED_MODULE_6__[/* AtListItem */ "f"], {
+    }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(taro_ui__WEBPACK_IMPORTED_MODULE_6__["AtListItem"], {
       className: "lebalItem",
       title: "\u9000\u51FA\u767B\u9646",
       onClick: function onClick() {
@@ -406,10 +410,10 @@ var My = function My() {
 
 function Phtot(props) {
   return Object(mobx_react__WEBPACK_IMPORTED_MODULE_1__[/* useObserver */ "d"])(function () {
-    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_tarojs_components__WEBPACK_IMPORTED_MODULE_2__[/* View */ "x"], {
+    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_tarojs_components__WEBPACK_IMPORTED_MODULE_2__["View"], {
       className: "userinfo-img-view portrait flex-box jc-sb ai-ce",
       "data-flag": "portrait"
-    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_tarojs_components__WEBPACK_IMPORTED_MODULE_2__[/* Image */ "h"], {
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_tarojs_components__WEBPACK_IMPORTED_MODULE_2__["Image"], {
       src: props.photoUrl,
       className: "userinfo-img",
       onClick: function onClick(e) {

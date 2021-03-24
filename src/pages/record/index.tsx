@@ -56,6 +56,8 @@ const Record: React.FC = () => {
         })
         if (result.data.status === 200) {
             setAllList(result.data.data)
+        } else {
+            setAllList([])
         }
     }
 

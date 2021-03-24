@@ -739,59 +739,60 @@ var Taro = {
   !*** ./node_modules/@tarojs/components/mini/index.js ***!
   \*******************************************************/
 /*! exports provided: View, Icon, Progress, RichText, Text, Button, Checkbox, CheckboxGroup, Editor, Form, Input, Label, Picker, PickerView, PickerViewColumn, Radio, RadioGroup, Slider, Switch, CoverImage, Textarea, CoverView, MatchMedia, MoveableArea, MoveableView, ScrollView, Swiper, SwiperItem, FunctionalPageNavigator, Navigator, Audio, Camera, Image, LivePlayer, LivePusher, Video, Map, Canvas, Ad, OfficialAccount, OpenData, WebView, NavigationBar, PageMeta, Block, MovableArea, MovableView, Slot, CustomWrapper */
-/*! exports used: Button, Canvas, Checkbox, CoverImage, CoverView, Form, Icon, Image, Input, Label, Map, MovableArea, MovableView, OpenData, Picker, RadioGroup, ScrollView, Slider, Swiper, SwiperItem, Switch, Text, Textarea, View */
+/*! all exports used */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "x", function() { return View; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "g", function() { return Icon; });
-/* unused harmony export Progress */
-/* unused harmony export RichText */
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "v", function() { return Text; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Button; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "c", function() { return Checkbox; });
-/* unused harmony export CheckboxGroup */
-/* unused harmony export Editor */
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "f", function() { return Form; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "i", function() { return Input; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "j", function() { return Label; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "o", function() { return Picker; });
-/* unused harmony export PickerView */
-/* unused harmony export PickerViewColumn */
-/* unused harmony export Radio */
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "p", function() { return RadioGroup; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "r", function() { return Slider; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "u", function() { return Switch; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "d", function() { return CoverImage; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "w", function() { return Textarea; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "e", function() { return CoverView; });
-/* unused harmony export MatchMedia */
-/* unused harmony export MoveableArea */
-/* unused harmony export MoveableView */
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "q", function() { return ScrollView; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "s", function() { return Swiper; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "t", function() { return SwiperItem; });
-/* unused harmony export FunctionalPageNavigator */
-/* unused harmony export Navigator */
-/* unused harmony export Audio */
-/* unused harmony export Camera */
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "h", function() { return Image; });
-/* unused harmony export LivePlayer */
-/* unused harmony export LivePusher */
-/* unused harmony export Video */
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "k", function() { return Map; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return Canvas; });
-/* unused harmony export Ad */
-/* unused harmony export OfficialAccount */
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "n", function() { return OpenData; });
-/* unused harmony export WebView */
-/* unused harmony export NavigationBar */
-/* unused harmony export PageMeta */
-/* unused harmony export Block */
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "l", function() { return MovableArea; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "m", function() { return MovableView; });
-/* unused harmony export Slot */
-/* unused harmony export CustomWrapper */
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "View", function() { return View; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Icon", function() { return Icon; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Progress", function() { return Progress; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "RichText", function() { return RichText; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Text", function() { return Text; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Button", function() { return Button; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Checkbox", function() { return Checkbox; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CheckboxGroup", function() { return CheckboxGroup; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Editor", function() { return Editor; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Form", function() { return Form; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Input", function() { return Input; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Label", function() { return Label; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Picker", function() { return Picker; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "PickerView", function() { return PickerView; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "PickerViewColumn", function() { return PickerViewColumn; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Radio", function() { return Radio; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "RadioGroup", function() { return RadioGroup; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Slider", function() { return Slider; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Switch", function() { return Switch; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CoverImage", function() { return CoverImage; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Textarea", function() { return Textarea; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CoverView", function() { return CoverView; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "MatchMedia", function() { return MatchMedia; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "MoveableArea", function() { return MoveableArea; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "MoveableView", function() { return MoveableView; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ScrollView", function() { return ScrollView; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Swiper", function() { return Swiper; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SwiperItem", function() { return SwiperItem; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "FunctionalPageNavigator", function() { return FunctionalPageNavigator; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Navigator", function() { return Navigator; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Audio", function() { return Audio; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Camera", function() { return Camera; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Image", function() { return Image; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "LivePlayer", function() { return LivePlayer; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "LivePusher", function() { return LivePusher; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Video", function() { return Video; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Map", function() { return Map; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Canvas", function() { return Canvas; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Ad", function() { return Ad; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "OfficialAccount", function() { return OfficialAccount; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "OpenData", function() { return OpenData; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "WebView", function() { return WebView; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NavigationBar", function() { return NavigationBar; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "PageMeta", function() { return PageMeta; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Block", function() { return Block; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "MovableArea", function() { return MovableArea; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "MovableView", function() { return MovableView; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Slot", function() { return Slot; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CustomWrapper", function() { return CustomWrapper; });
 var View = 'view';
 var Icon = 'icon';
 var Progress = 'progress';
@@ -7699,7 +7700,7 @@ var nextTick = function nextTick(cb, ctx) {
   !*** ./node_modules/@tarojs/taro/index.js ***!
   \********************************************/
 /*! no static exports found */
-/*! exports used: default, useDidHide, useDidShow */
+/*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
 var Taro = __webpack_require__(/*! @tarojs/api */ "./node_modules/@tarojs/api/dist/index.esm.js").default;
