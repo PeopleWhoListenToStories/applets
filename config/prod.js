@@ -14,5 +14,15 @@ module.exports = {
      *     .use(require('webpack-bundle-analyzer').BundleAnalyzerPlugin, [])
      * }
      */
-  }
+    esnextModules: ['taro-ui'],
+    publicPath: './',
+    staticDirectory: 'static',
+    module: {
+      postcss: {
+        autoprefixer: {
+          enable: true
+        }
+      }
+    }
+  },
 }

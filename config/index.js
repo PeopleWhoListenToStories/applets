@@ -68,12 +68,19 @@ const config = {
     }
   },
   h5: {
+    publicPath: process.env.NODE_ENV === 'development' ? '/' : './',
     publicPath: '/',
     staticDirectory: 'static',
+    esnextModules: ['taro-ui'],
     postcss: {
       autoprefixer: {
         enable: true,
         config: {
+          browsers: [
+            'last 3 versions',
+            'Android >= 4.1',
+            'ios >= 8'
+          ]
         }
       },
       cssModules: {
@@ -83,7 +90,19 @@ const config = {
           generateScopedName: '[name]__[local]___[hash:base64:5]'
         }
       }
-    }
+    },
+    devServer: {
+      host: 'localhost',
+      port: 10086,
+      proxy: {
+        '/api': {
+          target: 'https://humanweaknesses.com',  // 服务端地址
+          changeOrigin: true,
+          pathRewrite: { '^/api': '/api' },
+        }
+      }
+    },
+
   }
 }
 
